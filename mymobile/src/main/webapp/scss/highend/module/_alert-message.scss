@@ -1,0 +1,41 @@
+.alert-message-grid{
+	@include cssTable;
+
+}
+.alert-message-comment{
+	@extend .grid-cell;
+	position: relative;
+	top: -4px;	
+	left:5px;
+}
+//Written for intretment user for Latest bill Widget
+.intreatment-summary-message-grid{
+	@extend .alert-message-grid;
+	@include PxToEm(margin-top,8px);
+}
+.intreatment-details-message {
+	background-color:$boxGreyColor;
+	@include PxToEm(margin-top,0px);
+	@include PxToEm(padding-bottom,18px);
+	@extend .container-padding;
+}
+.cca-bill-details-message {
+	@include PxToEm(margin-top,22px);
+	@include PxToEm(margin-bottom,0px);
+	@extend .container-padding;
+}
+.intreatment-message-text{
+	@include PxToEm(padding-left,21px);
+	@include PxToEm(padding-right,18px);
+	@include PxToEm(padding-top,4px);
+	@extend .alert-message-comment;
+}
+#myLatestBillSumary .alert-message-comment{
+	top:-4px;
+}
+#paygbalanceandallowancedetails .alert-message-comment, #myLatestBillSumary .alert-message-comment{
+	left:0px;	
+}
+#paygbalanceandallowancedetails .alert-icon-payg-balance svg,#paygbalanceandallowancedetails .alert-icon-payg-balance img{
+	margin-right:4px;
+}

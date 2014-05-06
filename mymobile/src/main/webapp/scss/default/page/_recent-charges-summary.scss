@@ -1,0 +1,6 @@
+.recentchargessummary{
+ 	.widget-note{
+ 		@include PxToEm(margin-top,14px);
+ 		@include PxToEm(margin-left,2px);
+	}
+}

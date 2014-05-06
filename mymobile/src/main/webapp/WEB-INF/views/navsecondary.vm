@@ -1,0 +1,101 @@
+<div style="display: none" id="secondoryNav">
+    #if($productType.isPayMonthly)
+        <!-- CCA -->
+        #if($productType.isCCA)
+            <div>
+                <li id="mainTab" class="main-element">
+                    <a href="$external.url('accounts')">My O2</a>
+                </li>
+                <li id="myMobileTab" class="has-shadow" #if($navstate.get(0)=="mymobile")class="is-active has-shadow"#end>
+                        <a o2-link="" href="$mymobile.url('/')">My mobile</a>
+                </li>
+                <li #if($navstate.get(0)=="bills")class="is-active"#end>
+                        <a id="billDetailsTabLink" href="$mymobile.url('/paymonthly/bills')" o2-link="paymonthly/bills">Bills</a>
+                </li>
+                <li #if($navstate.get(0)=="tariffandboltons")class="is-active" #elseif($navstate.get(0)=="allowance")class="is-active" #end>
+                            <a id="allowancesTab" o2-link="paymonthly/myallowance/allowance" href="$mymobile.url('/paymonthly/myallowance/allowance')">Allowances</a>
+                </li>
+                <li #if($navstate.get(0)=="phoneplan")class="is-active"#end>
+                        <a id="phonePlanDetailsTabLink" o2-link="paymonthly/ccaphoneplan" href="$mymobile.url('/paymonthly/ccaphoneplan')">Phone Plan</a>
+                </li>
+                <li id="moreTab" class="js-injection show-more">
+                    <a class="" href="javascript:void(0)">More</a>
+                    <span></span>
+                    <ul id="moreMenu" class="overflow-menu" style="display: none; margin-left: -74px;">
+                        <li #if($navstate.get(0)=="offers")class="is-active"#end >
+                                <a o2-link="myoffers/offers" href="$mymobile.url('/myoffers/offers')">My offers</a>
+                        </li>
+                        <li #if($navstate.get(0)=="orders")class="is-active"#end >
+                                <a id="myOrdersTab" o2-link="myorders" href="$mymobile.url('/myorders')">My orders</a>
+                        </li>
+                        <li #if($navstate.get(0)=="choices")class="is-active"#end >
+                                <a id="myChoicesTab" href="$mymobile.url('/mychoices')" o2-link="mychoices">My choices</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+            #else
+                <!-- Non CCA -->
+                <div>
+                    <li id="mainTab" class="main-element">
+                        <a href="$external.url('accounts')">My O2</a>
+                    </li>
+                    <li id="myMobileTab" class="has-shadow" #if($navstate.get(0)=="mymobile")class="is-active has-shadow"#end>
+                            <a o2-link="" href="$mymobile.url('/')">My mobile</a>
+                    </li>
+                    <li #if($navstate.get(0)=="bills")class="is-active"#end>
+                            <a id="billDetailsTabLink" href="$mymobile.url('/paymonthly/bills')" o2-link="paymonthly/bills">Bills</a>
+                    </li>
+                    <li #if($navstate.get(0)=="tariffandboltons")class="is-active" #elseif($navstate.get(0)=="allowance")class="is-active" #end>
+                                <a id="allowancesTab" o2-link="paymonthly/myallowance/allowance" href="$mymobile.url('/paymonthly/myallowance/allowance')">Allowances</a>
+                    </li>
+                    <li #if($navstate.get(0)=="offers")class="is-active"#end >
+                            <a o2-link="myoffers/offers" href="$mymobile.url('/myoffers/offers')">My offers</a>
+                    </li>
+                    <li id="moreTab" class="js-injection show-more">
+                        <a class="" href="javascript:void(0)">More</a>
+                        <span></span>
+                        <ul id="moreMenu" class="overflow-menu" style="display: none; margin-left: -74px;">
+                            <li #if($navstate.get(0)=="orders")class="is-active"#end >
+                                    <a id="myOrdersTab" o2-link="myorders" href="$mymobile.url('/myorders')">My orders</a>
+                            </li>
+                            <li #if($navstate.get(0)=="choices")class="is-active"#end >
+                                    <a id="myChoicesTab" href="$mymobile.url('/mychoices')" o2-link="mychoices">My choices</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+        #end
+        #else
+            <!-- Pay and go -->
+            <div>
+                <li id="mainTab" class="main-element">
+                    <a href="$external.url('accounts')">My O2</a>
+                </li>
+                <li id="myMobileTab" class="has-shadow" #if($navstate.get(0)=="mymobile")class="is-active has-shadow"#end >
+                        <a o2-link="" href="$mymobile.url('/')">My mobile</a>
+                </li>
+                <li #if($navstate.get(0)=="tariffandboltons")class="is-active"#end >
+                        <a id="tariff&BoltOns" o2-link="payandgo/tariffandboltons"  href="$mymobile.url('/payandgo/tariffandboltons')">Tariff & Bolt Ons</a>
+                </li>
+                <li #if($navstate.get(0)=="topup")class="is-active"#end >
+                        <a id="topUpTab" o2-link="payandgo/topup" href="$mymobile.url('/payandgo/topup')">Top up</a>
+                </li>
+                <li #if($navstate.get(0)=="offers")class="is-active"#end >
+                        <a o2-link="myoffers/offers" href="$mymobile.url('/myoffers/offers')">My offers</a>
+                </li>
+                <li id="moreTab" class="js-injection show-more">
+                    <a class="" href="javascript:void(0)">More</a>
+                    <span></span>
+                    <ul id="moreMenu" class="overflow-menu" style="display: none; margin-left: -74px;">
+                        <li #if($navstate.get(0)=="orders")class="is-active"#end >
+                                <a id="myOrders" o2-link="myorders" href="$mymobile.url('/myorders')" >My orders</a>
+                        </li>
+                        <li #if($navstate.get(0)=="choices")class="is-active"#end >
+                                <a id="myChoicesTab" o2-link="mychoices"  href="$mymobile.url('/mychoices')">My choices</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+    #end
+</div>

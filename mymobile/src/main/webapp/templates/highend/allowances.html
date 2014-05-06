@@ -1,0 +1,39 @@
+<!-- ALLOWANCES DETAILS -->
+<div
+	id="myAllowancesDetails"
+	class="widget-container"
+	ng-init="allowancesView='detail'"
+	ng-controller="myAllowancesController.getSummary">
+	<div ng-include="'templates/highend/allowanceswidget.html'"></div>
+</div>
+<hr class="blue-strip-separator" />
+
+<!-- TARIFF -->
+<div
+	id="myTariffSummary"
+	class="widget-container"
+	ng-init="module='mytariff';showCallToAction=false;"
+	ng-controller="myTariffAndBoltonsController.getTariffDetails">
+    <div ng-include="'templates/highend/widget.html'"></div>
+</div>
+<hr class="blue-strip-separator" />
+
+<!-- BOLTO NS -->
+<div
+	id="myBoltonsSummary"
+	class="widget-container myBoltons"
+	ng-init="module='myboltons';showCallToAction=false;"
+	ng-controller="myBoltonsController.getBoltonsSummary">
+	<div ng-include="'templates/highend/widget.html'"></div>
+</div>
+<hr class="blue-strip-separator" />
+
+<!-- CALLING PLAN -->
+<div
+	id="myCallingPlan"
+	class="widget-container"
+	ng-init="module='callingplan';status='success';showCallToAction=true;"
+	ng-controller="widgetController.doNothing">
+	<div ng-include="'templates/highend/widget.html'"></div>
+</div>
+<hr class="blue-strip-separator" />

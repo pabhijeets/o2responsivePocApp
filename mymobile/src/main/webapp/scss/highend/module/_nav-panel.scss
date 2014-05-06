@@ -1,0 +1,41 @@
+.nav-panel{
+  >:last-child{
+    border-bottom:none;
+  }
+}
+.navLink{
+  display: block;
+  font-size: 15px;
+  @include PxToEm(padding-top,6px);
+  @include PxToEm(padding-bottom,6px);
+  color:$darkBlueColor;
+  background-color: $boxGreyColor;
+  border-bottom: 1px solid $dullGrey;
+}
+.selectedNavLink{
+  @extend .navLink;
+  color: $electricBlueColor;
+  background-color:$darkBoxGreyColor;
+  cursor: default;
+}    
+.navLink-one, .navLink-two, .navLink-three {
+  @extend .navLink;
+}
+.selectedNavLink-one, .selectedNavLink-two, .selectedNavLink-three {
+  @extend .selectedNavLink;
+}
+.selectedNavLink-one, .navLink-one {
+  @include PxToEm(padding-left,$spacingNavBarLink);
+  padding-top:5px;
+}
+.selectedNavLink-two, .navLink-two {
+  @include PxToEm(padding-left,$spacingNavBarLink *2);
+}  
+.selectedNavLink-three, .navLink-three {
+  @include PxToEm(padding-left,$spacingNavBarLink *3);
+}
+.nav-text{
+	padding-top:5px;
+	display: block;
+}
+	

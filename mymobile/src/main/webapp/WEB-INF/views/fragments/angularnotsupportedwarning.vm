@@ -1,0 +1,29 @@
+<div id="main-container-error" ng-hide=true>
+    <div class="mymobile-top wrapper-disabled">
+        <div class="mymobile-top">
+            <div id="pageHeader" class="widget-header">
+                <h1><span>My O2</span></h1>
+            </div>
+            <div id="subscribe" class="subscriber-number">
+                <p id="mobileNumberValue" class="data">
+                    $mobilePhoneNumber
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="js-disabled-wrapper">
+        #if (${isPayM})
+            <p>Unfortunately we can't display My O2 on your mobile. You'll need to sign into My O2 on a computer to view your account.</p>
+            <p>Text XXXX for your remaining allowance.</p>
+            <p>If your fancy one of your latest smartphones go to O2 shop or <a href="#">contact us</a>.</p>
+            <p><a href="#">O2 Shop</a></p>
+        #end
+        #if (!${isPayM})
+            <p>Unfortunately we can't display My O2 on your mobile.</p>
+            <p>Text XXXX for your remaining allowance.</p>
+            <p>If your fancy one of your latest smartphones go to O2 shop or <a href="#">contact us</a>.</p>
+
+        #end
+    </div>
+
+</div>

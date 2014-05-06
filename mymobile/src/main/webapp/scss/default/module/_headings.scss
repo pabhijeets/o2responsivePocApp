@@ -1,0 +1,32 @@
+.paragraph-title-large{
+  @include setFont(FrutigerLTStd45Light,28px);
+  font-weight: normal;
+}
+.paragraph-title-medium{
+  @include setFont(FrutigerLTStd45Light,22px);
+  font-weight: normal;
+}
+.paragraph-title-small{
+  @include setFont(FrutigerLTStd45Light,21px);
+  font-weight: normal;
+}
+.paragraph-title-large:before{
+font-size:28px;
+content:"";
+}
+.overlay-content{
+	.paragraph-title-medium{
+		@include PxToEm(padding-bottom,16px);
+	}
+	.paragraph-title-small{
+		@include PxToEm(padding-bottom,17px);
+	}	
+}
+.overlay-paragraph-text-success{
+	@include setFont(FrutigerLTStd45Light,17px);
+	line-height:1.25;
+	@include PxToEm(padding-bottom,87px);
+	@include PxToEm(padding-top,28px);
+	@include PxToEm(padding-left,37px);
+}
+

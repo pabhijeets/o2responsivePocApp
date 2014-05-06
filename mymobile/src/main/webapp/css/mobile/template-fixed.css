@@ -1,0 +1,31 @@
+body,html { margin:0; padding:0 }
+.clear { clear: both;}
+body {background: url("../../img/mobile/wrapper/bg-gradient.jpg") repeat-x scroll 0 -152px #FFFFFF;color: #2C2C2C;font-family: Verdana,Geneva,sans-serif;}#head {display: block;margin: 10px 10px 5px 10px;font-size: 70%;}
+#head .logoRow {float: left;width: 100%;margin-bottom: 10px;}
+#head a#logo-m { float: left; }
+#head a span.O2 {position: absolute;top: -1000px;}
+#head .headerIcons {float: right;margin-top: 6px;}
+#head .mobileNavContainer p a {float: left;font-size: 1.333em;background: #1b2350 url("../../img/mobile/wrapper/mobile-nav-bg.jpg") repeat-x scroll 0 -56px;margin: 0 20px 10px 0;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;text-align: center;width: 86px;padding: 0.2em 0 0.3em;color: #fff}
+#head .mobileNavContainer p a.supportLink { margin-right: 0; }
+#head .mobileNavContainer p a:hover {color: #98d3fb;text-decoration: none;}
+
+.main { background: #fff url("../../img/mobile/wrapper/bg-gradient-container.jpg") repeat-x left top; }
+.main{color:#636363;font-size:small;}
+a{color:#0086C3;;text-decoration:none; line-height: 1.5em;}
+h1,h2,h3,h4,h5,p { margin-top:0 }
+img { border:none}
+.mobile { margin:0 auto; width:320px; text-align:left; padding:0;}
+
+.white{background:#fff !important;}
+
+#foot {margin-bottom: 16px;width: 100%;font-size: 80%;}
+#foot ul{margin:0;padding:0;}
+ul#footer-menu {list-style: none;width: 100%;margin:0 0 16px 0;clear:both;}
+#footer-menu li {margin-bottom: 1px;background: #E1E4E6 url("../../img/mobile/wrapper/footer-arrow.gif") no-repeat 12px center;padding: 0.45em 0;}
+#footer-menu li a {color: #616a74;display: block;margin-left: 22px;}
+ul#footerLinks {list-style: none outside none;margin: 0 auto 8px;text-align: center;}
+#footerLinks li {display: inline;padding: 0 12px 0 6px;background: url("../../img/mobile/wrapper/footer-link-separator.gif") no-repeat right 4px transparent;}
+#footerLinks li.last {background: none;}
+#footerLinks li a {color: #626a74;font-size: 0.916em;}
+p#branding {color: #626A74;font-size: .85em;text-align: center;margin-bottom: 20px;}
+p#branding img {position: relative;top: 7px;}

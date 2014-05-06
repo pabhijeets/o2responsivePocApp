@@ -1,0 +1,28 @@
+.phonedetails-widget{
+	.widget-heading-cell{
+		@include PxToEm(padding-bottom,11px);
+	}
+	.widget-bordered-grid{
+		@include PxToEm(padding-left,13px);
+		@include PxToEm(padding-top,12px);
+	}
+	.grid-column{
+		@include PxToEm(padding-bottom,7px);
+		@include PxToEm(padding-top,7px);
+	}
+	.widget-note{
+		@include PxToEm(margin-top,18.1px);
+		@include PxToEm(margin-left,1px);
+	}
+	.new-page-link-icon{
+		@include PxToEm(margin-left,0px);
+	}
+	.info-icon{
+	  vertical-align: -28%;
+	  @include PxToEm(width,14px);
+	  @include PxToEm(margin-left,6px);
+	}
+}
+
+
+

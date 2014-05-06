@@ -1,0 +1,85 @@
+.myorders-reskin{
+	@include PxToEm(margin-top,30px);
+	h1{
+		@include PxToEm(margin-bottom,20px);
+	}
+	.paragraph-title-small{
+		@include PxToEm(margin-bottom,20px);
+	}
+	td a{
+		color:$lightBlueColor;
+	}
+	.widget-note-topup-widget-msg{
+		@include PxToEm(margin-bottom,10px);
+	}
+	.orders .ordersummary p{
+	 	@extend .widget-note-topup-widget-msg;
+	 	@include PxToEm("margin-top",20px);
+	 	@include PxToEm("margin-bottom",25px);
+	 }
+	 .orders{
+	 	@include PxToEm(margin-bottom,50px);
+	 }
+	.links{
+			border-top:none;
+			border-bottom:none;
+			@include PxToEm("margin-top",-10px);
+			
+			a.btn{
+				@include PxToEm("padding-top",10px);
+				@include PxToEm("padding-bottom",7px);
+				@extend .button-payment:enabled;
+				/*.blue-button-common, .anchor-button-blue, are already extended in ".button-payment:enabled"*/
+				}
+	}	
+	
+	table{
+		width:100%;
+		border-bottom:none;
+		@include PxToEm(margin-bottom,20px);
+		thead th{
+			background-color: #DBDBDB;
+		}
+		thead th, tr td{
+			@include PxToEm(padding-top,10px);
+			@include PxToEm(padding-right,10px);
+			@include PxToEm(padding-bottom,10px);
+			@include PxToEm(padding-left,11px);		
+		}
+		 tr.odd td{
+			background-color:$boxGreyColor;
+			border-left:none;
+		}
+		 tr.even td{
+			background-color:$greyColor;
+			border-left:none;
+		}
+		.orderno{
+			width: 50px;
+		}
+		.date{
+			width: 66px;
+		}
+		.links{
+			border-bottom:none;
+			margin-top:0;
+		}
+		.desc{
+			width: 152px;
+		}
+
+	}	
+	a.btn{		
+		height:20px;
+	}
+	a.btn span{
+		line-height:17px;
+	}
+	a.btn span, a.btn{
+		background:none;	
+	}
+	.orders .ordersummary{
+		padding-bottom:0;
+
+	}
+}

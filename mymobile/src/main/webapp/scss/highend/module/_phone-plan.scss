@@ -1,0 +1,33 @@
+.phone-plan-heading{
+	@include PxToEm("padding-top",18px);
+}
+.phone-plan-title{
+	@include PxToEm("padding-top",4px);
+}
+.phone-plan-info{
+	@extend .text-xs;
+	@include PxToEm("padding-top",18px);
+}
+.phone-plan-info-l{
+	@extend .text-xs;
+	@include PxToEm("padding-top",30px);
+	line-height:1.2;
+}
+.phone-plan-page{
+	.info-seperator{
+	@include PxToEm("margin-top",18px);
+	@include PxToEm("margin-bottom",1.06px);
+	}
+	.button-blue-container-anchor-margin{
+		@include PxToEm("margin-top",19px);
+	}
+    .anchor-button-blue{
+		@include PxToEm("margin-top",9px);
+		@include PxToEm("margin-bottom",10px);
+    }
+    .phone-plan-details-container{
+		.info-seperator{
+			@include PxToEm("margin-top",12px);
+		}
+	}
+}	

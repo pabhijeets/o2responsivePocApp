@@ -1,0 +1,17 @@
+.amount{
+  @include setFont(FrutigerLTStd55Bold,25px);
+}
+.amount-subtext{
+  @include PxToEm(margin-left,-2px);
+}  
+.paragraph-subtitle{
+	@include setFont(FrutigerLTStd55Roman,20px);	
+}
+.overlay-text-small{
+	@include setFont(FrutigerLTStd55Roman,16px);	
+}
+.overlay-paragraph-text{
+	@include setFont(FrutigerLTStd45Light,17px);
+	@include PxToEm(padding-bottom,25px);
+	line-height:1.25;
+}

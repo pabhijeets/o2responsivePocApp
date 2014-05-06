@@ -1,0 +1,6 @@
+.js-disabled-wrapper{
+	@extend .container-padding;
+	@extend .container-padding-bottom;	
+	@extend .text-l;
+	@include PxToEm(padding-top,40px);
+}

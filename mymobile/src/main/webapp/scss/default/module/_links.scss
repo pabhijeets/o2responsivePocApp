@@ -1,0 +1,36 @@
+a,a:link,a:visited,a:hover,a:active{
+  	text-decoration: none;
+}
+.customlink{
+  color:$lightBlueColor;
+  cursor:pointer;
+  font-size: 15px;
+  
+}
+.allowance-widget-link{
+	@extend .customlink;
+	display: inline-block;
+	@include PxToEm(margin-top , 3px);
+}
+.allowance-details-widget-link{
+	@extend .customlink;
+	display: inline-block;
+	@include PxToEm(margin-top , 17px);
+	@include PxToEm(margin-left ,1px);
+}
+.details-link{
+	@include PxToEm(padding-top,30px);
+}
+.cta-info{
+cursor:pointer;
+		img{
+			vertical-align: -4px;
+		}
+}
+
+.changemysecuritypin, .margin-left-link{
+	 @include PxToEm(margin-left,55px);
+}
+.margin-right-link{
+	 @include PxToEm(margin-right,55px);
+}

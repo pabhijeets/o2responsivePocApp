@@ -1,0 +1,43 @@
+.viewpaymentdetails{
+	@include PxToEm(padding-left,30px);
+	.widget-heading-cell{
+		@include PxToEm(padding-bottom,17px);
+	}
+	.widget-shaded-grid{
+		@include PxToEm(padding-top,16px);
+		.grid{
+		 		@include PxToEm(width,450px);
+			}
+	}
+	.grid{
+		.grid-column{
+			width:63%;
+		}
+	}
+	.widget-sub-heading{
+		@extend .paragraph-subtitle;
+		@include PxToEm(margin-top,25px);
+	}
+	.widget-note-payment-details{
+		line-height:1.35;
+		width: 80%;
+	}
+
+	.common-shadow-seprator {
+		@include PxToEm(height, 10px);
+		@include PxToEm(margin-top, 9px);
+		@include PxToEm(margin-bottom, 0px);
+		background-size: 100%;
+	}
+}
+.payment-links{
+	@include PxToEm(padding-top,28px);
+}
+.paymentdetails-foot-note{
+	@include PxToEm(margin-top,25px);
+}
+
+#viewPaymentDetails{
+	.error-container{padding-top:4px;}
+
+}

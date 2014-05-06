@@ -1,0 +1,146 @@
+<article ng-init="status='loading'">
+    <div ng-switch on="status">
+        <!-- Error -->
+        <div id="errorPage" ng-switch-when="error">
+            <div ng-include="templates/highend/errorpage.html"></div>
+        </div>
+        <!-- Loading -->
+        <div id="loadingPage" ng-switch-when="loading" class="loading-page">
+            <div ng-include="templates/highend/loadingpage.html"></div>
+        </div>
+        <!-- Sucess -->
+        <div ng-switch-when="success">        
+            <div ng-if="!myPhonePlan.ccaInfoMessage">
+                <article id="myPhonePlanPage" class="phone-plan-page">
+                    <!-- Installment Amount -->
+                    <div class="container-padding">
+                        <span id="monthlyInstallment"><span class="larger-amount">{{myPhonePlan.installmentAmount | currencyFormatter:true}}</span> per month</span>
+                    </div>
+                    <div class="container-padding phone-plan-title">
+                        <h2 class="phone-plan-heading">What you bought</h2>
+                    </div>
+                    <section id="whatYouBought" class="grid reverse-shading">
+                        <div class="grid-row">
+                            <label class="grid-column-medium">
+                                Model purchased
+                            </label>
+                            <label class="grid-column-medium">
+                                {{myPhonePlan.phoneName}}
+                            </label>
+                        </div>
+                        <div class="grid-row">
+                            <label class="grid-column-medium">
+                                Phone Plan start date
+                            </label>
+                            <label class="grid-column-medium">
+                                {{myPhonePlan.startDate | dateFormatter}}
+                            </label>
+                        </div>
+                    </section>
+                    <hr class="info-seperator"/>
+                    <div class="container-padding">
+                        <h2 class="phone-plan-title">Phone Plan details</h2>
+                    </div>
+                    <div class="phone-plan-details-container">
+                        <section id="planDetails" class=" grid reverse-shading">
+                            <div class="grid-row">
+                                <label class="grid-column-medium">
+                                    Phone Plan
+                                </label>
+                                <label class="grid-column-medium">
+                                    {{myPhonePlan.ccaNumber}}
+                                </label>
+                            </div>
+                            <div class="grid-row">
+                                <label class="grid-column-medium">
+                                    Total credit
+                                </label>
+                                <label class="grid-column-medium">
+                                    {{myPhonePlan.totalCredit | currencyFormatter:true}}
+                                </label>
+                            </div>
+                            <div class="grid-row">
+                                <label class="grid-column-medium">
+                                    Duration of plan
+                                </label>
+                                <label class="grid-column-medium">
+                                    {{myPhonePlan.duration}} months
+                                </label>
+                            </div>
+                            <div class="grid-row">
+                                <label class="grid-column-medium">
+                                    APR*
+                                </label>
+                                <label class="grid-column-medium">
+                                    {{myPhonePlan.apr | percentageFormatter}}
+                                </label>
+                            </div>
+                        </section>
+                        <div class="container-padding">
+                            <p id="aprFootNote" class="phone-plan-info">
+                                *Interest rate (calculated in the same way as the APR, but excluding fees)
+                            </p>
+                        </div>
+                        <hr class="info-seperator"/>    
+                    </div>  
+                        
+                    <div class="container-padding">
+                        <h2 class="phone-plan-title">Repayments</h2>
+                    </div>
+                    
+                        <section id="repayments" class="grid reverse-shading">
+                            <div class="grid-row">
+                                <label class="grid-column-medium">
+                                    Paid to date
+                                </label>
+                                <label class="grid-column-medium">
+                                    {{myPhonePlan.paidToDate | currencyFormatter:true}}
+                                </label>
+                            </div>
+                            <div class="grid-row">
+                                <label class="grid-column-medium">
+                                    Monthly repayment
+                                </label>
+                                <label class="grid-column-medium">
+                                    {{myPhonePlan.installmentAmount | currencyFormatter:true}}
+                                </label>
+                            </div>
+                            <div class="grid-row">
+                                <label class="grid-column-medium">
+                                    Payment due on
+                                </label>
+                                <label class="grid-column-medium">
+                                    {{myPhonePlan.installmentDate | dateFormatter}}
+                                </label>
+                            </div>
+                            <div class="grid-row">
+                                <label class="grid-column-medium">
+                                    Settlement amount
+                                </label>
+                                <label class="grid-column-medium">
+                                    {{myPhonePlan.settlementAmount | currencyFormatter:true}}
+                                </label>
+                            </div>
+                        </section>
+                        <div class="container-padding">
+                            <p id="phonePlanInfoMessage" class="phone-plan-info-l">
+                                This is your Phone Plan. You also have a separate airtime bill.
+                            </p>
+                            <p id="phonePlanInfoMsg" class="phone-plan-info-l">
+                                Missed a payment or want to pay off your Phone Plan?
+                            </p>
+                        </div>
+                    
+                    <section class="button-blue-container-anchor-margin">
+                        <a id="makeAPayment" href="tel:202" class="anchor-button-blue">Call to make a payment</a>
+                    </section>
+                </article>
+            </div>
+            <div ng-if="myPhonePlan.ccaInfoMessage" class="container-padding container-padding-bottom">
+                <p class="text-l">{{myPhonePlan.ccaInfoMessage}}</p>
+            </div>
+			<hr class="blue-strip-separator" />
+        </div>		
+    </div>
+	
+</article>

@@ -1,0 +1,83 @@
+//for add data bolt on input label
+.margin-left{
+  @include PxToEm("margin-left",$spacingFromEnds);
+  @extend .text-m;
+}
+.add-data-bolton-listing{
+	background-color:$greyColor;
+	@include PxToEm("padding-left",7px);
+	@include PxToEm("padding-right",7px);
+}
+.total-heading{
+	@include PxToEm(margin-top,25px);
+	@extend .text-l;
+}
+.bolton-description{
+	@include PxToEm(margin-left,27px);
+	@extend .text-s;
+}
+.bolton-description-font{
+	@extend .text-m;
+	@include PxToEm(margin-bottom,4px);
+}
+.textDisabled {
+	color:$transparentGrey;
+}
+.top-heading{
+	@include PxToEm(margin-bottom,19.83px);
+	@extend .text-l;
+}
+.bolton-title{
+	@extend .text-m;
+	@include PxToEm(margin-bottom,9.33px);
+}
+.total-confirm{
+	@include PxToEm(margin-bottom,55px);
+	@extend .text-l;
+}
+.confirm-title{
+	@extend .text-m;
+	margin-bottom:-3px;
+}
+.key-note-success{
+	@include PxToEm(margin-top,33px);
+	@extend .text-l;
+}
+.icon-data-container{
+	@extend .text-l;
+	@include PxToEm(margin-bottom,17.5px);
+}
+.top-heading-margin-less{
+	@include PxToEm(margin-top,15px);
+	@extend .text-l;
+}
+.heading-container{
+	@extend .text-l;
+	@include PxToEm(margin-bottom,$spacingFromEnds);
+}
+.bolton-success-container{
+	@include PxToEm(margin-bottom,8px);
+	@include PxToEm(margin-left,25px);
+}
+.add-boltons-heading{
+	@extend .text-l;
+	@include PxToEm(margin-bottom,20px);
+}
+.bolton-container{
+	@include PxToEm(margin-bottom, 7px);
+}
+.bolton-value{
+	margin-top: -3px;
+	@extend .text-m;
+}
+.bolton-container{
+	@extend .text-l;	
+	@include PxToEm(margin-bottom,17px);
+}
+.container-padding-boltons{
+	@include PxToEm(padding-left,19px);
+	h2{
+		@include PxToEm(padding-top,18px);
+		@include PxToEm(padding-bottom,13px);
+	}
+}

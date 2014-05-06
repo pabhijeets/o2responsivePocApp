@@ -1,0 +1,22 @@
+<noscript>
+    <div class="mymobile-top wrapper-disabled" ng-controller="navigationController">
+        <div class="mymobile-top" ng-controller="navigationController">
+            <header id="pageHeader" class="widget-header">
+                <h1><span>My O2</span></h1>
+            </header>
+            <div id="subscribe" class="subscriber-number">
+                <p id="mobileNumberValue" class="data">
+                    $mobilePhoneNumber
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="js-disabled-wrapper">
+        You need to turn on Javascript on your phone to access My O2. This can normally be found under your phone browser settings.
+    </div>
+    <style type="text/css">
+        .wrapper-container {
+            display: none;
+        }
+    </style>
+</noscript>

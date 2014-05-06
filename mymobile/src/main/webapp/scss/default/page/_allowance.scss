@@ -1,0 +1,57 @@
+.widget-details-background-allowance{
+	@include PxToEm("padding-top",14px);
+	@include PxToEm("padding-bottom",11px);
+}
+.widget-header-panel{
+	@extend .grid-cell;
+	@include PxToEm(padding-left,15px);
+}
+.widget-details-background{
+   	@include PxToEm(padding-top,15px);
+   	@include PxToEm(padding-bottom,11px);
+}
+.widget-summmary{
+   	@include PxToEm(margin-top,15px);
+}
+.widget-logo-cell{
+	@extend .grid-cell;
+    @include PxToEm(width,58px);
+    @extend .text-right;
+	@include PxToEm(padding-left,13px);
+
+	div>img{width:100%}
+}
+.widget-container{
+	@include PxToEm(margin-top,12px);
+}
+.widget-unlimited-desc-column{
+	@include cssTableCell(null,top);
+	@include PxToEm(padding-top,3px);
+}
+.widget-unlimited-title-column{
+	@extend .bold;
+	@include PxToEm(width,58.33px);
+	@include PxToEm("padding-left",14px);
+	@include PxToEm("padding-right",4px);
+	@extend .widget-unlimited-desc-column;
+
+}
+.widget-allowance-nil{
+	@include PxToEm(padding-top,20px);
+	@include PxToEm(padding-left,1px);
+	@include PxToEm(padding-bottom,17px);
+	line-height: 1.25;
+}
+.allowance-plain-dark-separator{
+	@extend .plain-dark-separator;
+	border-top: 5px solid #efefef;
+}
+.allowance-plain-dark-separator-loading{
+	@extend .allowance-plain-dark-separator;
+	border-top: 30px solid #efefef;
+}
+.allowancesummary{
+	.allowance-detail-msg-nil{
+		margin-left:0;
+	}
+}

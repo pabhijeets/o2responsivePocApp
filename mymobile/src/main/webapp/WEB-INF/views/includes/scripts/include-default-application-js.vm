@@ -1,0 +1,67 @@
+<script type="text/javascript" src="js/default/config/properties.js"></script>
+<script type="text/javascript" src="js/default/modules/myo2desktopmodule.js"></script>
+
+<script type="text/javascript" src="js/default/modules/myordersmodule.js"></script>
+<script type="text/javascript" src="js/default/services/myordersservice.js"></script>
+<script type="text/javascript" src="js/default/viewmodels/myrecentorders.js"></script>
+
+<script type="text/javascript" src="js/default/modules/phonedetailsmodule.js"></script>
+<script type="text/javascript" src="js/default/services/phonedetailsservice.js"></script>
+<script type="text/javascript" src="js/default/viewmodels/phonedetails.js"></script>
+
+<script type="text/javascript" src="js/default/modules/paym/viewpaymentdetailsmodule.js"></script>
+<script type="text/javascript" src="js/default/services/paym/paymentdetailsservice.js"></script>
+<script type="text/javascript" src="js/default/viewmodels/paym/paymentdetails.js"></script>
+<script type="text/javascript" src="js/default/modules/paym/changepaymentdetailsmodule.js"></script>
+<script type="text/javascript" src="js/default/viewmodels/paym/creditcard.js"></script>
+<script type="text/javascript" src="js/default/viewmodels/paym/resetpinview.js"></script>
+<script type="text/javascript" src="js/default/viewmodels/paym/changepinview.js"></script>
+
+<script type="text/javascript" src="js/default/modules/payg/topupmodule.js"></script>
+<script type="text/javascript" src="js/default/services/payg/topupservice.js"></script>
+<script type="text/javascript" src="js/default/viewmodels/payg/topuphistory.js"></script>
+
+<script type="text/javascript" src="js/default/viewmodels/paym/directdebit.js"></script>
+
+<script type="text/javascript" src="js/default/modules/paym/paperfreebillingmodule.js"></script>
+<script type="text/javascript" src="js/default/services/paym/paperfreebillingservice.js"></script>
+<script type="text/javascript" src="js/default/viewmodels/paym/paperfreebilling.js"></script>
+
+<script type="text/javascript" src="js/default/modules/paym/tariffmodule.js"></script>
+<script type="text/javascript" src="js/default/services/paym/pendingtariffservice.js"></script>
+<script type="text/javascript" src="js/default/viewmodels/paym/pendingtariff.js"></script>
+
+<script type="text/javascript" src="js/default/modules/payg/boltonssummarymodule.js"></script>
+<script type="text/javascript" src="js/default/viewmodels/payg/boltons.js"></script>
+
+<script type="text/javascript" src="js/default/modules/payg/rewardsmodule.js"></script>
+<script type="text/javascript" src="js/default/services/payg/rewardsservice.js"></script>
+<script type="text/javascript" src="js/default/viewmodels/payg/rewards.js"></script>
+
+<script type="text/javascript" src="js/default/services/paym/securitypinservice.js"></script>
+<script type="text/javascript" src="js/default/viewmodels/paym/createpin.js"></script>
+
+<script type="text/javascript" src="js/default/modules/payg/tariffdetailsmodule.js"></script>
+<script type="text/javascript" src="js/default/viewmodels/payg/tariffdetails.js"></script>
+<script type="text/javascript" src="js/default/viewmodels/payg/pendingtariffdetails.js"></script>
+
+<script type="text/javascript" src="js/default/services/offersservice.js"></script>
+<script type="text/javascript" src="js/default/modules/offersmodule.js"></script>
+<script type="text/javascript" src="js/default/viewmodels/offers.js"></script>
+
+<script type="text/javascript" src="js/default/viewmodels/paym/paymbolton.js"></script>
+<script type="text/javascript" src="js/default/services/paym/paymboltonsservice.js"></script>
+<script type="text/javascript" src="js/default/modules/paym/paymboltonsmodule.js"></script>
+
+<script type="text/javascript" src="js/default/services/paym/swappabletravelboltonsservice.js"></script>
+<script type="text/javascript" src="js/default/modules/paym/swappabletravelboltonsmodule.js"></script>
+<script type="text/javascript" src="js/default/viewmodels/paym/swappabletravelboltons.js"></script>
+
+<script type="text/javascript" src="js/default/services/paym/swappableboltonsservice.js"></script>
+<script type="text/javascript" src="js/default/modules/paym/swappableboltonsmodule.js"></script>
+<script type="text/javascript" src="js/default/viewmodels/paym/swappableboltons.js"></script>
+<script type="text/javascript" src="js/default/viewmodels/paym/swappableo2travelbolton.js"></script>
+
+<script type="text/javascript" src="js/default/services/payg/tariffdetailsservice.js"></script>
+
+<script type="text/javascript" src="js/default/navsecondary.js"></script>

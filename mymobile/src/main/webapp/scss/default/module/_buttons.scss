@@ -1,0 +1,86 @@
+.blue-button-common{
+  background: #419ed9; /* Old browsers */
+  background: -moz-linear-gradient(top,  #419ed9 0%, #3f99d5 17%, #3985c9 48%, #3282bb 75%, #2f7cb4 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#419ed9), color-stop(17%,#3f99d5), color-stop(48%,#3985c9), color-stop(75%,#3282bb), color-stop(100%,#2f7cb4)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #419ed9 0%,#3f99d5 17%,#3985c9 48%,#3282bb 75%,#2f7cb4 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #419ed9 0%,#3f99d5 17%,#3985c9 48%,#3282bb 75%,#2f7cb4 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #419ed9 0%,#3f99d5 17%,#3985c9 48%,#3282bb 75%,#2f7cb4 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #419ed9 0%,#3f99d5 17%,#3985c9 48%,#3282bb 75%,#2f7cb4 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#419ed9', endColorstr='#2f7cb4',GradientType=0 ); /* IE6-8 */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQxOWVkOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE3JSIgc3RvcC1jb2xvcj0iIzNmOTlkNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ4JSIgc3RvcC1jb2xvcj0iIzM5ODVjOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iIzMyODJiYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyZjdjYjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  @include setBorderRadius;
+  color: $whiteColor;
+  border: none;
+}
+.anchor-button-blue{
+  border:1px solid $greyColor;
+  @extend .blue-button-common;
+  @include PxToEm("padding-top",12px);
+  @include PxToEm("padding-bottom",10px);
+  @include PxToEm("padding-left",11px);
+  @include PxToEm("padding-right",9px);
+  display: inline-block;
+}
+.button-payment:enabled {
+       @include PxToEm("padding-bottom",8px);
+       @extend .blue-button-common;
+       @extend .anchor-button-blue;
+    }
+.button-payment:disabled {
+/*      background: transparent;*/
+      background:  $whiteColor;/*toolkit button design specificatoin*/
+      color:$transparentGrey;
+      border:1px solid $transparentGrey;
+      @include PxToEm("padding-top",12px);
+      @include PxToEm("padding-bottom",8px);
+      //margin-bottom:1px;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      text-align:center;
+      @include setBorderRadius;
+}
+.overlay-content{
+  .anchor-button-blue{
+  @include PxToEm(font-size,14px);
+  @include PxToEm(padding-top,11px);
+  @include PxToEm(padding-bottom,7px);/*
+  @include PxToEm(margin-top,30px);
+  @include PxToEm(margin-bottom,54px);*/
+  }
+  .anchor-button-spacing{
+  @include PxToEm(padding-top,30px);
+  @include PxToEm(padding-bottom,54px);
+  }
+}
+.blue-button-common:hover,anchor-button-blue:hover,.button-payment:hover{
+  background: #2870a7; /* Old browsers */
+  background: -moz-linear-gradient(top, #2870a7 0%, #1d5c90 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2870a7), color-stop(100%,#1d5c90)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #2870a7 0%,#1d5c90 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #2870a7 0%,#1d5c90 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #2870a7 0%,#1d5c90 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #2870a7 0%,#1d5c90 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2870a7', endColorstr='#1d5c90',GradientType=0 ); /* IE6-9 */
+}
+.blue-button-common:focus,anchor-button-blue:focus,.button-payment:focus{
+  border:1px solid $button-state-active;
+  /*removed as it adds height and button shakes on clicking.*/
+}
+.blue-button-common:active,.anchor-button-blue:active,.button-payment:active{
+  border:1px solid $button-state-active;
+  /*removed as it adds height and button shakes on clicking.*/
+}
+.blue-button-common:active,.anchor-button-blue:active,.button-payment:active{
+  background:$button-state-active;
+}
+.blue-button-common:disabled,.anchor-button-blue:disabled{
+  background: #ffffff;
+  color: #d9d9d9;
+  border: 1px solid #d9d9d9;
+}
+.blue-button-common:disabled:hover,.anchor-button-blue:disabled:hover,.button-payment:disabled:hover {
+    background: #ffffff;
+}
+.blue-button-common:disabled:active,.anchor-button-blue:disabled:active,.button-payment:disabled:active {
+    background: #ffffff;
+    border: 1px solid #d9d9d9;
+}

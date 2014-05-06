@@ -1,0 +1,14 @@
+<!-- Bottom Nav -->
+<section ng-show="userDetails" id="bottomNav" class="nav-panel" ng-controller="navigationController">
+    <a id="myO2Link" ng-class="linkClass('home', 'one')" href='#/'><span class="nav-text">My O2</span></a>
+    <div ng-if="userDetails.ismonthly">
+        <a id="allowanceTariffBoltOnLink" ng-class="linkClass('allowances', 'two')" href='#/allowances'><span class="nav-text">Allowances, tariff and Bolt Ons</a>
+            <a id="addDataBoltOnLink" ng-class="linkClass('adddataboltons', 'three')" href='#/adddataboltons'><span class="nav-text">Add data Bolt Ons</span></a>
+            <a id="callingPlanLink" ng-class="linkClass('callingplan', 'three')" href='#/callingplan'><span class="nav-text">Call and text charges</span></a>
+        <a ng-show="userDetails.isCCA" id="phonePlanLink" ng-class="linkClass('phoneplan', 'two')" href='#/phoneplan'><span class="nav-text">Phone Plan</span></a>
+        <a ng-hide="isMBBUser" id="upgradeOptionsLink" ng-class="linkClass('upgradeoptions', 'two')" href='#/upgradeoptions'><span class="nav-text">Upgrade options</span></a>
+    </div>
+    <div ng-if="!userDetails.ismonthly">
+        <a id="callingPlanLink" ng-class="linkClass('paygcallingplan', 'two')" href='#/paygcallingplan'><span class="nav-text">Call and text charges</span></a>
+    </div>
+</section>

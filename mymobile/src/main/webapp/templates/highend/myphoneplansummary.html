@@ -1,0 +1,10 @@
+<section ng-if="myPhonePlan.ccaInfoMessage">
+	<p id="ccaInfoMessage" class="widget-info widget-info-padding-right">{{myPhonePlan.ccaInfoMessage}}</p>
+</section>
+
+<section ng-if="!myPhonePlan.ccaInfoMessage">
+	<p id="monthlyInstallment" class="widget-info"><span class="amount">{{myPhonePlan.installmentAmount | currencyFormatter:true}}</span> per month</p>
+	<p id="installmentDateMessage" class="widget-info widget-info-more-text widget-info-padding-right"  ng-if="myPhonePlan.installmentDate">
+		The payment is due on <span class="bold">{{myPhonePlan.installmentDate | dateFormatter}}</span>
+	</p>
+</section>

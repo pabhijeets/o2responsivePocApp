@@ -1,0 +1,29 @@
+.checkbox-list{ 
+  @include PxToEm("padding-top",3px);
+}
+.checkbox-list-row{  
+    @include PxToEm("padding-bottom",6.3px);
+    @include PxToEm("padding-top",9px);
+    @include PxToEm("font-size",15px);
+    @include PxToEm("line-height",16px);
+    input[type=checkbox]{
+  	 vertical-align: text-top;
+    }
+}
+.hidden-checkbox{
+	@extend .display-none;
+}
+.hidden-checkbox + label .custom-checkbox  {
+    display:inline-block;
+    @include PxToEm(width, 17px);
+    @include PxToEm(height, 17px);
+    @include PxToEm(margin-right, 5px);
+    vertical-align:middle;
+    background:url($checkbox-unchecked) left top no-repeat;
+    cursor:pointer;
+    background-size:100%;
+}
+.hidden-checkbox:checked + label .custom-checkbox {
+    background:url($checkbox-checked) left top no-repeat;
+    background-size:100%;
+}

@@ -1,0 +1,6 @@
+<script type="text/javascript" src="js/jquery.tools.min.js?ts=3463"></script>
+<script type="text/javascript" src="js/jquery.application.js?ts=3463"></script>
+<script type="text/javascript" src="https://a248.e.akamai.net/f/1107/5451/1h/netraker.download.akamai.com/5451/cookie.js"></script>
+<script type="text/javascript" src="js/default/navsecondary.js?ts=3473"></script>
+<script type="text/javascript" src="js/application.js?ts=3473"></script>
+#parse("/fragments/coremetrics-scripts.vm")

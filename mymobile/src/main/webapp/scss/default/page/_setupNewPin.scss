@@ -1,0 +1,79 @@
+
+.setupNewPin {
+	.paragraph-title-medium {
+		margin-top: 48px;
+		}
+
+	.acc-number{
+		padding-top: 7px;
+		padding-bottom: 7px;
+		margin-top: 7px;
+		width: 288px;
+		@extend .payment-input;
+	}
+	.sort-code-input{
+		width:67px;
+		margin-right:6px;
+		@extend .acc-number;
+	}
+	.re-enter-input {
+		width:130px;
+		@extend .acc-number;
+	}
+	.shadow-bottom {
+	margin-bottom: 14px;
+	}
+	.widget-button-container-payment-details{
+		.button-payment{
+			width:auto;	
+		}
+	}
+}
+
+.setupNewPinContainer {
+	.errorRed{padding-top:4px;}
+}
+.setupNewPinContainer .secondParatext{
+	@include PxToEm(margin-top,23px);
+	@include PxToEm(margin-bottom,10px);	
+}
+.setupNewPinContainer .blockLevel{
+	display:block;
+	@include PxToEm(margin-top,23px);
+	
+}
+.setupNewPin svg
+{
+	width: 1.07143em;
+	width: 1.07143rem;
+	height: 1.07143em;
+	height: 1.07143rem;
+	vertical-align: -0.21429em;
+	vertical-align: -0.21429rem;
+	padding-right: 0.21429em;
+	padding-right: 0.21429rem;
+}
+/*.setupNewPin .customlink{
+	font-size: 16px;		
+}*/
+.correctIcon{
+	background:url("../../img/default/tick.png") no-repeat;
+	width: 18px;
+	height: 13px;
+	display: inline-block;
+	@include PxToEm(margin-left,8px);	
+}
+
+.widget-heading-setupNewPin{
+	@include PxToEm(margin-top,42px);
+}
+.setupNewPin-margin-top .margin-top-fortytwo{
+	@include PxToEm("margin-top",42px);	
+}
+.setupNewPin-margin-top .error-container{
+	@include PxToEm(margin-top,32px);
+	@extend .min-height-three-eight-five;
+} 
+.setupNewPin-margin-top .margin-top-fortyseven{
+	@include PxToEm("margin-top",47px);	
+}

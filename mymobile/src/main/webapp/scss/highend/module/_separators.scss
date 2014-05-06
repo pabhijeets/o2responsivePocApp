@@ -1,0 +1,32 @@
+.blue-strip-separator{
+  background: url($seperator) no-repeat #efefef;
+  height: 5px;
+  background-position: 50% 0%;
+  background-size: 100% 5px;
+  border: none;
+}
+.info-seperator{
+  background: {
+    image: url($infoSeparator);
+    repeat: no-repeat;
+    size: 100% 24px;
+    position:50% 100%;
+  }
+  border: none;
+  height: 23.33px;  
+  color:transparent;
+  @include PxToEm("padding-top",13px);
+}
+.headless-seperator{
+  height: 1px;
+  border: none;
+  background-image:url($headlessSeparator);
+  background-repeat: repeat-x;
+  margin-left: $spacingFromEnds;
+}
+.plain-dark-separator{
+  background: $dullGrey;
+  border-top: $dullGrey;
+  border-bottom: 1px solid $whiteColor;
+  height: 1px;
+}

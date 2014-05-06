@@ -1,0 +1,5 @@
+#parse('/fragments/coremetrics-core.vm')
+<script type="text/javascript">
+  cmSetProduction();
+  cmCreateErrorTag("Dashboard - Error 404 - Not found", "Error");    
+</script>

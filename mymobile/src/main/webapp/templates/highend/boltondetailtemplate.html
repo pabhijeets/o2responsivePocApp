@@ -1,0 +1,42 @@
+  	<div class="container-padding-boltons">
+  	 <h2>{{bolton.name}}</h2>
+    	<p class="shift-up" ng-show="mandatoryBolton">(mandatory)</p>
+        <p class="shift-up" ng-hide="mandatoryBolton">&nbsp;</p>
+	</div>
+    <section class="grid reverse-shading" ng-switch on="userDetails.ismonthly">
+       
+        <div class="grid-row">
+            <label class="grid-column-first">What you get</label>
+            <label id="boltOnDescription" class="grid-column-second">{{bolton.description}}</label>
+        </div>
+
+        <div class="grid-row">
+            <label class="grid-column-first">Tariff Charge</label>
+            <label id="boltOnCharge" class="grid-column-second">{{bolton.boltOnFee | boltonCurrencyFormatter}} <span ng-hide="bolton.boltOnFee == 0">{{bolton.billingInterval}}</span></label>
+        </div>
+        
+        <div class="grid-row">
+            <label class="grid-column-first">Status</label>
+            <label id="boltOnStatus" class="grid-column-second">{{bolton.status}}</label>
+        </div>
+        <!-- ng switch is applied on section as wrapping it with a div over here breaks the css of grid-row -->        
+        <!-- display only for paym boltons -->
+        <div ng-switch-when="true" class="grid-row">
+            <label class="grid-column-first">Start date</label>
+            <label id="boltOnStartDate" class="grid-column-second"><time>{{(bolton.startDate | dateFormatter) || 'No start date' }}</time></label>
+        </div>
+        <div ng-switch-when="true" class="grid-row">
+            <label class="grid-column-first">End date</label>
+            <label id="boltOnEndDate"class="grid-column-second"><time>{{(bolton.endDate | dateFormatter) || 'No end date'}}</time></label>
+        </div>
+
+        <!-- display only for payg boltons -->
+        <div ng-switch-when="false" class="grid-row">
+            <label class="grid-column-first">Anniversary Date</label>
+            <label id="boltOnAnniversaryDate" class="grid-column-second"><time>{{(bolton.anniversaryDate | dateFormatter) || 'N/A' }}</time></label>
+        </div>
+        <div ng-switch-when="false" class="grid-row">
+            <label class="grid-column-first">Remaining</label>
+            <label id="boltOnRemaining" class="grid-column-second">{{(bolton.allowanceRemainingText) || 'ToBeImplemented'}}</label>
+        </div>
+    </section>

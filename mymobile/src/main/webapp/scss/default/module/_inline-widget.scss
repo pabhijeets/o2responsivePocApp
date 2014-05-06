@@ -1,0 +1,28 @@
+.inline-widget-unit{
+	  @include PxToEm(padding-left,$widget-padding - 1px);
+	  @include PxToEm(padding-right,$widget-padding);
+	  @include PxToEm(padding-top,21px);
+	  @include PxToEm(padding-bottom,12px);
+	  @extend .background-box-grey;
+
+}
+.inline-widget-content-container{
+	@include PxToEm(padding-top,10px);
+}
+.inline-widget-note{
+	@include PxToEm(margin-top,13px);
+	line-height: 1.1;
+}
+
+
+
+
+/*Pay and Go*/
+
+.inline-widget-note-payg{
+	@include PxToEm(padding-top,25px);
+	@extend .bold;
+}
+#paygTariffSummary .amount{
+	width:90%;
+}

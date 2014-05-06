@@ -1,0 +1,126 @@
+<script type="text/ng-template" id="cta_link.svg">
+    #parse("/_assets/img/highend/cta_link.svg")
+</script>
+
+
+<script type="text/ng-template" id="icon_phoneplan_10802.svg">
+	#parse("/_assets/img/highend/icon_phoneplan_10802.svg")
+</script>
+
+
+<script type="text/ng-template" id="icon_allowances_10802.svg">
+	#parse("/_assets/img/highend/icon_allowances_10802.svg")
+</script>
+
+
+<script type="text/ng-template" id="icon_callingplan.svg">
+	#parse("/_assets/img/highend/icon_callingplan.svg")
+</script>
+
+
+<script type="text/ng-template" id="icon_boltons.svg">
+	#parse("/_assets/img/highend/icon_boltons.svg")
+</script>
+
+
+<script type="text/ng-template" id="icon_bill.svg">
+	#parse("/_assets/img/highend/icon_bill.svg")
+</script>
+
+
+<script type="text/ng-template" id="icon_allowances_yellow.svg">
+	#parse("/_assets/img/highend/icon_allowances_yellow.svg")
+</script>
+
+
+<script type="text/ng-template" id="icon_allowances.svg">
+	#parse("/_assets/img/highend/icon_allowances.svg")
+</script>
+
+
+<script type="text/ng-template" id="icon_allowances_red.svg">
+	#parse("/_assets/img/highend/icon_allowances_red.svg")
+</script>
+
+
+<script type="text/ng-template" id="icon_alert.svg">
+	#parse("/_assets/img/highend/icon_alert.svg")
+</script>
+
+
+<script type="text/ng-template" id="cta_more.svg">
+	#parse("/_assets/img/highend/cta_more.svg")
+</script>
+
+
+<script type="text/ng-template" id="cta_less.svg">
+	#parse("/_assets/img/highend/cta_less.svg")
+</script>
+
+
+<script type="text/ng-template" id="cta_info.svg">
+	#parse("/_assets/img/highend/cta_info.svg")
+</script>
+
+
+<script type="text/ng-template" id="checkbox.svg">
+	#parse("/_assets/img/highend/checkbox.svg")
+</script>
+
+
+<script type="text/ng-template" id="checkbox_check.svg">
+	#parse("/_assets/img/highend/checkbox_check.svg")
+</script>
+
+
+<script type="text/ng-template" id="page_header_bg.svg">
+	#parse("/_assets/img/highend/page_header_bg.svg")
+</script>
+
+
+<script type="text/ng-template" id="moduledivider.svg">
+	#parse("/_assets/img/highend/moduledivider.svg")
+</script>
+
+
+<script type="text/ng-template" id="icon_warning.svg">
+	#parse("/_assets/img/highend/icon_warning.svg")
+</script>
+
+
+<script type="text/ng-template" id="icon_upgrade.svg">
+	#parse("/_assets/img/highend/icon_upgrade.svg")
+</script>
+
+
+<script type="text/ng-template" id="icon_tariff.svg">
+	#parse("/_assets/img/highend/icon_tariff.svg")
+</script>
+
+
+<script type="text/ng-template" id="icon_recentcharges.svg">
+	#parse("/_assets/img/highend/icon_recentcharges.svg")
+</script>
+
+
+<script type="text/ng-template" id="icon_phoneplan.svg">
+	#parse("/_assets/img/highend/icon_phoneplan.svg")
+</script>
+
+
+<script type="text/ng-template" id="icon_error.svg">
+	#parse("/_assets/img/highend/icon_error.svg")
+</script>
+
+
+<script type="text/ng-template" id="cta_link_white.svg">
+	#parse("/_assets/img/highend/cta_link_white.svg")
+</script>
+
+
+<script type="text/ng-template" id="loadinganim.svg">
+	#parse("/_assets/img/highend/loadinganim.svg")
+</script>
+<script type="text/ng-template" id="icon_error.svg">
+	#parse("/_assets/img/highend/icon_error.svg")
+</script>

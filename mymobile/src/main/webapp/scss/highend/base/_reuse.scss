@@ -1,0 +1,55 @@
+.visibility-false{
+  visibility: hidden;
+}
+.visibility-true{
+  visibility: visible;
+}
+.display-none{
+  display: none;
+}
+.display-default{
+	overflow:hidden;
+}
+.bold{
+  @include setFont(FrutigerLTStd55Bold);
+}
+.shift-up{
+  	@include PxToEm(margin-top,-15px);
+  	@include PxToEm(padding-bottom,5px);
+  	@include PxToEm(font-size,12px);
+}
+	
+.text-align-center{
+	text-align:center;
+}
+.text-right{
+	text-align:right;
+}	
+.float-right{
+	float:right;
+}
+.float-left{
+	float:left;
+}
+.spacing-top{
+  @include PxToEm(padding-top,3px);
+}
+.line-height-1{
+  line-height: 1.1;
+}
+.css-browser-device-rounded{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.background-box-grey{
+  background-color:$boxGreyColor;
+}
+.container-padding{
+	@include PxToEm("padding-left",$spacingFromEnds);
+	@include PxToEm("padding-right",$spacingFromEnds);
+}
+.comment-align{
+	@include PxToEm(margin-left,25px);
+}

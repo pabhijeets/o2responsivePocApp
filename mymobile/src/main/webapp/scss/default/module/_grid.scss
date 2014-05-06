@@ -1,0 +1,17 @@
+.grid{
+  @include cssTable(100%);
+  margin:0;
+}
+.grid-row{
+  @include cssTableRow;
+}  
+.grid-cell{
+  @include cssTableCell(null,middle);
+} 
+
+.heading-row-dark{
+	background:	#DBDBDB;
+}
+.wrapper-container .grid{
+	overflow:visible;
+}

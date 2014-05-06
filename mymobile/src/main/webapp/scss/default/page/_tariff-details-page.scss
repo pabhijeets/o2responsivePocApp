@@ -1,0 +1,159 @@
+#myTariffSummary .widget-unit,.boltonsSummary .widget-unit{
+	@include PxToEm(padding-bottom,12px);
+}
+.tariff-details-widget {
+	@include PxToEm(padding-left,31px);
+	@include PxToEm(padding-top,13px);
+	.cta-info
+	{
+		svg{
+			@include PxToEm(width,15px);
+	    	@include PxToEm(height,15px);
+	    	@include PxToEm(vertical-align,-3px);
+		}
+	}
+	.widget-heading-cell{
+		@include PxToEm(padding-top,14px);
+		@include PxToEm(padding-bottom,12px);
+	}
+	.widget-info{
+		@include PxToEm(padding-top,2px);
+	}
+	.widget-shaded-grid{
+		@include PxToEm(padding-top,18px);
+	}
+
+	.error-container{
+		@include PxToEm(margin-bottom,0px);
+	}
+}
+.alert-message-tariff{
+	@include PxToEm(margin-top,15px);
+}
+.tariff-details{
+	margin-bottom:25px;
+}
+.additional-boltons-widget{
+	@extend .tariff-details-widget;
+	padding-top:25px;
+
+	.right-arrow-icon svg {
+		margin-right:3px;
+	}
+}
+.tariff-widget-unit{
+	@include cssTableCell(403px,top);
+	.widget-shaded-grid{
+		@include PxToEm(padding-right,0px);
+	}
+	.grid {
+		.grid-column{
+			width:57%;
+		}
+		.grid-column-last{
+		@include PxToEm(padding-left,15px);
+		}
+	}
+}
+.boltons-widget-unit{
+	$boltons-widget-width:436px;
+	@include cssTableCell($boltons-widget-width,top);	
+	@include PxToEm(padding-left,80px);
+	.grid{
+		.grid-column{
+			width:60px;
+		}
+	}
+}
+.tariff-details-subheading{
+	@include PxToEm(padding-top,14px);
+}
+.no-dataallowance-text{
+	@include PxToEm(padding-top,11px);
+}
+
+.tariff-details{
+  .widget-shaded-grid {
+    .grid-column-tariff-details{
+      width:20%;
+    }
+    /*
+    
+    .grid {
+      
+      >:nth-child(even){
+        background-color : #eeeeee;
+      }
+    }
+    */
+  }
+}
+
+.widget-content-container-tariff-details{
+	@include PxToEm(margin-top,-9px);
+	width: 83.6%;
+	.widget-shaded-grid .grid-column-tariff-details{
+		width: 25.5%;
+	}
+}
+.tariff-details-widget-note{
+	@include PxToEm(margin-top,13px);
+}
+
+.widget-content-container-tariff-details .widget-shaded-grid{
+	@include PxToEm(padding-top,18px);
+}
+.padding-top-zero{
+	@include PxToEm("padding-top",0px);
+}
+.padding-top-five{
+	@include PxToEm("padding-top",5px);
+}
+#callingPlanOverlay{
+ .call-plan-grid-width-right, .grid-column-small{
+	width:auto;
+	@include PxToEm("padding-right",10px);
+	}
+}
+
+
+
+
+/* Boltons Actions */
+
+.additional-boltons-link-wrapper{
+	@include PxToEm(margin-top,30px);
+	@include PxToEm(margin-bottom,30px);
+}
+.boltons-actions-widget{
+		background:url($bolton-action) no-repeat right bottom;
+		background-size: 37% 91%;
+		background-color: #efefef;	
+		width:80.5%;
+		.boltons-actions-content-wrapper{
+			width: 60.3%;
+			background:url($bottom-up-shadow) no-repeat right bottom;
+			background-size: 87% 4%;
+			@include PxToEm(padding-left,28px);
+			@include PxToEm(padding-top,25px);
+			@include PxToEm(padding-bottom,25px);
+		}
+	.widget-text{
+		width: 86%;
+		@include PxToEm(margin-top,11px);
+		@include PxToEm(margin-bottom,14px);
+	}	
+}
+
+.pending-tariff-container{
+	@include PxToEm("padding-top",10px);
+	.your-moving-wrapper{
+		@include PxToEm(margin-bottom,14px);
+	}
+}
+.tariff-overlay .error-container{
+	padding-bottom:0;
+}
+.tariff-overlay{
+	overflow:hidden;
+}

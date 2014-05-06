@@ -1,0 +1,33 @@
+.o2popup { 
+	width: 390px;
+	background: #FFF; 
+	position: fixed; 
+	z-index: 9999; 
+	padding: 15px 25px 18px; 
+  border-color : #D3D3D3;  
+	border-style: solid; 
+  border-width:6px;
+	border-radius: 12px; 
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;  
+	box-shadow: 1px 1px 9px 3px #000000;
+	-webkit-box-shadow: 1px 1px 9px 3px #000000;
+}
+
+.o2overlay { 
+	width: 100%; 
+	height: 100%; 
+	background: #333; 
+	position: fixed; 
+	z-index: 9998; 
+	top: 0; 
+	left: 0; 
+	opacity: 0.5; 
+	cursor: pointer; 
+}
+.o2popup p { margin: 10px 0 !important; font-size: 1em; line-height: normal; }
+.o2popup p.title { font-size: 1.2em; }
+.o2popup p.phone strong { float:left; padding: 1px 0; }
+.o2popup p.phone img { float:left; margin-right: 10px; }
+.o2popup p.phone { font-size: 1em; overflow: hidden; }
+.o2popup a.closeButton { position: absolute; right: -15px; top: -15px; }

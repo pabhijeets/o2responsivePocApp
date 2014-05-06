@@ -1,0 +1,118 @@
+.offers-summary-container{
+	@extend .display-div;
+	@extend .margin-auto;
+	width:100%;
+	background-color:$greyColor;	
+	@include PxToEm(padding-bottom,20px);
+}
+.offer-heading-wrapper{
+	 background:url($bottom-shadow) left top no-repeat;
+     background-size:100%;
+     h1{
+		border-bottom: 1px solid #d8d8d8;
+		@include PxToEm(padding-bottom,16px);
+		@include PxToEm(padding-left,10px);
+		@include PxToEm(margin-left,18px);	
+		@include PxToEm(margin-right,18px);	
+		font-size: 19px;	
+	}
+	.widget-heading-cell{
+		padding-bottom:10px;
+	}
+}
+.offer-grid-wrapper, .offers-details-container{
+	@extend .display-div;
+	@include PxToEm(padding-left,0px);
+	.grid-offer{
+		float:left;
+		width:30.7%;		
+		@include PxToEm(padding-left,25px);
+		@include PxToEm(padding-top,10px);
+		background-color: $boxGreyColor;
+		margin-left:1px;
+	}
+	.widget-heading-cell{
+		padding-bottom:10px;
+	}
+	.offer-row-desc{
+		font-size: 15px;
+		width: 75%;
+		line-height: 1.1em;
+	}
+	.offer-column-title{
+		float: left;
+		width:68%;
+	}
+	.offer-column-image{
+		float: right;
+		@extend .display-div;
+		float: right;
+	}
+	.widget-link-container-offer-wrapper{
+		@include PxToEm(margin-top,13px);
+	}
+
+}
+#offerNumber2 .grid-offer, #offerNumber0 .grid-offer, #offerNumber1 .grid-offer{
+	width: 46.5%;	
+	@include PxToEm(padding-bottom,20px);	
+}
+#offerNumber2 >:last-child{
+		float:right;
+		margin-right:0;
+}
+#offerNumber2 {
+	.offer-row-desc{
+		width:64%;
+	}
+}
+#offerNumber0,#offerNumber1{
+	.offer-row-desc{
+		width:58%;
+	}
+}
+#offerNumber0 .grid-offer{
+	background:url($offer-promo) left top no-repeat;
+    background-size:100% 100%;
+    color:$whiteColor;
+    @include PxToEm(padding-bottom,30px);
+    a{
+    	color:$whiteColor;
+    }
+}
+
+#offerNumber3 .grid-offer{	
+	height: 15em;
+}
+.display-div{
+	display:block;
+	overflow:hidden;
+}
+.margin-auto{
+	margin:auto;
+}
+.widget-left-right-container{
+	@extend .display-div;
+}
+/*
+.offers-details-container {
+	.ng-hide{line-height:0;
+	height:0px !important;
+	display:block;
+	display:none;
+	position:absolute;
+	top:100px;
+	}
+}*/
+@media screen 
+and (max-width : 1000px) {
+	.offer-grid-wrapper .grid-offer{
+		width:30%;
+	}
+	.offer-grid-wrapper .widget-link-container-offer-wrapper{
+		margin-top:-5px;
+	}
+}
+.offers-details-container .offer-column-image{
+	float:none;
+}

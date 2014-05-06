@@ -1,0 +1,31 @@
+.error-message{
+	@include setFont(null,11.66px);
+	@include PxToEm(margin-top,7px);
+	@include PxToEm(padding-right,$spacingFromEnds); 
+}
+.error-page{  
+    img , svg {
+       margin:auto;
+       width:3.3em;
+       height:3.3em;
+       display: block;
+    }
+}
+.error-message-bolton{
+	@include PxToEm(margin-left,3.5px);
+}
+.error-container{
+	@include PxToEm(margin-bottom,31px);	
+}
+.error-boltons-container{
+  	 @extend .text-l;
+  	 @include PxToEm(padding-left,$spacingFromEnds);	
+  	 @include PxToEm(padding-right,$spacingFromEnds);	
+  	 @include PxToEm(padding-top,12px);	
+  	 padding-bottom:1px;
+}
+.eror-paragraph{
+	@include PxToEm(margin-top,15px);
+	@include PxToEm(padding-bottom,25px);
+	@extend .text-l;
+}	

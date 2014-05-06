@@ -1,0 +1,53 @@
+<script type="text/javascript" src="js/highend/properties.js"></script>
+
+<script type="text/javascript" src="js/highend/services/paymonthlytariffservice.js"></script>
+<script type="text/javascript" src="js/highend/services/userdetailsservice.js"></script>
+<script type="text/javascript" src="js/highend/services/mylatestbillservice.js"></script>
+<script type="text/javascript" src="js/highend/services/recentchargesservice.js"></script>
+<script type="text/javascript" src="js/highend/services/allowancesservice.js"></script>
+<script type="text/javascript" src="js/highend/services/myboltonsservice.js"></script>
+<script type="text/javascript" src="js/highend/services/addboltonsservice.js"></script>
+<script type="text/javascript" src="js/highend/services/upgradeeligibilityservice.js"></script>
+<script type="text/javascript" src="js/highend/services/payg/paygaccountsummaryservice.js"></script>
+<script type="text/javascript" src="js/highend/services/payg/paygboltonsservice.js"></script>
+<script type="text/javascript" src="js/highend/services/myphoneplanservice.js"></script>
+
+
+<script type="text/javascript" src="js/highend/viewmodels/userdetails.js"></script>
+<script type="text/javascript" src="js/highend/viewmodels/tariffdetail.js"></script>
+<script type="text/javascript" src="js/highend/viewmodels/mylatestbilldetail.js"></script>
+<script type="text/javascript" src="js/highend/viewmodels/myboltons.js"></script>
+<script type="text/javascript" src="js/highend/viewmodels/allowance.js"></script>
+<script type="text/javascript" src="js/highend/viewmodels/allowances.js"></script>
+<script type="text/javascript" src="js/highend/viewmodels/myrecentcharges.js"></script>
+<script type="text/javascript" src="js/highend/viewmodels/addboltonsviewmodel.js"></script>
+<script type="text/javascript" src="js/highend/viewmodels/upgradeeligibility.js"></script>
+<script type="text/javascript" src="js/highend/viewmodels/upgradeoptionmessageshelper.js"></script>
+<script type="text/javascript" src="js/highend/viewmodels/myphoneplan.js"></script>
+<script type="text/javascript" src="js/highend/viewmodels/mobilenumbers.js"></script>
+<script type="text/javascript" src="js/highend/viewmodels/billingaddressview.js"></script>
+
+<script type="text/javascript" src="js/highend/viewmodels/payg/mytariffmodel.js"></script>
+<script type="text/javascript" src="js/highend/viewmodels/payg/balanceandallowancemodel.js"></script>
+<script type="text/javascript" src="js/highend/viewmodels/payg/boltonsmodel.js"></script>
+
+<script type="text/javascript" src="js/highend/modules/widgetmodule.js"></script>
+<script type="text/javascript" src="js/highend/modules/callingplanmodule.js"></script>
+<script type="text/javascript" src="js/highend/modules/userdetailsmodule.js"></script>
+<script type="text/javascript" src="js/highend/modules/myallowancesmodule.js"></script>
+<script type="text/javascript" src="js/highend/modules/allowancedetailsmodule.js"></script>
+<script type="text/javascript" src="js/highend/modules/mylatestbillmodule.js"></script>
+<script type="text/javascript" src="js/highend/modules/myrecentchargesmodule.js"></script>
+<script type="text/javascript" src="js/highend/modules/mytariffdetailsmodule.js"></script>
+<script type="text/javascript" src="js/highend/modules/myboltonsmodule.js"></script>
+<script type="text/javascript" src="js/highend/modules/adddataboltonmodule.js"></script>
+<script type="text/javascript" src="js/highend/modules/upgradeeligibilitymodule.js"></script>    
+<script type="text/javascript" src="js/highend/modules/compilemodule.js"></script>    
+<script type="text/javascript" src="js/highend/modules/myphoneplanmodule.js"></script>    
+
+<script type="text/javascript" src="js/highend/modules/payg/mytariffsummarymodule.js"></script>
+<script type="text/javascript" src="js/highend/modules/payg/balanceandallowancesummarymodule.js"></script>
+<script type="text/javascript" src="js/highend/modules/payg/callingplansummarymodule.js"></script>
+<script type="text/javascript" src="js/highend/modules/payg/boltonssummarymodule.js"></script>
+
+<script type="text/javascript" src="js/highend/application.js"></script>

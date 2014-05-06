@@ -1,0 +1,28 @@
+    <article>
+        <div id="boltOnSummaryHasAllowance" ng-show="showCallToAction" class="text-m">
+            <p class="widget-info  widget-info-padding-right bolton-details-text">You have
+                <ng-pluralize count="myBoltons.dataBoltOnsCount"
+                              when="{
+                '1': '{} data allowance Bolt On',
+                '0': 'no data allowance Bolt On',
+                'other': '{} data allowance Bolt Ons'
+            }">
+                </ng-pluralize>
+                and
+                <ng-pluralize count="myBoltons.otherBoltOnsCount"
+                              when="{
+                '1': '{} additional Bolt On',
+                '0': 'no additional Bolt On',
+                'other': '{} additional Bolt Ons'
+            }">
+                </ng-pluralize>
+            </p>
+        </div>
+        <div id="boltOnSummaryHasNoAllowance" ng-show="!showCallToAction">
+            <p class="widget-info widget-info-extra-margin-top widget-info-padding-right">Bolt Ons allow you to customise your tariff, giving you extra calls, texts and data as and when you need it. You can have a Bolt On for as little as one month.</p>
+            <p class="widget-info widget-info-extra-margin-top">You can add Bolt Ons online.</p>
+            <a id="addDataBoltOn" href="#/adddataboltons" class="customlink">
+                <o2svg svgclass="arrow" nonsvgclass="" name="'cta_link'"></o2svg>Add data Bolt On
+            </a>
+        </div>
+    </article>

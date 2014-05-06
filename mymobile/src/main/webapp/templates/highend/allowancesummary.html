@@ -1,0 +1,18 @@
+    <p id="{{allowanceType}}AllowanceRemaining">
+    <span id="allowanceWarningMessage" ng-if="allowance.warningMessage">
+       <o2svg id="allowanceAlertIcon" svgclass="alert-icon-allowance alert-icon-allowance-alignment" nonsvgclass="alert-icon-allowance alert-icon-allowance-alignment" name="'icon_' + allowance.messageType" fallbackext="png"></o2svg>
+    </span>
+    <span ng-switch on="allowanceType">
+        <span ng-switch-when="data" ng-init="allowanceSummary=(allowance.remaining | dataAllowanceFormatter:true)">
+            <span class="amount">{{allowanceSummary.allowanceValue}}</span>
+            <span>{{allowanceSummary.allowanceUnit}}</span>
+        </span>
+        <span ng-switch-when="minutes" class="amount">
+            {{allowance.remaining | minutesAllowanceFormatter:true}}
+        </span>
+        <span ng-switch-when="messages" class="amount">
+            {{allowance.remaining}}
+        </span>
+    </span>
+        <span class="left-text"> left</span>
+    </p>

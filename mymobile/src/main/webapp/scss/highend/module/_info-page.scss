@@ -1,0 +1,6 @@
+.info-paragraph{
+  @include PxToEm("padding-top",10.5px);
+  @include PxToEm("padding-bottom",10px);  
+  @include PxToEm("font-size",15px); 
+  line-height:1.4; 
+}

@@ -1,0 +1,7 @@
+<script type="text/javascript" src="js/common/myo2filters.js"></script>
+<script type="text/javascript" src="js/common/myo2directives.js"></script>
+<script type="text/javascript" src="js/common/utils.js"></script>
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/common/ie8o2css3.js"></script>
+<![endif]-->

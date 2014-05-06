@@ -1,0 +1,46 @@
+a,a:link,a:hover,a:active ,a:visited{
+  text-decoration: none;
+}
+.common-link{
+  @include PxToEm("font-size",15.16px);
+  @include PxToEm("line-height",23.33px);
+  /*@include PxToEm(margin-left,$spacingFromEnds);*/
+  cursor:pointer;
+  >img{
+    @include PxToEm(margin-right,8px);
+    vertical-align: -10%;
+  }
+}
+.customlink{
+  @extend .common-link;
+  display:table;
+  color:$lightBlueColor;
+  @include PxToEm("margin-top",14px);
+  img[src$='.svg'] {
+      width:1em;
+      height:1em;
+      vertical-align:-15%;
+  }
+
+}
+.confirm-bolton-link{
+  @extend .customlink;
+  @include PxToEm(margin-top,21px);
+  @include PxToEm(margin-bottom,29px);
+}
+.inline-custom-link{
+	color:$lightBlueColor;
+}
+.dataAllowanceInfoLink{
+  @include PxToEm(vertical-align,-2px);
+}
+.myBoltons .customlink{
+@include PxToEm("margin-top",0px);
+@include PxToEm("padding-top",28px);
+@include PxToEm("padding-bottom",10px);
+@include PxToEm("margin-left",-2px);
+line-height: 1.15;
+}
+.myBoltons .grid-column-second{
+  @include PxToEm("padding-left",14px);
+}

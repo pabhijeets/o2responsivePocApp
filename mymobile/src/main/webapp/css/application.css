@@ -1,0 +1,2932 @@
+h1, h2, h3, h4, h5{
+ line-height: 1em;	
+}
+p{
+ font-size: 1em;	
+}
+input[type="submit"], input[type="button"] {
+ background: transparent url(../img/inputbtn-bg.gif) 0 0 repeat-x;
+ color: #fff;
+ height: 22px;
+ border: none;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ font-size: 1em;
+ float: right;
+ margin: 0px 5px;
+ cursor: pointer;
+}
+input[type="submit"].link{
+ background: none;
+ color: #0086C3;
+ height: auto;
+}
+input[type="submit"].link:hover{
+ text-decoration: underline;
+}
+button{
+ background: transparent url(../img/inputbtn-bg.gif) 0 0 repeat-x;
+ color: #fff;
+ height: 22px;
+ border: none;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ font-size: 1em;
+ margin: 0px 5px;
+ cursor: pointer;
+}
+label p{
+ margin: 0 0 10px 19px;	
+}
+hr{
+ background-color: #fff;
+ color: #fff;
+ border: 1px dotted #000;	
+ border-style: none none dotted;
+ clear: both;
+}
+.col2 fieldset{
+	margin: 10px 0;
+	padding: 0;
+}
+.col2 fieldset legend{
+ color: #004999;
+ font-size: 1.3em;	
+ padding: 10px 0;
+}
+.col2 fieldset h2{
+ padding: 0;
+ margin: 0;
+}
+ul.rows{
+ margin: 0;
+ padding: 0;	
+}
+ul.rows li{
+ float: left;
+ margin: 3px 0;
+}
+ul.col3 li{
+ width: 33%;	
+}
+ul.col5 li{
+ width: 20%;
+}
+ul.nolist li{
+ list-style: none outside none	
+}
+/* Form styling */
+form{}
+input[type="text"], input[type="password"]{
+ border: 1px solid #888;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ padding: 3px;	
+}
+form.validated{
+ height: auto;
+ overflow: hidden;	
+}
+form.validated .infolayout1 .data, form.validated td{
+ position: relative;
+}
+input[type="text"].invalid, input[type="password"].invalid{
+ border-color: red;
+ background-color: #ffffcc;
+}
+
+.validationError{
+ color: red;
+ /*position: absolute;
+ top: -10px;*/
+ width: 200px;
+}
+td .validationError{
+ position: inherit;
+ top: 0px;
+}
+.validationError p{
+ display: inline;
+ margin: 0;
+}
+.fieldError{
+ background-color: #ccc;
+ background-image: none;
+ background-repeat: no-repeat;
+ background-position: 5px 50%;
+ border: 1px solid #999;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ padding: 5px 5px;
+ margin: 10px 0;
+ font-weight: normal;
+ display: block;
+ clear: both;
+ min-height: 16px;
+ background-color: #fff1ed;
+ border-color: #b30000;
+ color: #b30000;
+ position: relative;	
+}
+.fieldError em{
+ margin: 0;
+ position: absolute;
+ top: -8px;
+ left: 10px;
+ height: 8px;
+ width: 16px;
+ background: transparent url(../img/fld-validation-err-point.gif) 0 0 no-repeat;	
+}
+.fieldError p{
+ margin: 0;
+ padding: 5px 0;	
+}
+
+form.btnonly{
+ display: inline;	
+}
+form.btnonly input[type="submit"]{
+ float:none;	
+}
+
+
+/*my O2 styles */
+.clear{
+ clear: both;	
+}
+.haspagebanner .o2body{
+ padding: 0;	
+}
+.o2body{
+ padding: 13px 2px;
+ overflow: visible;
+}
+
+.o2body .col1{
+ width: 227px;
+ min-height: 500px;
+ margin: 0 13px 0 0;
+}
+.o2body > .col1{
+ background-color: #63B1E0;	
+} 
+.o2body .col2{
+ width: 720px;
+}
+.o2body .col2 .col1, .o2body .col2 .col2{
+ width: 360px;
+ float: left;
+ margin: 0;
+ overflow: hidden;
+}
+.o2body .col2 h1, .o2body .fullwidth h1{
+ border-bottom: 1px dotted #999;
+ padding: 10px 0px; 
+ color: #000066;
+ font-size: 1.7em;
+ font-weight: normal;
+}
+.o2body .col2 h2{
+ font-size: 1.3em;
+ font-weight: normal;
+ color: #004999;
+ padding: 10px 0;
+}
+.o2body .myO2home .col1, .o2body .myO2home .col2{
+ width: 355px;
+ background: transparent;
+ min-height: 50px;
+ padding: 0;
+}
+.o2body .myO2home .col1{
+ margin-right: 10px;
+}
+.o2body .fullwidth{
+ width: auto;
+ padding: 0 10px;
+}
+.o2body .myo2 h1{
+ font-size: 1.7em;
+ font-weight: normal;
+ color: #222222;
+ border-bottom: 1px dotted #999;
+ padding: 10px 0px; 
+ color: #000066;
+}
+.o2body .myo2 h2{
+ font-size: 1.3em;
+ font-weight: normal;
+ color: #004999;
+ padding: 0 0 10px 0;
+}
+.o2body a.btn{
+ color: #fff;
+ height: 22px;
+ display: inline-block;
+ float: none;
+ /*background: transparent url(../img/myo2_button_r.gif) right top no-repeat;*/ 
+ background: transparent url(../img/inputbtn-bg.gif) 0 0 repeat-x;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ padding: 0 7px 0 0;
+ white-space: nowrap;
+ font-size: 1.1em;
+}
+.o2body a.btn span{
+ /*background: transparent url(../img/myo2_button_l.gif) 0 0 no-repeat;*/
+ background: transparent;
+ padding: 0 0 0 7px;
+ line-height: 22px;
+ display: block;
+}
+.o2body a.btn:hover{
+ text-decoration: none;
+}
+.o2body .flft, .o2body a.flft, .o2body input.flft, .fLeft{
+ float: left;
+}
+.o2body .frht, .o2body a.frht{
+ float: right;
+}
+.o2body .btn.flft{
+ margin-right: 5px;  
+}
+.o2body .btn.frht{
+ margin-left: 5px;  
+}
+
+ul.arrowedlist li{
+ list-style: none inside url(../img/arrowblue.gif) !important;
+}
+/* END My O2 styles */
+/* Page Banners */
+.pagebanner{
+ background: none repeat scroll 0 0 #aaa;
+ -moz-border-radius: 10px 10px 0 0;
+ -webkit-border-radius: 10px 10px 0 0;
+ border-radius: 10px 10px 0 0;
+ color: #FFFFFF;
+ height: 160px;
+ padding: 20px;
+ margin: 0 0 10px 0;	
+}
+.family .pagebanner {
+ background: url(../img/myfamilybanner.jpg) no-repeat scroll 0 0 transparent;
+}
+
+.pagecontent{
+ padding: 20px;
+ clear: both;
+}
+/* End page Banners */
+/* left hand nav */
+#nav{
+ background: #fff url(../img/nav-contact-grad.gif) bottom left no-repeat;;
+ height: auto;
+ overflow: hidden;
+}
+#nav .ttl{
+ color: #000066;
+ margin: 10px 0 30px 10px;
+ font-size: 2.2em;
+}
+#nav ul{
+ margin: 0;
+ padding: 0;
+}
+#nav ul li{
+ list-style: none outside none;	
+}
+#nav p.hdr{
+ color: #fff;
+ font-size: 0.9em;
+ font-weight: bold;
+ background: #02369b;
+ padding: 10px 10px 0 10px;
+ margin: 0 40px 0 0;
+ -moz-border-radius: 5px 5px 0 0;
+ -webkit-border-radius: 5px 5px 0 0;
+ border-radius: 5px 5px 0 0;
+}
+#nav > ul{
+ background-color: #000066;
+ -moz-border-radius: 0 5px 5px 5px;
+ -webkit-border-radius: 0 5px 5px 5px;
+ border-radius: 0 5px 5px 5px;
+ border-top: 7px solid #02369B;	
+}
+#nav li{
+ color: #FFFFFF;
+ display: block;
+ font-weight: bold;
+ text-decoration: none;
+}
+#nav li.selected{
+ 
+}
+#nav li a{
+ color: #fff;
+ display: block;
+ background: #000066 url() 0 0 no-repeat;	
+ border-bottom: 1px solid #81B2E3;
+ font-weight: bold;
+ padding: 3px 0 3px 20px;
+ background-position: 10px center;
+}
+#nav li a:hover{
+ text-decoration: none;
+ color: #98CDF9;	
+}
+#nav li.selected > a{
+ color: #98CDF9;
+}
+#nav a.active{
+ background-image: url(../img/navarrow.gif);	
+}
+
+#nav li ul{
+ display: none;	
+}
+#nav li.selected ul{
+ display:block;
+}
+
+#nav li li a{
+ font-weight: bold;
+ padding-left: 30px;
+ background-position: 20px center;
+}
+#nav li li li a{
+ font-weight: bold;
+ padding-left: 40px;
+ background-position: 30px center;
+}
+#nav li li li li a{
+ font-weight: normal;
+ padding-left: 50px;
+ background-position: 40px center;
+}
+#nav .contact{
+ background: #caddee;
+ margin: 15px 15px;
+ padding: 10px;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ -moz-box-shadow: 2px 2px 1px #666;
+ -webkit-box-shadow: 2px 2px 1px #666;
+ box-shadow: 2px 2px 1px #666;
+}
+#nav .contact h2{
+ font-weight: bold;
+ margin: 5px 10px 20px 20px;
+ font-size: 1.2em;
+}
+#nav .contact > div{
+ margin: 10px 0 10px 18px;
+ clear: both;
+}
+#nav .contact img{
+ vertical-align: middle;	
+ float: left;
+ margin: 0 10px 0 0;
+}
+#nav .ftr{
+ height: 60px;
+ 
+}
+/*end left hand nav */
+
+/* Default tooltip */
+.tooltip{
+ float: none;
+ margin: 0;
+ padding: 0;
+ display: inline;
+ vertical-align: bottom;
+}
+.tooltip div.info{
+ display: none;
+ width: 210px;
+ overflow: hidden;
+ z-index: 999;
+ padding: 10px;
+ background-color: #fff;
+ border: 3px solid #0089C7;
+ -moz-border-radius: 8px;
+ -webkit-border-radius: 8px;
+ border-radius: 8px;
+ -moz-box-shadow: 0 0 15px 5px #0089C7;
+ -webkit-box-shadow: 0 0 15px 5px #0089C7;
+ box-shadow: 0 0 15px 5px #0089C7;
+}
+.tooltip img{
+ vertical-align: top;
+}
+.tooltip div.info.bottom{
+}
+.tooltip div.info h3, #summary .tooltip div.info h3{
+ font-size: 12px;
+ font-weight: bold;
+ margin: 5px 0 5px 0;
+ border: none;
+}
+.tooltip div.info p,  #summary .tooltip div.info p{
+ font-size: 10px;
+ margin: 5px 0 5px 0;
+}
+
+/*** Error tooltip   ****/
+.tooltip.error{
+ float: none;
+ display: inline;
+}
+.tooltip.error div.info{
+ border-color: #D9002B;
+ -moz-box-shadow: 0 0 15px 5px #D9002B;
+ -webkit-box-shadow: 0 0 15px 5px #D9002B;
+ box-shadow: 0 0 15px 5px #D9002B;
+}
+.tooltip.error div.info.bottom{
+}
+/* END Tooltip */
+
+
+
+/* Data Layouts */
+/* default table */
+table{
+ border-collapse: collapse;
+ margin: 10px 0;
+ table-layout: fixed;
+ width: 100%;
+ border-bottom: 1px solid #ccc;
+}
+table th, table td{
+ padding: 5px 7px;	
+ vertical-align: top;
+}
+table th{
+ background-color: #bfc5cc;
+ text-align: left;
+ border-top: 1px solid #9da3aa;
+ border-left: 1px solid #fff;
+ text-align: left;
+}	
+table td{
+ /*background-color: #e6e6e6;*/
+ border-left: 1px solid #ccc;
+ text-align: left;
+ overflow: hidden;
+}
+table th:first-child, table td:first-child{
+ border-left: none;
+}
+table th a{
+ font-weight: normal;	
+}
+table .label{
+ width: 180px;	
+}
+table .cost{
+ width: 70px;	
+}
+table .date{
+ width: 120px;	
+}
+table.shortdate{
+ width: 80px;	
+}
+table .orderno{
+ width: 110px;
+} 
+table .desc{
+ width: 200px;
+}
+table .status{
+ width: 60px;
+}
+table .fulldescription{
+ width: 350px;	
+}
+table tr.collapsed{
+ display: none;
+}
+/* Alternate rows */
+
+table tr.even td{
+ background-color: #E6E6E6;
+ border-left: 1px solid #fff;
+ clear: both;
+}
+table tr.odd td{
+ background-color: #fff;
+ clear: both;
+}
+
+/* End alternates */
+
+table .blank, table.style1 th.blank, table.style1 td.blank, table.style1 tr td.blank, table tr.even td.blank, table tr.odd td.blank, table.style1 tr.odd td.blank, table.style1 tr.even td.blank {
+ background-color: #fff;
+ width: 90px;
+ min-width: 90px;
+ border: 1px solid #fff;
+ padding: 0px 3px;
+}
+table .addbtn{
+ width: 120px;	
+}
+
+/* table style1 */
+table.style1{
+ border-collapse: collapse;
+ width: auto;
+ border-bottom: none;
+}
+table.style1 th, table.style1 td{
+ padding: 5px 7px;	
+}
+table.style1 th{
+ background-color: #CBDDEE;
+ text-align: left;
+ border: 1px solid #fff;
+}	
+table.style1 td{
+ background-color: #e6e6e6;
+ border: 1px solid #fff;
+}
+table.style1 tr.even td{
+ background-color: #fff;
+ border-bottom: 1px solid #e6e6e6;
+}
+table.style1 tr.odd td{
+ background-color: #e6e6e6;
+}
+table.style1 .date{
+ width: 150px;	
+}
+table.style1 .orderno{
+ width: 110px;
+} 
+table.style1 .desc{
+ width: 200px;
+}
+table.style1 .status{
+ width: 150px
+}
+
+/* Information Layout 1 */
+.infolayout1{
+ height: auto;
+ overflow: hidden;	
+}
+.infolayout1 .label, .infolayout1 .data{
+ margin: 0;
+ padding: 5px;
+}
+.infolayout1 .label{
+ clear: left;
+ float: left;
+ width: 200px;
+ /*
+ background-color: #cbddee;
+ border: 1px solid #fff;
+ border-right: 1px solid #ddd;
+ */
+}
+.infolayout1 .label p{
+ margin: 8px 0 0 15px;
+}
+.infolayout1 .data{
+	float: left;
+	width: 440px;
+	clear: none;
+}
+/* End Info Layout 1 */
+/* Information Layout 2 */
+.infolayout2 .headings{
+ overflow: hidden;	
+ height: auto;
+ clear: both;
+ background: #BFC5CC;
+ border-top: 1px solid #9DA3AA; 
+}
+.infolayout2 .headings div{
+ text-align: left;
+ background-color: #BFC5CC;
+ border-left: 1px solid #fff;
+ color: #000;
+ float: left;
+ padding: 5px 7px 1005px 7px;
+ margin: 0;  
+}
+.infolayout2 .headings div:first-child{
+ border-left: none;
+}
+.infolayout2 .data{
+ clear: both;	
+}
+.infolayout2 .data > div{
+ overflow: hidden;	
+}
+/*col definitions*/
+.infolayout2 .data > div > div{
+ border-left: 1px solid #ccc;
+ padding: 5px 7px 1005px 7px;
+ margin: 0 0 -1000px 0;
+ float: left;
+}
+.infolayout2 .data > div > div:first-child{
+ border-left: none;
+}
+.infolayout2 .headings .label, .infolayout2 .data .label{
+ width: 220px; 
+}
+.infolayout2 .headings .cost, .infolayout2 .data .cost{
+ width: 70px;
+}
+.infolayout2 .headings .date, .infolayout2 .data .date{
+ width: 75px;
+}
+.infolayout2 .headings .datelng, .infolayout2 .data .datelng{
+ width: 150px;
+}
+.infolayout2 .headings .desc, .infolayout2 .data .desc{
+ width: 200px;
+}
+.infolayout2 .headings .orderno, .infolayout2 .data .orderno{
+ width: 110px;
+}
+.infolayout2 .headings .status, .infolayout2 .data .status{
+ width: 150px;
+}
+/* End Info Layout 2 */
+
+
+
+/*  Widgets and Data Sections */
+.widget{
+ clear: both;
+ padding: 0;
+ margin: 0 0 20px 0;
+ font-size: 0.91em;
+}
+.section{
+ clear: both;	
+ margin: 10px 0;
+ height: auto;
+ overflow: hidden;
+}
+.widget img{
+ vertical-align: middle;	
+}
+.widget p{
+ height: auto;
+ margin: 5px 0 5px 0;
+ overflow: hidden;
+}
+.widget label {
+  float: left;
+  padding: 7px;
+}
+
+.widget.accountSummarySmallWidget {
+  background-color: #E1F0FB;
+  border: medium none;
+  border-radius: 3px;
+  margin: 12px 0;
+}
+.widget.accountSummarySmallWidget .content{
+  padding:0;
+  border: none;
+}
+
+
+.widget p.note{
+ font-size: 0.9em;
+}
+.widget p.tariffchange { margin: 15px 0 9px; }
+
+.widget table{
+ width: 100%;	
+}
+
+.widget .hdr, .section .hdr, .section h2.hdr{
+ padding: 5px 5px;
+ color: #fff;
+ background: #0162A2 url(../img/portlethdr-bg.gif) 0 0 repeat-x;
+ -moz-border-radius: 5px 5px 0 0;
+ -webkit-border-radius: 5px 5px 0 0;
+ border-radius: 5px 5px 0 0;
+}
+.widget .hdr{
+ cursor: pointer;
+}
+.widget.closed .hdr{
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+} 
+.widget .hdr h2, .section .hdr h2{
+ font-size: 1.2em;
+ font-weight: bold;
+ line-height: 18px;
+ color: #fff;
+ padding: 2px 0 0 0;
+ margin: 0;
+}
+.widget .hdr h2{
+ background: transparent url(../img/arrow_opened.gif) 0 0 no-repeat;
+ padding: 0 0 0 30px;
+}
+.widget.closed .hdr h2{
+ background: transparent url(../img/arrow_closed.gif) 0 0 no-repeat;
+}
+.widget .content{
+ padding: 5px 5px;
+ border: 1px solid #ccc;
+ border-top: none;
+ -moz-border-radius: 3px;
+ -webkit-border-radius: 3px;
+ border-radius: 3px;   
+ overflow: hidden;
+}
+.widget .content .tile1, img.tile1{
+ float: left;
+ margin: 0 10px 5px 0;
+}
+.widget .content .tile2, img.tile2{
+ float: right;
+ margin: 0 0 5px 10px;
+}
+.widget .content img.hdr1{
+ margin: 5px 7px 10px 7px
+}
+.widget .content .tile2, .box .tile2{
+ float: right;
+ margin: 0 0 5px 10px;
+}
+.widget .content ul li{
+ list-style: inside disc none;	
+}
+.widget .content .infolayout1 .label, .widget .content .infolayout1 .data{
+ margin: 0;
+ padding: 5px;
+}
+.widget .content .infolayout1{
+ clear: both;
+ height: auto;
+ overflow: hidden;
+ margin: 0 0 10px 0;	
+}
+.widget .content .infolayout1 .label{ 
+ width: 145px;
+}
+.widget .content .infolayout1 .data{
+	width: 175px;
+}
+.widget .content .loading{
+ text-align: center;
+ display:none;
+}
+.js .widget .content .loading{
+ display: block;	
+}
+.widget iframe{
+ height: 300px;
+ width: 100%;
+ border: none;
+ overflow: auto;
+}
+body.widget{
+ background: #fff url() 0 0 no-repeat;
+ border: none;
+}
+body.widget .wrapper{
+ width: auto;	
+ padding: 0 10px 0 0;
+ margin: 0 10px 0 0;	
+}
+body.widget .content{
+ background: #fff url() 0 0 no-repeat;
+ border: none;
+ padding: 0;
+}
+.widget .content .loading img.spinner{
+ margin: 30px 0px;
+}
+.widget .content h1{
+ font-size: 2em;
+ color: #000;
+ border: none;
+ margin: 0;
+}
+.widget .content h2{
+ font-size: 1.8em;
+ color: #000;
+ border: none;
+ margin: 0;
+}
+.widget .content h3{
+ font-size: 1.2em;
+}
+.widget .content ul.services{
+ margin: 5px;
+ padding: 0;	
+}
+.widget .content ul.services li{
+ float: left;
+ width: 325px;
+ list-style: none inside none;	
+ margin: 10px;
+}
+.widget .content ul.services li.odd{
+ clear: both;
+}
+.widget .content ul.services li a{
+ font-size: 1.4em;
+}
+.widget .content ul.services li img{
+ height: 50px;
+ width: 50px;	
+ border: none;
+}
+.widget .content ul.offers{
+ margin: 0;
+ padding: 0;
+}
+.widget .content ul.offers li{
+ clear: both;
+ height: auto;
+ overflow: hidden;
+ list-style: none inside none;
+ margin: 0 0 10px 0;
+}
+.widget .content ul.offers li img{
+ width: 75px;
+ height: 75px;
+}
+.widget .content table.style1 .label{
+ width: auto;
+}
+.widget .content table.style1 .status{
+ width: 50px;
+}
+.widget .content table.style1 .cost{
+ width: 60px;
+}
+.widget .content table.style1 .date{
+ width: 70px; 
+}
+.widget .content table.prepayboltons .status{
+ width: 120px;
+}
+
+.widget .infolayout2 .odd, .widget .infolayout2 .even{
+ background-color: transparent;	
+}
+.widget .infolayout2 .headings div{
+ font-weight: bold;	
+ background-color: #cbddee;
+ border-left: 1px solid #fff;
+ border-top: 1px solid #fff;
+}
+.widget .infolayout2 .data div{
+ border-left: 1px solid #fff;
+ border-top: 1px solid #fff;
+ height: 60px;
+}
+.widget .infolayout2 .data > div > div{
+ height: 100%;
+ background-color: #e6e6e6;	
+}
+.widget .infolayout2 .headings .label, .widget .infolayout2 .data .label{
+ width: 85px;
+}
+.widget .infolayout2 .headings .cost, .widget .infolayout2 .data .cost{
+ width: 55px;
+}
+.widget .infolayout2 .headings .date, .widget .infolayout2 .data .date{
+ width: 65px;
+}
+.widget .infolayout2 .headings .status, .widget .infolayout2 .data .status{
+ width: 65px;
+}
+.widget .links{
+ border: none;
+ padding: 0;
+ margin: 5px 0;	
+}
+.widget .links .btn{
+ float: right;
+ margin: 0 10px 0 0;	
+}
+.widget .links .btn:first-child{
+ margin: 0;
+}
+.widget input[type="submit"]{
+ font-size: 1.1em;	
+}
+.widget ul.billSummary{
+ padding: 0;	
+}
+.widget ul.billSummary li{
+ list-style-image: url(../img/arrowblue.gif);
+ padding: 5px 0;	
+}
+.widget .content #inTreatmentMessage{
+ border: 2px solid #d40423;
+ color: #d40423;
+ padding: 10px 10px 0 10px;
+ margin: 0 0 10px 0;	
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ border-radius: 10px;
+}
+.widget .content .eligibilityContainer {
+ clear: both;
+ font-size: 1em;
+ margin: 10px 0 5px 4px;
+ padding: 0;
+ width:99% !important;
+}
+.widget .content .eligibilityContainer p { margin-bottom:10px; }
+.widget .content .eligibilityContainer .top {
+ background-position: left bottom;
+ background-repeat: no-repeat;
+ background-image: url(../img/tariffandboltons/upgrade_eligible_top.gif);
+ clear: both;
+ height: 60px;
+ margin: 0;
+ padding: 0;
+ width: 335px;
+ color: #fff;
+}
+.widget .content .eligibilityContainer .top h2{
+ color: #fff;
+ font-size: 1.4em;
+ font-weight: bold;
+ padding: 25px 0 0 20px;
+}
+.widget .content .eligibilityContainer .middle {
+ background-position: left top;
+ background-repeat: no-repeat;
+ background-color: #67c0ec;
+ background-image: url(../img/tariffandboltons/upgrade_eligible_middle.gif);
+ clear: both;
+ margin: 0 20px 0 0;
+ width: 335px;
+ height: auto;
+ overflow: hidden;
+}
+.widget .content .eligibilityContainer .middle .msg {
+ margin: 10px;
+ background-color: #fff;
+ padding: 10px;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ -moz-box-shadow: inset 2px 2px 3px #888;
+ -webkit-box-shadow: inset 2px 2px 3px #888;
+ box-shadow: inset 2px 2px 3px #888;	
+ height: auto;
+ overflow: hidden;
+ min-height: 80px;
+}
+.widget .content .eligibilityContainer .bottom {
+ background-position: left top;
+ background-repeat: no-repeat;
+ background-image: url(../img/tariffandboltons/upgrade_eligible_bottom.gif);
+ clear: both;
+ height: 20px;
+ margin: 0;
+ width: 335px;
+}
+.widget .content .eligibilityContainer .blueTop {
+ background-image: url(../img/tariffandboltons/blue_top_ineligible.jpg);
+}
+.widget .content .eligibilityContainer .blueMiddle {
+ background-image: url(../img/tariffandboltons/blue_middle.jpg);
+}
+.widget .content .eligibilityContainer .blueBottom {
+ background-image: url(../img/tariffandboltons/blue_bottom.jpg);
+}
+.widget .content .eligibilityContainer .silverTop, .widget .content .eligibilityContainer .silver2Top{
+ background-image: url(../img/tariffandboltons/silver_top_ineligible.jpg);
+}
+.widget .content .eligibilityContainer .silverMiddle {
+ background-image: url(../img/tariffandboltons/silver_middle.jpg);
+}
+.widget .content .eligibilityContainer .silverBottom {
+ background-image: url(../img/tariffandboltons/silver_bottom.jpg);
+}
+.widget .content .eligibilityContainer .goldTop {
+ background-image: url(../img/tariffandboltons/gold_top_ineligible.jpg);
+}
+.widget .content .eligibilityContainer .goldMiddle {
+ background-image: url(../img/tariffandboltons/gold_middle.jpg);
+}
+.widget .content .eligibilityContainer .goldBottom {
+ background-image: url(../img/tariffandboltons/gold_bottom.jpg);
+}
+.widget .content .eligibilityContainer .platinumTop {
+ background-image: url(../img/tariffandboltons/platinum_top_ineligible.jpg);
+}
+.widget .content .eligibilityContainer .platinumMiddle {
+ background-image: url(../img/tariffandboltons/platinum_middle.jpg);
+}
+.widget .content .eligibilityContainer .platinumBottom {
+ background-image: url(../img/tariffandboltons/platinum_bottom.jpg);
+}
+.widget .content .eligibilityContainer .notierTop {
+ background-image: url(../img/tariffandboltons/notier_top_ineligible.jpg);
+}
+.widget .content .eligibilityContainer .notierMiddle {
+ background-image: url(../img/tariffandboltons/notier_middle.jpg);
+}
+.widget .content .eligibilityContainer .notierBottom {
+ background-image: url(../img/tariffandboltons/notier_bottom.jpg);
+}
+
+.widget .content .highlight{
+ border: 3px solid #73bdf3;
+ -moz-border-radius: 8px;
+ -webkit-border-radius: 8px;
+ border-radius: 8px;
+ -moz-box-shadow: 0 15px 25px -13px #444;
+ -webkit-box-shadow: 0 15px 25px -13px #444;
+ box-shadow: 0 15px 25px -13px #444;
+ margin: 10px 0;
+ padding: 5px;
+}
+
+/*Aleternative widget schemes*/
+.widget2 .content h2{
+ color: #004A95;
+}
+.offers .widget .content input[type="submit"]{
+ float: left;	
+}
+#o2rewards.widget .label{
+ width: 260px;	
+}
+#o2rewards.widget .data{
+ width: auto;	
+}
+/* Legacy homepage 4 col footer */ 
+ul.Col4Ul{
+ clear: both;
+ padding: 0;	
+ margin: 0;
+ height: auto;
+ overflow: hidden;
+ font-size: 0.9em;
+}
+ul.Col4Ul li{
+ list-style: none outside none;
+ float: left;
+ border-right: 1px dotted #D8D8D9;
+ float: left;
+ height: 220px;
+ width: 159px;
+ padding: 10px;	
+}
+ul.Col4Ul li p{
+ color: #7D8286;
+}   
+ul.Col4Ul li h3{
+ color: #000000;
+ font-size: 1.3em;
+ margin: 0;	
+}
+ul.Col4Ul li a.arrow{
+ background: transparent url(../img/dblarrow.gif) 0 3px no-repeat;
+ padding: 0 0 0 13px;	
+}
+/* end legacy homepage footer */
+
+
+.shaded{
+ background-color: #e9e9e9;
+ padding: 10px;
+}
+.shaded fieldset{
+ background-color: #fff;
+ padding: 5px 8px;
+}
+.gradbtm{
+ background: transparent url(../img/grygradbtmline.gif) left bottom repeat-x;
+ padding: 10px;
+ height: auto;
+ overflow: hidden;
+}
+
+#myAllowances.widget table{}
+#myAllowances.widget table th{
+ color: #000;
+ font-weight: bold;
+ background-color: #cbddee;
+ border: 1px solid #005896;
+ padding: 5px;
+}
+#myAllowances.widget table td{
+ color: #000;
+ background-color: #e6e6e6;
+ border: 1px solid #005896;
+ padding: 5px;
+}
+#myAllowances.widget .message{
+ background: #E6E6E6;
+ padding: 10px 5px;
+ margin: 0 0 10px 0;
+ font-size: 0.9em; 	
+}
+#myAllowances.widget .data{
+ background-color: #fff;
+ padding: 5px;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;	
+ margin: 10px 0 10px 0;
+ height: auto;
+ overflow: hidden;
+}
+#myAllowances.widget .data span.note{
+ font-weight: bold;
+}
+#myAllowances.widget .data .moredetail{
+ font-size: 0.9em;	
+}
+#myAllowances.widget .data div.warn{
+ color: #D40423;	
+ border: 2px solid #D40423;
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ border-radius: 10px;
+ padding: 5px;
+ margin: 5px 0;
+}
+#myAllowances.widget .data .usagePanel{
+ background: #E8E8E8;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ padding: 5px;
+ height: auto;
+ overflow: hidden;
+}
+#myAllowances.widget .data .usagePanel strong{
+ display: block;
+}
+#myAllowances.widget .data a.btn{
+ float: right;	
+}
+#myAllowances.widget .data .datagauge{
+ float: right;	
+}
+
+
+#myAllowances.widget .allowance.unlimiteddata .usage{
+ background-color: #e6e6e6; 
+ -moz-border-radius: 8px; 
+ -webkit-border-radius: 8px; 
+ border-radius: 8px; 
+ padding: 5px 10px;
+}
+#myAllowances.widget .allowance.unlimiteddata .usage strong{
+ margin-left: 75px;
+}
+
+/* End Widgets and data sections */
+
+.footer{
+ clear: both;	
+}
+
+/* Payment details */
+.paymenttype{
+ padding: 10px;
+ clear: both;
+}
+.paymenttype .tile1{
+ width: 65px;	
+ margin: 5px 20px 50px 0;
+}
+
+.paymenttype h2{
+ padding: 5px;
+ margin: 0; 	
+}
+.paymenttype p{
+ padding: 10px 10px 10px 85px;
+ margin: 0; 	
+}
+/* End payment details */
+
+/* Summary List */
+ul.summarylist{
+ margin: 0;
+ padding: 0;
+}
+ul.summarylist li{
+ list-style: none outside none;
+ clear: both;
+ margin: 10px 0 30px 0;
+ height: auto;
+ overflow: hidden;
+}
+ul.summarylist li h3{
+ margin: 3px 0 5px 5px;
+}
+/* End Summary list */
+
+/* links */
+.links{
+ margin: 30px 0px;
+ padding: 10px 0;
+ height: auto;
+ overflow: hidden;
+ border-top: 1px dotted #000;
+ border-bottom: 1px dotted #000;
+ clear: both;	
+ line-height: 25px;
+}
+.links input[type="submit"]{
+ font-size: 1.1em;	
+}
+/* end links */
+
+/**** Address Finder ****/
+#findAddressAjaxResult{
+ width: 490px;	
+}
+#findAddressAjaxResult .loading{
+ padding: 30px 0 0 120px;
+ clear: both;
+}
+#findAddressAjaxResult .loading img{
+ height: 30px;
+ width: 30px;
+}
+#findAddressAjaxResult #matchingAddress{
+ width: 350px;
+}
+/** End Address Finder **/
+
+/********** Messaging *****************/
+.warningmsg{
+ color: #FF0000;
+}
+.boltOnSelector p.warningmsg{
+ margin-top: 0;
+}
+.successmsg, .errormsg, .infomsg{
+ background-color: #ccc;
+ background-image: none;
+ background-repeat: no-repeat;
+ background-position: 5px 50%;
+ border: 1px solid #999;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ color: #000;
+ padding: 10px 10px 10px 40px;
+ margin: 10px 0;
+ font-weight: bold;
+ display: block;
+ clear: both;
+ min-height: 16px;
+}
+.successmsg{
+ background-color: #ECFFE2;
+ background-image: url(../img/successmsg-bg.gif);
+ border-color: #319A00;
+ color: #319A00;
+}
+.errormsg{
+ background-color: #fff1ed;
+ background-image: url(../img/erroricon.gif);
+ border-color: #b30000;
+ color: #b30000;
+}
+.widget .errormsg{
+ color: #000;
+ font-weight: normal;	
+}
+.infomsg{
+ background-color: #e1f0fb;
+ background-image: url(../img/infoicon.gif);
+ border-color: #005859;
+ color: #005a95;	
+}
+.bubble{
+ -moz-border-radius: 5px 5px 5px 5px;
+ -moz-box-shadow: 2px 2px 1px #888888;
+ -webkit-border-radius: 5px 5px 5px 5px;
+ -webkit-box-shadow: 2px 2px 1px #888888;
+ border-radius: 5px 5px 5px 5px;
+ box-shadow: 2px 2px 1px #888888;	
+ background: none repeat scroll 0 0 #CADDEE;
+ padding: 10px;
+ float: left;
+ width: 200px;
+}
+
+
+/********* End Messaging  ************/
+
+/* my o2 home */
+
+/* End My O2 Home */
+
+.boxes{
+ clear: both;	
+ height: auto;
+ overflow: hidden;
+ margin: 0 0 20px 0;
+}
+.col2 .box{
+ float: left;
+ width: 320px;
+ margin: 0 10px 10px 0;
+ padding: 10px;
+ border: 1px solid #c2d6e6;
+ background: #e8f4ff;
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ border-radius: 10px;
+ font-size: 0.92em;
+ height: auto;
+ overflow: hidden;
+}
+
+.col2 .box h2{
+ margin: 0;
+ padding: 0;
+ color: #032b5a;
+}
+.col2 .box h3{
+ font-size: 2em;
+ color: #032b5a;
+ margin: 10px 0;	
+}
+.box .fixedmiddle{
+ height: 80px;	
+}
+.box .btns{
+ height: 25px;	
+}
+.box a.btn{
+ float: right;	
+}
+
+.col2 .storelocator{
+ background: #e8f4ff url(../img/map_search.gif) top right no-repeat;
+ height: 160px;	
+}
+.col2 .storelocator form{
+ 	margin-top: 35px;
+}
+.col2 .storelocator form input[type="text"]{
+ width: 52px;
+}
+.col2 .storelocator form input[type="submit"]{
+ float:none;
+ font-size: 1.2em;
+}
+.content{
+ clear: both;	
+}
+.focussection{
+ padding: 10px;
+ border: 1px solid #c2d6e6;
+ background: #e8f4ff;
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ border-radius: 10px;
+ font-size: 0.92em;
+ height: auto;
+ overflow: hidden;
+}
+.focussection h3{
+ padding: 5px 0;
+ margin: 0;
+ color: #004899;
+ font-weight: bold;
+ font-size: 1.2em;
+ 
+}
+.confirmsection{
+ text-align: center;
+ margin: 0 10px 10px 0;
+ padding: 10px;
+ border: 1px solid #c2d6e6;
+ background: #e8f4ff;
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ border-radius: 10px;
+ font-size: 0.92em;
+ height: auto;
+ overflow: hidden;
+}
+.confirmsection h3 {
+ color: #004999;
+ font-size: 1.5em;
+ text-align: center;
+}
+.confirmsection table{
+ margin: 10px auto;	
+}
+.confirmsection .links{
+ text-align: center;
+ border: none;
+}
+.confirmsection .links form{
+ display: inline;	
+}
+.confirmsection .summary{
+ clear: both;	
+}
+.confirmsection .links a.btn, .confirmsection .links input[type="submit"] {
+ float: none;
+ display: inline-block;
+}
+.o2body .confirmsection .col1, .o2body .confirmsection .col2{
+ width: 45%;
+ padding: 10px;
+ text-align: left;
+ min-height: 0;
+}
+.o2body .confirmsection .col1 h3, .o2body .confirmsection .col2 h3{
+ text-align: left;
+ font-size: 1.2em;	
+}
+
+.tariffchange .links { margin-top: 10px; }
+
+.boltonmarketing{
+ background: #f7f8f9 url(../img/boltons-bg.gif) 0 0 no-repeat;
+ border: 1px solid #bed9ed;
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;	
+ border-radius: 10px;
+ padding: 10px;
+ height: auto;
+ overflow: hidden;
+}
+
+.msginfo{
+ text-align: center;	
+}
+.txtmsginfo, .emailmsginfo{
+ background: #f6f8f9 url(../img/sminfophone.gif) 10px center no-repeat;
+ display: inline-block;
+ width: 200px;
+ height: auto;
+ overflow: hidden;
+ margin: 10px;
+ padding: 10px 10px 10px 80px;
+ min-height: 80px;
+ height: 90px;
+ border: 1px solid #c2d6e6;
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ border-radius: 10px;
+}
+.emailmsginfo{
+ background: #f6f8f9 url(../img/sminfoemail.gif) 10px center no-repeat;
+}
+.txtmsginfo strong, .emailmsginfo strong{
+ display: block;
+
+}
+/* Accordions */
+ul.accordion{
+ margin: 0;	
+ padding: 0;
+ clear: both;
+}
+ul.accordion li{
+ list-style: none inside none;
+ margin: 5px 0;
+ padding: 5px 0;
+ clear: both;
+}
+ul.accordion li h3{
+ border-top: 1px solid #999;
+ border-bottom: 1px solid #999;
+ padding: 5px 0;
+ margin: 0;
+ color: #004899;
+ font-weight: bold;
+ font-size: 1.1em;
+ cursor: pointer;
+}
+.js ul.accordion li h3{
+ background: transparent url(../img/faqplus.gif) center right no-repeat;
+}
+.js ul.accordion li.open h3{
+ background: transparent url(../img/faqminus.gif) center right no-repeat;
+}
+.js ul.accordion li > div{
+ display: none;	
+ height: auto;
+ overflow: hidden;
+}
+.js ul.accordion li.open > div{
+ display: block;	
+}
+/* End Accordions */
+
+
+/* Tabbed Table Pattern */
+.tabbedTable{
+}
+.tabbedTable ul{
+ margin: 0;
+ padding: 0;	
+}
+.tabbedTable ul li{
+  list-style: none inside none!important; 	
+}
+.tabbedTable ul.tabs{
+ display: none;
+}
+.js .tabbedTable ul.tabs{
+ display: block;
+}
+.tabbedTable ul.tabs li{
+ float: left;
+ background: #419EDA;
+ background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#96CAEB), to(#419EDA));
+ background: -webkit-linear-gradient(top, #96CAEB, #419EDA);
+ background: -moz-linear-gradient(top, #96CAEB, #419EDA);
+ background: -ms-linear-gradient(top, #96CAEB, #419EDA);
+ background: -o-linear-gradient(top, #96CAEB, #419EDA); 
+ background: linear-gradient(top, #96CAEB, #419EDA);
+ color: #000;
+ border-width: 1px 1px 0 1px;
+ border-style: solid;
+ border-color: #419EDA;
+ font-weight: bold;
+ padding: 10px;
+ font-size: 1.3em;
+ -moz-border-radius: 5px 5px 0 0;
+ -webkit-border-radius: 5px 5px 0 0;
+ border-radius: 5px 5px 0 0;
+ margin: 0 5px 0 0;
+ cursor: pointer;
+ width: 85px;
+}
+.tabbedTable ul.tabs li.selected{
+ background: #005896;
+ color: #fff;
+ cursor: default;
+ border: 1px solid #005896;
+ border-bottom: none;
+}
+.tabbedTable ul.tabcontents{
+ background: #005896;
+ clear: both;	
+ padding: 1px 10px;
+ -moz-border-radius: 0 5px 5px 5px;
+ -webkit-border-radius: 0 5px 5px 5px;
+ border-radius: 0 5px 5px 5px;
+}
+.tabbedTable ul.tabcontents li{
+ 
+}
+/* End Tabbed Table Pattern */
+
+/* My O2 orders */
+.orders h1{
+ border-bottom: 1px dotted #999;
+ padding: 10px 0px; 
+ color: #000066;
+}
+.orders .ordersummary{
+ padding: 0 0 20px 0;
+ clear: both;
+ height: auto;
+ overflow: hidden;
+}
+.orders .ordersummary p{
+ font-size: 0.92em;
+}
+.orders .address p{
+ margin: 0;
+ padding: 0;	
+}
+/*overrides for .infolayout2 */
+.orders .infolayout2 .odd, .orders .infolayout2 .even{
+ background-color: transparent;	
+}  
+.orders .infolayout2 .headings div{
+ background-color: #CBDDEE;
+ border-left: 1px solid #FFFFFF;
+ border-top: 1px solid #fff;
+ color: #000000;
+ font-weight: bold;
+ text-align: left;
+ vertical-align: middle;
+}
+.orders .infolayout2 .headings .date, .orders .infolayout2 .data .date{
+ width: 150px;
+ float: left;
+}
+.orders .infolayout2 .data > div > div{
+ float: left;
+ background-color: #e6e6e6;
+ border-left: 1px solid #fff;
+ border-bottom: 1px solid #fff;
+}
+.orders .infolayout1 .infolayout2 .data{
+ padding: 0;
+ margin: 0;
+ width: 600px;
+}
+.orders .infolayout1 .infolayout2 .data > div > div{} 
+.orders .orderitems .item{
+ clear: both;	
+}
+.orders .orderitems .cost{
+ width: 200px;	
+}
+.orderdetails .parcels{
+ clear: both;	
+ height: auto;
+ overflow: hidden;
+ padding-top: 20px;
+}
+.orderdetails .parcels .parcel{}
+.orderdetails .parcels .parcelno{
+ width: 150px; 
+}
+.orderdetails .parcels .courier{
+ width: 250px; 
+}
+/* End orders */
+
+/* Paper free billing */
+.paperfreebilling{
+ height: auto;
+ overflow: hidden;
+ margin: 20px 0;	
+}
+.paperfreebilling img{
+ float: left;
+ margin: 0 20px 10px 20px;
+}
+.paperfreebilling p{
+ padding: 5px 0 0;
+}
+.paperfreebilling input[type="submit"]{
+	float: none;
+	display: block;
+	margin: 10px 0;
+}
+/* End Paper free billing */
+
+/* tarrifsandboltons */
+
+.jsOffHidden {
+ display: none;
+}
+.js .jsOffHidden {
+ display: block;
+}
+.js span.jsOffHidden {
+ display: inline;
+}
+.js tr.jsOffHidden {
+ display: table-row;
+}
+tr.jsOnHidden {
+ display: table-row;
+}
+.js .jsOnHidden {
+ display: none;
+}
+#changeMyTariff{
+ clear: both;
+ height: auto;
+ overflow: hidden;
+}
+
+#changeMyTariff p.tariffchange { float: left; margin: 0 0 6px; width: 79%; }
+
+.tariffGroup, .availabletariff{
+ clear: both;	
+ /*background-color: #e6e6e6;*/
+ height: auto;
+ overflow: hidden;
+ margin: 5px 0;
+}
+.tariffGroup h3, .availabletariff h3{
+ background-color: #CBDDEE;	
+ border-bottom: 1px solid #fff;
+ padding: 5px 3px;
+ margin: 0 0 10px 0;
+}
+.tariffGroup p, .availabletariff p{
+ padding: 4px;
+}
+.tariffGroup p, .availabletariff a{
+ margin: 5px;	
+}
+.tariffGroup p, .availabletariff a.btn{
+ margin-right: 5px;	
+}
+.tariffGroup form, .availabletariff form{
+ float: right;
+ width: 92px;
+}
+
+table.tariffselect{
+ width: 100%;	
+}
+table.tariffselect tr td.blank{
+ width: 150px;
+ text-align: left;	
+}
+table#pendingTariffBoltOnsTable{
+ width: 480px;
+}
+table#pendingTariffBoltOnsTable th.cost, table#pendingTariffBoltOnsTable td.cost{
+ width: 140px;
+}
+.drawer{
+ background-color: #EEF6FC;
+ padding: 10px 20px; 
+ border: 1px solid #C2D7E7;
+ margin: 15px 5px 10px 5px;
+ clear: both;
+ height: auto;
+}
+.drawer .pointer{
+ position: absolute;
+ height: 21px;
+ width: 41px;
+ background: transparent url(../img/toparrow.gif) 0 0 no-repeat;	
+ display: none;
+}
+.drawer .close, .drawer .drawerClose, .overlay.inttariffsel .close{
+ float: right;
+ background: transparent url(../img/bluecross.gif) top right no-repeat;
+ height: 21px;
+ padding-right: 20px;
+ cursor: pointer;
+}
+.js .drawer {
+  display: none;
+}
+.js .drawer .pointer{
+ display:block;
+}
+.boltOnSelector h3{
+ color: #004999;
+ font-size: 1.4em;
+ margin: 10px 0 20px 10px;
+}
+.boltOnSelector h3{
+ clear: both;
+ margin:15px 0px;
+}
+.boltOnSelector select{
+ clear: both;
+ margin:15px 0px;
+}
+.boltOnSelector .radioSection div{
+ float: left;
+ width: 300px;
+}
+.boltOnSelector .radioSection input{}
+.boltOnSelector .radioSection label{}
+.boltOnSelector .radioSection label span{
+ display: block;
+ color: #004999;
+ font-weight: bold;
+ padding: 0 0 0 27px;
+}
+.boltOnSelector .chooseSection div{
+ width: 100%;
+ clear: both;
+ border-top: 1px solid #ddd;
+ padding: 5px 0;
+ line-height: 22px;
+}
+.boltOnSelector .chooseSection div:first-child{
+ border-top: none;	
+}
+.boltOnSelector .chooseSection .swapbolton{
+ clear: both;
+ height: auto;
+ overflow: hidden;
+ margin: 5px 0;	
+}
+.boltOnSelector .chooseSection .msg{
+ clear: both;
+ margin: 5px 0;
+}
+.boltOnSelector .chooseSection div p{
+  display: block;	
+  margin: 0;
+  padding: 0;	
+}
+.boltOnSelector .chooseSection div p span, .boltOnSelector .chooseSection span.cost{
+ font-weight: bold;
+ float: right;	
+ margin: 0 150px 0 20px;
+ width: auto;
+}
+.boltOnSelector .chooseSection input[type="button"]{
+ background: transparent url(../img/inputbtn-bg.gif) 0 0 repeat-x;
+ color: #fff;
+ height: 22px;
+ border: none;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ font-size: 1em;
+ float: right;
+ margin: 0px 5px;
+ padding: 3px 5px;
+ cursor: pointer;
+}
+
+.boltOnSelector .termlinks{
+ clear: both;
+ padding: 20px 10px;
+}
+.boltOnSelector .termlinks .terms{
+ float: right;
+}
+.boltOnSelector .termlinks .details, .boltOnSelector .termlinks .viewDetails{
+ float: left;
+}
+.travelBoltOnSwapRowCols{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#travelBoltOnSelector{
+    margin-top: 19px;
+}
+#travelBoltOnSelector h3{
+    margin: 0;
+}
+.travelBoltOn{
+    padding: 15px 0 0 0;
+    overflow: hidden;
+}
+.boltOnSelector .termlinks.travelBoltOnTermLinks{
+    padding: 15px 0 0 0;
+    overflow: hidden;
+}
+.buttonSection a.cancel{
+ 	float: left;
+}
+.buttonSection a.terms{
+ 	float: right;
+}
+#family a.deleteMember{
+margin-left:20px;
+}
+.moreboltons{
+ clear: both;
+ height: auto;
+ overflow: hidden;
+ padding: 20px;
+ color: #fff;
+ background: #00599c;
+ background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#031550), to(#6fbae3));
+ background: -webkit-linear-gradient(top, #031550, #6fbae3);
+ background: -moz-linear-gradient(top, #031550, #6fbae3);
+ background: -ms-linear-gradient(top, #031550, #6fbae3);
+ background: -o-linear-gradient(top, #031550, #6fbae3);
+ background: linear-gradient(top, #031550, #6fbae3); 
+ -moz-border-radius: 12px;
+ -webkit-border-radius: 12px;
+ border-radius: 12px;
+}
+.moreboltons h3{
+ font-size: 1.75em;
+}
+.moreboltons .btn{
+ float: right;
+ margin: 0 20px 0 0;
+}
+
+
+/*********** Account Selection  ****************/
+
+#accountselector table{
+ margin-bottom: 50px;
+}
+#accountselector table td{
+ border: none;
+}
+#accountselector .label{
+ width: 500px;
+ font-size: 1.8em;
+ line-height: 1.8em;
+}
+#accountselector .select{
+ vertical-align: middle;
+}
+
+/* myO2explained */
+.o2explained ul li{
+ list-style-image: url(../img/bulletblue.gif)
+}
+/* end myO2explained */
+
+.mydetails .infolayout1{
+ float: left;
+ margin: 0 0 20px 0;
+}
+.mydetails .infolayout1 .label{
+ width: 230px;	
+}
+.mydetails .infolayout1 .data{
+ width: 245px;
+}
+.detailsbox{
+ float: left;
+ margin: 20px 0;
+ width: 356px;
+ height: auto;
+ overflow: hidden;
+}
+.detailsbox.first{
+margin-right: 8px;
+}
+.detailsbox .gryGradTop{
+ background: transparent url(../img/grygradtop.gif) 0 0 no-repeat;
+ height: 15px;
+ margin: 20px 0 0;
+ padding: 0;
+
+}
+.detailsbox .gryGradMid{
+ clear: both;
+ height: 115px;
+ margin: 0;
+ padding: 0 10px;
+ background: transparent;
+}
+.detailsbox .gryGradBottom{
+ background: transparent url(../img/grygradbot.gif) 0 0 no-repeat;
+ height: 15px;
+ margin: 0;
+ padding: 0;
+}
+.detailsbox .security{
+ background: #e7e7e7 url(../img/grygradmidsec.gif) 0 0 no-repeat;
+}
+.detailsbox .choices{
+ background: #e7e7e7 url(../img/grygradmidchoice.gif) 0 0 no-repeat;
+}
+.detailsbox .gryGradMid h3{
+ font-size: 1.2em;
+ color: #234877;
+ font-size: 1.7em;
+ padding: 0;
+ margin: 0;
+}
+.detailsbox .gryGradMid p{
+ width: 250px;
+ font-weight: bold;
+ color: #7A7C81;
+ /*height: 50px*/
+}
+
+.boxstyle1{
+ width: 524px;
+}
+.boxstyle1 ul{
+ padding: 0 10px;	
+}
+.boxstyle1 .top{
+ background: transparent url(../img/addboltonsportlettopgrad.gif) 0 0 no-repeat;
+ clear: both;
+ height: 5px;
+ padding: 0;
+}
+.boxstyle1 .middle{
+ background: transparent url(../img/addboltonsportletmiddlegrad.gif) 0 0 repeat-y;
+ clear: both;
+ padding: 10px;
+ height: auto;
+ overflow: hidden;
+ line-height: 2em;
+}
+.boxstyle1 .bottom{
+ background: transparent url(../img/addboltonsportletbottomgrad_65px.gif) 0 0 no-repeat;
+ clear: both;
+ height: 65px;  
+ padding: 10px; 
+}
+.boxstyle1 h3{
+ margin: 0 0 10px 0;
+}
+.boxstyle1 .bottom a{
+ display: block;
+}
+.boxstyle1 input{
+ float: left;
+ clear: both;
+ margin: 5px 0 0 20px;
+}
+.boxstyle1 label{
+ float: left;
+ margin: 0 0 0 10px;
+ width: 420px;
+}
+.boxstyle1 label span{
+ font-weight: bold;
+ color: #004999;
+}
+.boxstyle1 select{
+ float: left;	
+ margin: 0 0 0 20px;
+}
+.boxstyle1 li{
+ height: auto;
+ overflow: hidden;	
+}
+.boxstyle1 li .drawer{
+ margin-top: 40px;
+ height: auto;
+}
+
+/* Add Boltons */
+#boltOnForm{
+ clear: both;	
+}
+.basketMutexMessageArea{
+ clear: both;
+ background-color: #eee;
+ padding: 5px 10px;
+ border: 1px solid #ccc;
+ margin: 5px 0;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ line-height: 1.2em; 	
+}
+
+#selections{
+ float: left;
+ width: 530px;
+ margin: 0 6px 0 0;	
+}
+
+#summary{
+ float: left;
+ width: 176px;
+ border: 2px solid #022E5D;
+ -moz-border-radius: 8px;
+ -webkit-border-radius: 8px;
+ border-radius: 8px;
+ margin: 10px 0 10px 0;
+ padding: 2px;
+ font-size: 0.9em;
+}
+#summary a{
+ display: block;
+}
+#summary .tariff, #summary .boltons{
+ height: auto;
+ overflow: hidden;	
+}
+#summary h2{
+ color: #fff;
+ background-color: #022E5D;
+ padding: 5px;
+ margin: 0 0 10px 0;
+ font-size: 1.6em;
+ line-height: 1.25em;
+ -moz-border-radius: 5px 5px 0 0;
+ -webkit-border-radius: 5px 5px 0 0;
+ border-radius: 8px 8px 0 0;
+}
+#summary h3{
+ color: #000;
+ font-size: 1.2em;
+ font-weight: bold;
+ border-bottom: 1px dotted #000;
+ margin: 10px 0px;	
+}
+#summary h4{
+ margin: 10px 0 0 0;	
+}
+#summary .hdr{
+ background-color: #022E5D;
+ color: #fff;
+ padding: 5px;
+ -moz-border-radius: 8px 8px 0 0;
+ -webkit-border-radius: 8px 8px 0 0;
+ border-radius: 8px 8px 0 0;
+ height: 60px;
+}
+#summary .hdr h3{
+ color: #fff;
+ border: none;
+ float: left;
+ width: 90px;
+}
+#summary .summaryinfo{
+ clear: both;	
+}
+#summary .cost{
+ padding: 0;
+ margin: 0 0 10px 0;
+ font-weight: bold;	
+ display: inline-block;
+}
+#summary .total{
+ margin: 10px 0;
+ font-weight: bold;
+ font-size: 1em;
+ border-top: 1px dotted #000;
+ border-bottom: 1px dotted #000;
+ height: auto;
+ overflow: hidden;
+}
+#summary .total .label{
+ float: left;
+ width: 95px;
+}
+#summary .total .data{
+ float: left;
+ font-size: 1.5em;
+ color: #359BCC;
+ width: 80px;
+ text-align: right;
+}
+#summary .total .wrapper{
+ margin: 1px 0;
+ border-top: 1px dotted #000;
+ border-bottom: 1px dotted #000;
+ width: auto;
+ padding: 0;
+ height: auto;
+ overflow: hidden;
+}
+#summary input[type="submit"]{
+ font-size: 1em;	
+ margin: 0;
+}
+#summary .tooltip{
+ float: right;	
+}
+p.addedBoltons{
+ font-weight: bold;	
+}
+#summary .update{
+ height: auto;
+ overflow: hidden;	
+}
+#summary .update .spinner{
+ float: right;	
+ height: 20px;
+ width: 20px;
+}
+#summary .nobolton .spinner{
+ margin: 0 80px 0 0	;
+}
+/* End Add Boltons */
+
+/* confirm tariff */
+
+.confirmYourTariff .o2body .col2 .col1, .confirmYourTariff .o2body .col2 .col2{
+ width: 350px;
+ float: left;
+ margin: 0;
+ overflow: hidden;
+}
+.confirmYourTariff .o2body .col2 .col1{
+ padding-right: 9px;
+ border-right: 1px solid #ccc;
+}
+.confirmYourTariff .o2body .col2 .col2{
+ padding-left: 10px;
+}
+.confirmYourTariff .tariffLockMsg{
+ border: 1px solid #5CCDFF;
+ background-color: #ceebff;
+ padding: 5px;
+ margin: 10px 0;
+ height: auto;
+ overflow: hidden;
+}
+.confirmYourTariff .tariffLockMsg input[type="submit"]{;
+ float: right;
+}
+.confirmYourTariff .summary{
+ background-color: #e8e8e8;	
+ clear: both;
+ height: auto;
+ overflow: hidden;
+ padding: 10px;
+}
+.confirmYourTariff .summary .reminder { float: left; width: 350px; }
+
+.confirmYourTariff .summary .tariffchange { display: inline-block; width: 340px; }
+.confirmYourTariff .summary .tariffchange p { margin-bottom: 5px; }
+
+.confirmYourTariff .summary .message{
+ float: left;
+ width: 316px;
+ border: 2px solid #015895;
+ padding: 0 10px;
+ margin: 0 10px 0 0; 
+}
+.confirmYourTariff .summary .data{
+ float: left;
+ width: 330px;
+ background-color: #fff;
+ -moz-border-radius: 8px;
+ -webkit-border-radius: 8px;
+ border-radius: 8px;
+ padding: 10px;
+ text-align: right;
+}
+.confirmYourTariff .summary .data .cost{
+ color: #00ADDC;
+ font-size: 1.2em;
+}
+.confirmYourTariff .summary .data #changeTariffConfirmationInclLinks input{
+ margin: 0 0 0 5px;	
+}
+.confirmYourTariff .summary .data #changeTariffConfirmationInclLinks > *{
+ float: right;	
+}
+.confirmYourTariff .summary .data .links{
+ border: none;	
+ margin: 0;
+ padding: 5px 0 0 0;
+}
+.confirmYourTariff .summary .data .links input{
+ margin: 0;
+}
+
+/* end confirm tariff */
+
+/* banners */
+
+.bannerwrap{
+ height: auto;
+ overflow: hidden;	
+ margin: 10px 0;
+}
+.o2prioritybanner1{
+ background: transparent url(../img/o2priorityboxbg.gif) 0 0 no-repeat;
+ width: 344px;
+ height: 155px;
+ float: left;
+}
+.o2prioritybanner1 p{
+ color: #fff;
+ padding: 65px 20px 0;
+}
+.o2prioritybanner1 a{
+ color: #fff;
+ text-decoration: underline;
+}
+.o2morebanner1{
+ background: transparent url(../img/o2moreboxbg.gif) 0 0 no-repeat;
+ width: 363px;
+ height: 173px;
+ float: left;
+}
+.o2morebanner1 p{
+ font-size: 0.9em;
+ padding: 100px 50px 0;
+ text-align: center;
+}
+
+/********** My Phone Pages ***********/
+.myphone .phoneinfo{
+ clear: both;
+ height: auto;
+ overflow: hidden;
+}
+.myphone .phoneinfo img{
+ float: left;	
+ margin: 0 50px 0 20px;
+}
+.myphone .nophonerecord{
+ clear: both;
+ height: auto;
+ overflow: hidden;
+}
+.myphone .nophonerecord img{
+ float: left;	
+ margin: 0 50px 0 20px;
+}
+
+.myphone .col2 .phonesettingsbox{
+ width: auto;
+ margin-left: 0;
+ margin-right: 0;
+ padding-right: 100px;
+ background: #E8F4FF url(../img/promo2.gif) center right no-repeat; 	
+}
+.myphone .col2 .phonesettingsbox a.btn{
+ float: left;
+}
+.myphone .col2 .col1{
+ min-height: 0;	
+}
+.pendingtariffdetail{
+ padding: 10px 0;	
+}
+.pendingtariffdetail img{
+ float: left;
+ margin: 0 10px;
+}
+/* overlays */
+.overlay{
+ overflow: auto;
+ max-height: 70%;
+ max-width: 65%;		
+}
+.overlay h3{
+ background: transparent;	
+}
+.overlay a.close{
+ float: right;	
+ cursor: pointer;
+}
+.overlay a.close.withx{
+ background: transparent url(../img/bluecross.gif) top right no-repeat;
+ height: 21px;
+ padding-right: 20px;
+}
+.overlay table{
+ width: auto;
+}
+/* International tariff selector */
+.overlay{}
+.overlay.inttariffsel{
+ background-color: #EEF6FC;
+ padding : 10px 20px;	
+ text-align: left;
+ width: 540px;
+}
+
+.overlay.inttariffsel .close{
+ float: right;
+}
+
+.overlay.inttariffsel h2{
+ float: left;
+ width: 200px;
+ margin: 0 0 20px;
+ padding: 0;
+}
+.overlay.inttariffsel .innercontainer{
+ clear: both;
+ border: 1px solid #CACBCC;
+ margin: 10px 0;
+ padding: 15px 25px;
+ background-color: #fff;
+}
+.overlay.inttariffsel p{
+ color: #909090;
+ font-size: 1.1em;
+ margin: 0 0 10px;
+ padding: 0;
+}
+.overlay.inttariffsel img{
+ float: left;
+ margin: 0 10px 0 0;
+ height: 64px;
+ width: 64px;	
+}
+.overlay.inttariffsel h3{
+ color: #00A8E5;
+ float: left;
+ font-size: 1.4em;
+ margin: 30px 0 0 10px;
+}
+.overlay.inttariffsel table{
+ clear: both;
+}
+.overlay.inttariffsel table th{
+ background: none repeat scroll 0 0 #FFFFFF;
+ border: 1px solid #CACBCC;
+ font-size: 1.4em;
+ padding: 5px;
+ text-align: center;	
+ font-weight: normal;
+}
+.overlay.inttariffsel table th div{
+ font-size: 0.61em;
+}
+.overlay.inttariffsel table td{
+ background: none repeat scroll 0 0 #CDE6F6;
+ border: 1px solid #CACBCC;
+ color: #00A8E5;
+ font-size: 1.2em;
+ font-weight: bold;
+ padding: 10px 5px;
+ text-align: center;
+}
+/* end international tariff selector */
+
+.overlay.dark{
+ background-color: #eef6fc;	
+}
+
+/* End My Phone Pages */
+
+/****** Popup Windows ******/
+body.popup{
+ 
+}
+.popup .wrapper{
+ width: auto;
+ margin: 20px;
+ background: #fff;	
+}
+.popup .header{
+ padding: 20px 10px;
+}
+.popup .actionbar{
+ color: #fff;
+ background-color: #000066;
+ line-height: 20px;
+ height: 20px;
+ margin: 10px 0;
+}
+.actionbar a{
+ color: #fff;
+ float: right;
+ margin: 0px 5px 0px 10px;	
+}
+.popup .content{
+ padding: 10px;	
+}
+/*************************/
+
+/***** Bottom corner banner *****/
+#cornerBanner {
+ background: transparent url("../img/cornerbannerbg.png") bottom left no-repeat;
+ position: fixed;    
+ bottom: 0;
+ height: 174px;
+ width: 186px;
+}
+
+/*****************************/
+
+/*******  Family ************/
+.family h2{
+  color: #4a96d7;
+  font-size: 1.7em;
+  margin: 0 0 20px 0;	
+}
+.family .module{
+ background: #f0f0f0 url(../img/family-module-bg.gif) 0 0 repeat-x;
+ border: 1px solid #ccc;
+ float: left;
+ margin: 0 20px 20px 0;
+ width: 265px;
+ padding: 10px;
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ border-radius: 10px;	
+ font-size: 0.9em;
+ color: #515559;
+}
+.family .module.style2{
+ background: #cbeaff url(../img/family-module-bg2.gif) 0 0 repeat-x;
+ border: 1px solid #5ccdff;
+}
+.family .module.trans{
+ background: transparent none;
+ border: none;
+ padding: 0;
+}
+.family .module.width2{
+ width: 600px;
+ clear: both;
+}
+.family .module.width3{
+ width: 900px;
+ clear: both;
+}
+.family .module h3{
+ font-size: 1.3em;
+ font-weight: bold;
+ color: #2896d7;
+}
+.family .module.style2 h3{
+ color: #999;
+}
+.family .module p{
+ clear: both;
+}
+.family .module .hilite{
+ font-weight: bold;
+ color: #2896d7;
+}
+.family .o2body .btn{
+ background-color: #00A2DF;
+ background-image: none;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ line-height: 30px;
+ height: 30px;
+ margin: 0 10px 0 5px;	
+}
+.family .o2body .btn span{
+ background-image: none;
+ line-height: 30px;
+ 	
+}
+.family .o2body .module .btn{
+ font-weight: bold;
+}
+
+.family .o2body input[type="submit"]{
+ background-color: #00A2DF;
+ background-image: none;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ line-height: 30px;
+ height: 30px;
+ /*margin: 20px 10px 20px 5px;*/	
+ float: none;
+}
+.family th.status{
+ width: 150px;  
+}
+.family tr.section{
+ line-height: 3em;
+ font-weight: bold;
+ font-size: 1.2em;	
+}
+.family .module td{
+ background-color: #fff;	
+}
+.family #familyOwnerTable{
+ margin: 0 0 30px 0;	
+}
+.family #familyOwnerTable td{
+ vertical-align: middle;	
+}
+.family #familyOwnerTable .odd{
+ background-color: #E6E6E6;
+}
+.family #familyOwnerTable .even{
+ background-color: #fff;
+}
+
+.family .blockedmsg{
+ color: #ff1c1c;
+}
+
+/* tabbed navigation bar */
+.tabbar.tariffDetails {
+	width:415px;
+}
+.tabbar-horz li{
+ float: left;
+ list-style: none outside none;
+ margin: 0;
+ padding: 0;
+}
+.tabbar-horz a{
+ color: #999;
+ line-height: 30px;
+ height: 30px;
+ background: #fafafa url(../img/tab-bg-1.gif) bottom left repeat-x;
+ padding: 10px;
+ font-size: 0.82em;
+ font-weight: bold;
+}
+.tabbar-horz a:hover, .tabbar-horz li.active a{
+ color: #0086c3;
+ text-decoration: none;
+ background: #fff url(../img/tab-bg-sel.gif) bottom left no-repeat;
+}
+/*******************/
+/* End Family */
+
+ul.infooptions>li{
+ padding: 10px 0;	
+}
+
+.overlay.dark{
+ width: 750px;	
+}
+.overlay .tariffdetails{
+ background: #fff;
+ border: 1px solid #cacbcc;
+ clear: both;	
+ text-align: left;
+ padding: 10px;
+ color: #828A92;
+}
+.overlay .tariffdetails table tr.databolton{
+ background-color: #E7E7E7;	
+}
+.overlay .tariffdetails table td{
+ border: 1px solid #cacbcc; 
+ width: 100%;	
+ vertical-align: middle;
+}
+.overlay .tariffdetails table td.data{
+  text-align: center;
+  width: 100px;	
+}
+.overlay .tariffdetails table td p{
+ margin: 3px 0;	
+}
+.overlay .tariffdetails .headline{
+ font-size: 1.5em;	
+}
+.overlay .tariffdetails .title{
+ color: #0086C3;
+ font-weight: bold;
+
+}
+.overlay .tariffdetails .cost{
+ color: #0086C3;
+ font-size: 1.5em;
+ width: auto;
+ 
+}
+.overlay table.extracharges{
+ width: 100%;
+}
+.overlay table.extracharges th{
+ color: #fff;
+ font-size: 1.1em;	
+ background: #108ac1;
+ background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0F9BDA), to(#108ac1));
+ background: -webkit-linear-gradient(top, #0F9BDA, #108ac1);
+ background: -moz-linear-gradient(top, #0F9BDA, #108ac1);
+ background: -ms-linear-gradient(top, #0F9BDA, #108ac1);
+ background: -o-linear-gradient(top, #0F9BDA, #108ac1);
+ background: linear-gradient(top, #0F9BDA, #108ac1);
+}
+.overlay table.extracharges td{
+ border: 1px solid #cacbcc; 
+}
+.overlay .footnote{
+ text-align: left;	
+ color: #828A92;
+}
+.overlay .footnote strong{
+ font-style: italic;	
+}
+
+
+/******************************** Legacy Styling for Static Assets ***************************/
+
+.tariffDetails {
+ width:400px;
+ float:left;
+}
+.tariffDetails table{
+ border-collapse: collapse;
+ width: auto;
+}
+.tariffDetails table th, .tariffDetails table td{
+ padding: 5px 7px;	
+}
+.tariffDetails table th{
+ background-color: #CBDDEE;
+ text-align: left;
+ border: 1px solid #fff;
+}	
+.tariffDetails table td{
+ background-color: #e6e6e6;
+ border: 1px solid #fff;
+}
+.tariffDetails table tr.even td{
+ background-color: #fff;
+}
+.tariffDetails table tr.odd td{
+ background-color: #e6e6e6;
+}
+.tariffDetails table .date{
+ width: 150px;	
+}
+.tariffDetails table .orderno{
+ width: 110px;
+} 
+.tariffDetails table .desc{
+ width: 200px;
+}
+.tariffDetails table .status{
+ width: 150px
+}
+.paraTariff {
+ float: left;
+ width: 245px;
+ float:left; 
+ position:relative; 
+ 
+}
+.paraTariff p { word-break:normal; }
+table.portletTableSmall4 {
+ width:96%;
+ float:left;
+ margin:0 0 10px 10px;
+}
+p.italic{
+ font-style:italic;
+ margin:0px 0 0 0;
+ padding:5px 0 0 0 !important;
+}
+
+.labelHeaderMM2{
+ float: left;
+ font-size: 1.1em;
+ font-weight: bold;
+ line-height: 1.6em;
+ width: 130px;
+}
+
+.clearBoth{
+ clear: both;
+ height: auto;
+ overflow: hidden;	
+}
+
+
+.termsWrapp h1 {
+    color: #004999;
+    margin-bottom: 10px;
+}
+.termsWrapp h2 {
+    color: #004999;
+    margin: 0 0 5px;
+}
+.termsWrapp h3 {
+    color: #004999;
+    font-size: 1.34em;
+    margin: 0 0 5px;
+}
+.termsWrapp h4 {
+    color: #000000;
+    font-size: 1.4em;
+    margin: 20px 0 5px;
+}
+.termsWrapp p {
+    margin: 5px 0;
+}
+.termsWrapp ul {
+    margin: 0 0 0 30px;
+    padding: 0;
+}
+.termsWrapp li a, .termsWrapp li a:hover, .termsWrapp li a:visited {
+    color: blue;
+    text-decoration: none;
+}
+.termsWrapp table{
+ border-collapse: separate;
+ border-spacing: -1;
+}
+.termsWrapp table thead th {
+    background-color: #FFFFFF !important;
+    border: 1px solid #CCCCCC !important;
+}
+.termsWrapp table td {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC !important;
+}
+.termsWrapp table.dataTable {
+    font-size: 0.9em;
+    margin-left: 55px;
+    width: 470px !important;
+    
+}
+.termsWrapp table.dataTable td {
+    background: none repeat scroll 0 0 #EEF6FC;
+    border: 0 solid #EEF6FC !important;
+}
+.termsWrapp .transTbl {
+    background: none repeat scroll 0 0 transparent !important;
+    border: 0 none !important;
+    margin-top: 123px;
+    width: 103px !important;
+}
+.termsWrapp .transTd1 {
+    background: none repeat scroll 0 0 transparent !important;
+    border: 0 none !important;
+}
+.termsWrapp .transTd2 {
+    background: none repeat scroll 0 0 transparent !important;
+    border: 0 none !important;
+    clear: both !important;
+    padding-top: 20px;
+}
+.termsWrapp table.dataTable td.bacsBg {
+    background-image: url("images/dataDtls_basicsBg.gif");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 305px !important;
+    padding-left: 5px !important;
+    text-align: center !important;
+    width: 106px !important;
+}
+.termsWrapp table.dataTable td.aldrBg {
+    background-image: url("images/dataDtls_rounderBg.gif");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 305px !important;
+    padding-left: 5px !important;
+    text-align: center !important;
+    width: 106px !important;
+}
+.termsWrapp table.dataTable td.wrksBg {
+    background-image: url("images/dataDtls_worksBg.gif");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 305px !important;
+    padding-left: 5px !important;
+    text-align: center !important;
+    width: 106px !important;
+}
+.termsWrapp table.dataTable td.tether1 {
+    background-image: url("images/dataDtls_500mbBg.gif");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 305px !important;
+    padding-left: 5px !important;
+    text-align: center !important;
+    width: 106px !important;
+}
+.termsWrapp table.dataTable td.tether2 {
+    background-image: url("images/dataDtls_1gbBg.gif");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 305px !important;
+    padding-left: 5px !important;
+    text-align: center !important;
+    width: 106px !important;
+}
+
+.termsWrapp h2{
+  font-size: 1em;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #000;
+}
+.termsWrapp ol li{
+ list-style-type: decimal;
+}
+.termsWrapp ol ol li{
+ list-style-type: lower-alpha;
+}
+
+.footnote {
+    clear:both; font-weight:normal
+}
+
+.centre { text-align:center }
+.centre .btn { margin:0 auto;width: 100px
+        
+        }
+
+
+
+
+#ccaAirtimeBillNote {
+  position:relative;
+  margin: 13px 0;
+  top: 8px;
+}
+
+#latestBillLinkNonCCA {
+  width: 100px;
+}
+
+/******************************* End Legacy ***********************************/
+
+#accountSummaryContainer .widget.accountSummarySmallWidget { padding: 10px 0 10px 55px; height:auto; overflow:visible; background: #E1F0FB url('../img/o2man_sm.png') 0 0 no-repeat;}
+#accountSummaryContainer .widget.accountSummarySmallWidget label { padding:0; }
+#accountSummaryContainer .widget.accountSummarySmallWidget span.pipe { padding: 0 10px; }
+
+/* 4g banner */
+.banner4g{width:690px;background:#d2e9ff;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;border:none;padding:12px;margin:24px 0;}
+.a4gcopy{width:400px;background:url(../img/4glogo.png) 0 0 no-repeat;padding-left:60px;color:#005896;font:normal 13px verdana;overflow:hidden;}
+.str{color:#005896;font:bold 13px verdana;}
+.a4gright{width:200px;float:right;margin-top:-20px; text-align:right  }
+
+#nav-secondary {
+    display: block;
+}

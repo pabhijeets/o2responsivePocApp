@@ -1,0 +1,68 @@
+/*Temp styles for header
+*/
+.navbar{
+border-spacing: 2px;
+font-weight: 700;
+background:#0a365d;
+}
+.navbar-button{
+border-radius: 1px 4px 1px 1px;
+display: table-cell;
+width: 19.7%;
+text-align: center;
+color: snow;
+height: 2em;
+vertical-align: middle;
+font-size: 1.1em;
+
+}
+.displayFullTable{
+display: table;
+width: 100%;
+border-spacing: 0 11px;
+}
+
+/*Temp styles for header
+*/
+.widget-header{
+  color: $whiteColor; 
+  @include PxToEm("padding-left",$spacingFromEnds);
+  @include PxToEm("padding-right",$spacingFromEnds);
+  @include PxToEm("padding-top",20px);
+  @include PxToEm("padding-bottom",16px); 
+  background: {
+    image: url($pageHeaderBg);
+    repeat: no-repeat;
+    color: $widgetHeaderBg_fallback;
+    size: 100% 100%;    
+  }
+}
+.widget-header h1{
+  @include PxToEm("font-size",24px);
+  @include PxToEm("line-height",24px);
+  width:auto;
+}
+.change-mobile{
+    @include PxToEm(padding-left,$spacingFromEnds);
+    @include PxToEm(padding-top,5px);
+    a{
+       @extend .float-left;  
+       margin-top:2px;
+    }   
+
+}
+.subscriber-number{
+  @extend .text-right;
+  @include PxToEm(padding-bottom,8px);
+  @include PxToEm(padding-top,2px);
+  @include setFont(FrutigerLTStd45Light);
+  @include PxToEm("padding-right",$spacingFromEnds);
+  @extend .float-right;  
+  p{
+    @include PxToEm(padding-top,2px);
+  }
+}
+
+.bottom-nav-text{
+  @include PxToEm(padding-top,5px);
+}

@@ -1,0 +1,61 @@
+<article>
+	<div class="container-padding-allowances" ng-show="allowancesView == 'detail' && allowances.hasSomeAllowances()">
+		 <p id="allowanceInfoMessage" class="allowanceinfomessage" >
+	        UK minutes and messages usually appear within 12 hours but may take longer for international calls.
+	    </p>
+	</div>
+    <div id="loadingPage" class="loading-page" ng-show="loading != 3 && allowancesView == 'detail'">
+        <div ng-include="'templates/highend/loadingpage.html'"></div>
+    </div>
+    <!-- Allowances Section -->
+    <div ng-show="loading == 3">
+        <div ng-switch on="allowances.hasSomeAllowances()">
+            <div ng-switch-when="false">
+                <section id="noAllowancesMessage" class="widget-details-background">
+                    <div class="grid-row">
+                        <p class="widget-allowance-nil">
+                            There are no allowances included with your tariff. You'll be charged at your standard rate for any minutes, texts or data you use.
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <div id="allAllowancesSummary" class="background-box-grey" ng-switch-when="true">
+                <!-- Data Allowance -->
+                <div
+                    id="dataAllowancesSummary"
+                    ng-init="allowanceType='data';summarise=(allowancesView == 'summary');"
+                    ng-controller="widgetController.doNothing">
+                    <div ng-include="'templates/highend/allowancepartial.html'" class="data-allowances-widget"></div>
+                </div>
+
+                <!-- Minutes Allowance -->
+                <div
+                    id="minutesAllowancesSummary"
+                    ng-init="allowanceType='minutes';summarise=(allowancesView == 'summary');"
+                    ng-controller="widgetController.doNothing">
+                    <div ng-include="'templates/highend/allowancepartial.html'"></div>
+                </div>
+
+                <!-- Messages Allowance -->
+                <div
+                    id="messagesAllowancesSummary"
+                    ng-init="allowanceType='messages';summarise=(allowancesView == 'summary');hideLastSeparator=true"
+                    ng-controller="widgetController.doNothing">
+                    <div ng-include="'templates/highend/allowancepartial.html'"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Allowances Page Link -->
+    <div ng-show="allowancesView == 'summary'">
+        <hr class="plain-dark-separator" />
+        <div
+            ng-init="module='allowanceslink'; status='loading'; showCallToAction=false"
+            ng-controller="allowanceDetailsController.watchLoadingStatus">
+            <div ng-include="'templates/highend/widget.html'" class="allowance-widget"></div>
+        </div>
+    </div>
+</article>

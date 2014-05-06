@@ -1,0 +1,54 @@
+.billing-address-view {	
+	@include PxToEm(padding-left,30px);
+
+	.widget-heading-cell{
+		@include PxToEm(padding-bottom,17px);
+	}
+
+	.widget-shaded-grid{
+		@include PxToEm(padding-top,16px);
+		.grid{
+		 		@include PxToEm(width,450px);
+			}
+	}
+
+	.grid{
+		.grid-column{
+			width:63%;
+		}
+	}
+
+	.widget-sub-heading{
+		@extend .paragraph-subtitle;
+		@include PxToEm(margin-top,25px);
+	}
+
+	.common-shadow-seprator {
+		@include PxToEm(height, 10px);
+		@include PxToEm(margin-top, 26px);
+		@include PxToEm(margin-bottom, 0px);
+		background-size: 100%;
+	}
+
+	.billing-address-info-message {
+		width: 86%;
+		@extend .widget-note-line-height;
+		@include PxToEm(margin-bottom, 20px);
+	}
+
+	.billing-address-contaier {
+		@include PxToEm(margin-bottom, 20px);
+	}
+
+	.change-billing-address-link-container {
+		@include PxToEm(margin-top, 30px);		
+		@include PxToEm(margin-bottom, 20px);		
+	}
+
+	svg{
+		@include PxToEm(width,15px);
+		@include PxToEm(height,15px);
+		@include PxToEm(vertical-align,-3px);
+		@include PxToEm(padding-right,3px);
+	}
+}

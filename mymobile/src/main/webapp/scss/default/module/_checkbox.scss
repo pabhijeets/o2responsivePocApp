@@ -1,0 +1,18 @@
+.hidden-checkbox{
+	opacity:0;
+    @include PxToEm(margin-left, -17px);
+}
+.hidden-checkbox + label .custom-checkbox  {
+    display:inline-block;
+    @include PxToEm(width, 17px);
+    @include PxToEm(height, 17px);
+    @include PxToEm(margin-right, 5px);
+    vertical-align:middle;
+    background:url($checkbox-unchecked) left top no-repeat;
+    cursor:pointer;
+    background-size:100%;
+}
+.hidden-checkbox:checked + label .custom-checkbox {
+    background:url($checkbox-checked) left top no-repeat;
+    background-size:100%;
+}

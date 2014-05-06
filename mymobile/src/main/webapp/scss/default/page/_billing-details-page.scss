@@ -1,0 +1,165 @@
+#billSummaryDetails {
+	.widget-unit {
+		background: none;
+		@include PxToEm(padding-bottom,16px);
+	}
+}
+
+.billing-details{
+	.widget-shaded-grid{
+		@include PxToEm(width,450px);
+	}
+	.widget-heading-cell{
+		@include PxToEm(padding-bottom,9px);
+	}
+	.widget-note{
+		@include PxToEm(margin-top,13px);
+		@include PxToEm(font-size,16px);
+	}
+	.widget-button-container{
+		@include PxToEm(padding-top,24px);
+	}
+	.anchor-blue-button{
+		@include PxToEm(padding-left,9px);
+		@include PxToEm(padding-top,13px);
+		@include PxToEm(padding-bottom,9px);
+	}
+	.cca-customer-msg{
+		@include PxToEm(padding-top,25px);
+		@include PxToEm(font-size,16px);
+		line-height:1.25;
+	}
+	.intreatment-billmessage{
+		@include PxToEm(padding-top,15px);
+		@include PxToEm(font-size,15px);
+	}
+	.alert-icon-intreatment {
+	svg{
+			@include PxToEm(padding-right,2px);
+		}
+	}
+	.intreatment-message-text{
+		@include PxToEm(padding-top,25px);
+		@include PxToEm(padding-left,24px);
+		@include PxToEm(width,600px);
+	}
+	.widget-shaded-grid {
+		.grid-column{
+			width:63%;
+		}
+	}
+	.widget-content-container{
+		@include PxToEm(padding-top,2px);
+	}
+	.widget-msg-container{
+		@include PxToEm(font-size,16px);
+		@include PxToEm(width,560px);
+		line-height: 1.25;
+	}
+	.error{
+		 .error-msg-container{
+		 	@include PxToEm(font-size,12px);
+		 }
+	}
+}
+.paragraph-title-medium{
+	@include PxToEm(font-size,25px);
+}
+.makeapayment,.viewandprintolderbills{
+	a{
+		color:#419eda;
+	}
+  svg{
+	    @include PxToEm(width,15px);
+	    @include PxToEm(height,15px);
+	    @include PxToEm(vertical-align,-3px);
+	    @include PxToEm(padding-right,3px);
+    }
+}
+.makeapayment{
+	@include PxToEm(padding-top,25px);
+}
+
+
+/*Payment Details*/
+
+.widget-padding-top{
+	@include PxToEm(padding-top,1px);
+}
+.widget-sub-heading{
+	@extend .paragraph-subtitle;
+	@include PxToEm(margin-top,27px);
+}
+.widget-note-payment-details{
+	@extend .widget-note-line-height;
+	@include PxToEm(margin-top,17px);
+}
+
+.widget-note-line-height{
+	font-size: 16px;
+	line-height:1.3em;
+	width:57%;	
+}
+.widget-note-payment-details{
+	font-size: 16px;
+}
+#viewPaymentDetails .payment-details-custom-link{
+	color: #419eda;
+}
+
+#viewPaymentDetails{
+	svg{
+	    @include PxToEm(width,15px);
+	    @include PxToEm(height,15px);
+	    @include PxToEm(vertical-align,-3px);
+	    @include PxToEm(padding-right,3px);
+	    }
+}
+.payment-input{
+	@include PxToEm(margin-top,5px);
+	 @include PxToEm(padding,8px);
+	border: 1px solid #d2d2d2;
+	width: 12%;	
+}
+.widget-button-container-payment-details{
+	 @include PxToEm(padding-bottom,30px);
+}
+.changemysecuritypin{
+	 @include PxToEm(margin-left,55px);
+}
+.paperFreebillFetchfailed .error-container{
+	@include PxToEm(padding-top,14px);
+}
+
+.mobile-numbers {
+	@include PxToEm(padding-left, $widget-padding - 3.4px);
+	@include PxToEm(padding-top, $widget-padding - 2px);
+	@include PxToEm(padding-right, $widget-padding + 8px);
+	@include PxToEm(padding-bottom, $widget-padding);
+	font-size: 16px;
+
+	.mobile-numbers-label {
+		line-height: 1.26;
+	}
+
+	.mobile-numbers-not-available-message {
+		@include PxToEm(padding-top, 21.8px);
+		line-height: 1.36;
+	}
+
+	.mobile-numbers-list {
+		@extend .mobile-numbers-not-available-message;
+		@include PxToEm(padding-left, 0px);
+		list-style: none;
+	}
+}
+	
+.paperFreeBillSuccess{
+	@include PxToEm(margin-top,8px);
+}
+
+.bills-page-column-left {
+	.widget-group {
+		@include PxToEm(margin-bottom,0px);
+	}
+}

@@ -1,0 +1,226 @@
+.allowance-detail-msg{
+	@extend .background-box-grey;
+	@include PxToEm(padding,$widget-padding);
+	@include PxToEm(padding-top,22px);
+	@include PxToEm(padding-bottom,20px);
+}
+.allowancesummary {
+	.new-page-link-icon{
+		vertical-align: -38%;
+	}
+}
+.data-allowance-details{
+	@include cssTableCell();
+	border-right:1px solid #f8f8f8;
+	width:33%;
+	.paragraph-title-medium{
+		@include PxToEm(margin-top,23px);
+		@include PxToEm(margin-left,1px);
+	}
+}
+.data-allowance-details-padding{
+	@include PxToEm(padding-top,$widget-padding);
+	@include PxToEm(padding-bottom,20px);
+	@include PxToEm(padding-left,$widget-padding);
+	@include PxToEm(padding-right,24px);
+}
+.allowance-warning-icon{
+		vertical-align: -2px;
+		> svg {
+			width: 1.3em;
+			height: 1.3em;
+		}
+}
+.allowance-section-details{
+	.allowance-text{
+		@include PxToEm(padding-left,4px);
+		@include PxToEm(padding-top,11px);
+	}
+}
+.allowance-widget{
+	@include PxToEm(padding-top,11px);
+	.widget-logo-cell{
+	 padding-left:0;
+	 @include PxToEm(padding-top,4px);
+	}
+	.widget-header-panel{
+		@include PxToEm(padding-left,11px);
+		@include PxToEm(padding-top,2px);
+	}
+}
+.data-used {
+	@include PxToEm(margin-top,2px);
+}
+.allowance-amount {
+	@include PxToEm(margin-top,6px);
+}
+.allowance-widget{
+	.allowance-text{
+		@include PxToEm(padding-top,3px);
+	}
+}
+.allowance-amount-unit{
+	@include PxToEm(margin-left,-2px);
+}
+.allowance-widget{
+	.grid{
+		@include PxToEm(padding-bottom,24px);
+	}
+}
+
+.alert-message-grid{
+	@include PxToEm(padding-bottom,24px);
+	line-height:1.2;
+}
+.allowance-warning{
+	display:table-cell;
+	@include PxToEm(padding-left,4px);
+}
+.allowance-details-static-message{
+	@include PxToEm(padding-left,1px);
+	line-height:1.25;
+}
+.allowance-detail-widget-link{
+	display:inline-block;
+	@include PxToEm(margin-left,3px);
+	@include PxToEm(margin-top,16px);
+	color: #419eda;
+}
+.allowance-detail-static-text{
+	@extend .background-box-grey;
+	@include PxToEm(padding-top,23px);
+	@include PxToEm(padding-bottom,20px);
+	@include PxToEm(padding-left,32px);
+	@include PxToEm(padding-right,30px);
+}
+.data-allowance-details-section{
+	@extend .grid-row;
+	
+}
+.allowance-detail-msg-nil{
+	@extend .background-box-grey;
+	@include PxToEm(padding-top,14px);
+	@include PxToEm(padding-bottom,13px);
+	@include PxToEm(padding-left,14px);
+	@include PxToEm(margin-left,14px);
+	line-height:1.2em;
+}
+.headless-seperator-alowance-detail{
+  @extend .headless-seperator;
+  @include PxToEm(margin-top,-9px);
+  @include PxToEm(margin-bottom,-5px);
+  @include PxToEm(margin-left,4px);
+  @include PxToEm(margin-right,-24px);
+}
+
+
+.widget-reverse-shaded-grid{
+	.call-plan-grid{
+		.grid-row:nth-child(odd){background:#EFEFEF;}
+	}
+}
+
+.description-padding-top{
+	@include PxToEm(padding-Top,3px);
+}
+
+.call-plan-grid{
+	@extend .grid;
+	width:auto;
+}
+.widget-shaded-grid {
+	.call-plan-grid{
+		.grid-column-small{
+			@include PxToEm(width,120px);
+			@extend .grid-column;
+			}
+		.grid-column-large{
+			@include PxToEm(width,282px);
+			@extend .grid-column;
+			}
+		.call-plan-grid-width-left{
+		@include PxToEm(width,282px);
+		@extend .grid-column;
+		@extend .heading-row-dark;
+		}
+		.call-plan-grid-width-right{
+		@include PxToEm(width,120px);
+		@extend .grid-column;
+		@extend .heading-row-dark;
+		}
+	}
+}
+.additionalboltons-heading-background{
+	background-color:#dbdbdb;	
+}
+.additionalboltons-heading{
+	width:25%;
+	text-align: left;
+	@include PxToEm(padding-top,12px);
+	@include PxToEm(padding-bottom,8px);
+	@include PxToEm(padding-left,12px);
+	@include PxToEm(padding-right,12px);
+}
+.additionalboltons-heading-dark{
+	@extend .additionalboltons-heading;
+	background-color:$transparentGrey;	
+}
+.additionalboltons-detail{
+	@extend .additionalboltons-heading;
+	
+}
+.additionalboltons-detail-dark{
+	@extend .additionalboltons-heading;
+}
+.additionalboltons-table{
+	width: 100%
+}
+#additionalboltons-details{  	
+	    >:nth-child(even){
+	      background-color :#f8f8f8;
+	    }
+	    >:nth-child(odd){
+	      background-color :#eeeeee;
+	   }
+}
+ #additionalboltons-details{  	
+	    >:nth-child(even)>{
+	      background-color :#f8f8f8;
+	      :nth-child(even){
+	      	    background-color :#efefef;
+	      }
+	    }
+	    >:nth-child(odd){
+	      background-color :#eeeeee;
+	       :nth-child(even){
+	      	    background-color :#e6e6e6;
+	      }
+	   }
+}
+.data-allowance-details .allowanceDetailPartialHeading{
+	font-size:20.5px;
+	@include PxToEm(margin-top,22px);
+}
+.allowance-details-warning-icon{
+	vertical-align: -5px;
+	}
+.allowance-details-add-bolton-link span{
+	@include PxToEm(padding-right,4px);
+}
+.error-container-wide{
+	@extend .error-container;
+	@include PxToEm(padding-right,0px);
+}
+.error-msg-container-wide{
+	@extend .error-msg-container;
+	@include PxToEm(padding-right, 0px);
+}
+
+.widget-logo-cell div .allowance-error-icon{
+	@include PxToEm(width,42px);
+	@include PxToEm(height,42px);
+	@include PxToEm(margin-left,6px);
+}
+.data-allowance-info-icon{
+	margin-left: 0px;
+}

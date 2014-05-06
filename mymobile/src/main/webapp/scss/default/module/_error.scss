@@ -1,0 +1,45 @@
+.error-container{
+	@include PxToEm(padding-top,12px);
+	@include PxToEm(margin-bottom,-3px);
+	//To maintain spacing from right & leave the space below icon as blank
+	@extend .widget-msg-container;
+}
+.error-logo-container{
+	@extend .grid-cell;
+	@include PxToEm(width,47px);
+}
+.error-msg-container{
+	@extend .grid-cell;
+	@include PxToEm(padding-left,17px);
+	@include PxToEm(padding-top,1px);
+	@include PxToEm(font-size,13px);
+	line-height:1.2;
+	@extend .widget-msg-container;
+
+}
+.error-icon{
+	//include PxToEm(margin-top,-1px);
+	//include PxToEm(height,47px);
+	//@include PxToEm(width,47px);
+	//@include PxToEm(margin-top,-1px);
+	margin-top:4px;
+	margin-left:2px;
+	@include PxToEm(height,42px);
+	@include PxToEm(width,42px);
+}
+.allowance-error-icon{
+ 	@include PxToEm(margin-top,-1px);
+	@include PxToEm(height,47px);
+}
+.allowance-error-msg{
+	@include PxToEm(padding-top,11px);
+	@include PxToEm(padding-bottom,3px);
+	@include PxToEm(font-size,12px);	
+	@extend .widget-msg-container;
+}
+.overlay-content{
+	.error-container{
+		@include PxToEm(padding-bottom,30px);
+		@include PxToEm(padding-top,0px);
+	}
+}

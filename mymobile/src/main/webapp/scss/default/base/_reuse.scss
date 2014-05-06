@@ -1,0 +1,117 @@
+.bold{
+  @include setFont(FrutigerLTStd55Bold);
+}
+.text-align-center{
+  text-align:center;
+}
+.text-right{
+	text-align:right;
+}
+.background-box-grey{
+  background-color:$boxGreyColor;
+}
+.asterisk{
+	@include PxToEm("margin-right",-1px);
+	@include PxToEm("margin-left",-4px);
+	vertical-align: 60%;
+}
+.cta-info{
+	span{
+		@include PxToEm("padding-left",1px);
+		@include PxToEm("padding-right",3px);
+	}
+	svg{
+	@include PxToEm("width",15px);
+	@include PxToEm("height",15px);
+	@include PxToEm("vertical-align",-2px);
+	cursor:pointer;
+	}
+}
+.link-cursor{
+	cursor:pointer;
+}
+.table-width{
+	width:100%;
+}
+.display-none{
+	display:none;	
+}
+.detailpage-loading-error-width{
+	@include PxToEm("width",540px);
+}
+.errorRed{
+	color:#dd5858;
+}
+.block{
+	display:block;
+}
+.padding-bottom-zero{
+	padding-bottom:0px;
+}
+.arrow-svg svg
+{
+	width: 1.07143em;
+	width: 1.07143rem;
+	height: 1.07143em;
+	height: 1.07143rem;
+	vertical-align: -0.21429em;
+	vertical-align: -0.21429rem;
+	padding-right: 0.21429em;
+	padding-right: 0.21429rem;
+}
+.margin-left-zero{
+	margin-left:0;	
+}
+.padding-top-zero{
+	@include PxToEm("padding-top",0px);
+}
+.padding-top-five{
+	@include PxToEm("padding-top",5px);
+}
+input.errorRed_true,.selectbg.errorRed_true,input.errorRed_true:focus,.selectbg.errorRed_true:focus
+,.setupNewPin input.errorRed_true,.setupNewPin input.errorRed_true:focus
+{
+	border: 1px solid #dd5858;
+	box-shadow:none;
+	outline: 0px none;
+}
+.margin-top-twenty{
+	@include PxToEm("margin-top",20px);
+}
+
+.margin-top-fortytwo{
+	@include PxToEm("margin-top",42px);	
+}
+.padding-top-ten{
+	@include PxToEm("padding-top",10px);
+}
+.margin-bottom-seven{
+	@include PxToEm("margin-bottom",7px);	
+}
+.margin-top-forty-eight{
+	@include PxToEm("margin-top",48px);
+}
+.font-size-sixteen{
+	@include PxToEm(font-size,16px);
+}
+.margin-top-sixteen{
+	@include PxToEm("margin-top",16px);
+}
+.min-height-three-seven-nine{
+	min-height: 379px;
+}
+.min-height-three-eight-five{
+	min-height: 385px;
+}
+
+
+table.light{
+
+        tr:nth-child(odd){
+          background-color : $boxGreyColor;
+        }
+        tr:nth-child(even){
+          background-color : $greyColor;
+        }
+
+}

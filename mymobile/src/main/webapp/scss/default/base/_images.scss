@@ -1,0 +1,26 @@
+//defining path for base image directory
+$imagePath:"../../img/default/";
+
+//header images
+$pageHeaderBg:$imagePath + "page_header_bg.png";
+
+//widget background
+$dashboard-widget-bg:$imagePath + "dashboard-widget-bg.png";
+
+//overlay bg
+$overlay-bg:$imagePath + "overlay-bg.png";
+
+//seperator
+$headlessSeparator:$imagePath + "headless-seperator.png";
+
+//box-shadow-sperator
+$bottom-shadow:$imagePath + "shadow-seperator.png";
+$bottom-up-shadow:$imagePath + "bottom-up-shadow.png";
+
+
+$offer-promo:$imagePath + "offer_promo.jpg";
+
+$selectbox-arrow:$imagePath + "selectbox-arrow.png";
+
+$bolton-action:$imagePath + "boltons-action.png";
+

@@ -1,0 +1,12 @@
+.o2body .col2{
+ width: 710px;
+}
+.o2body .col2 .col1, .o2body .col2 .col2{
+ width: 350px;
+}
+.widget .content ul.services li{
+ width: 315px;
+}
+.o2body a.btn, a.btn:link, a.btn:visited{
+ color: #fff;
+}

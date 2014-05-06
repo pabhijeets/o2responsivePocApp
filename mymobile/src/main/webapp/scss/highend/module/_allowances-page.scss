@@ -1,0 +1,38 @@
+.container{
+	@include PxToEm(padding-top,17px);
+	@include PxToEm(padding-bottom,10px);
+	@include PxToEm(padding-right,$spacingFromEnds);
+	@include PxToEm(padding-left,19px);
+	a.customlink{	
+		@include PxToEm(margin-bottom,8px);	
+		@include PxToEm(margin-top,10px);	
+	}
+	.widget-logo-cell{
+		vertical-align: middle;
+		@include PxToEm(padding-left,2px);
+	}
+	.widget-header-panel{
+		@include PxToEm(padding-top,6px);
+		@include PxToEm(padding-bottom,0px);
+		@include PxToEm(padding-left,px);
+		vertical-align: middle;
+		
+	}
+	.alert-message-grid{
+  	 @include PxToEm(padding-top,0px);
+  	 @include PxToEm(padding-bottom,10px);
+  }
+}
+.allowance-comment{
+	 @extend .line-height-1;
+	 @extend .text-xs;
+	 @extend .comment-align;
+}
+.allowance-comment-static{
+	@extend .allowance-comment;
+}
+.container-padding-allowances{
+	 @extend .container-padding;
+	 @include PxToEm(padding-bottom,27px);
+	 @include PxToEm("padding-top",5px);
+  }

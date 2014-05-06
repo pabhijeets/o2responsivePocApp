@@ -1,0 +1,197 @@
+//Class to stack all the individual widgets
+.widget-group{
+	//to maintain gutter with the next widget
+   @include PxToEm(margin-bottom,20px);
+}
+//Class for an individual widget
+.widget-unit{
+  @include PxToEm(padding-left,$widget-padding - 1px);
+  @include PxToEm(padding-bottom,$widget-padding);
+	@include PxToEm(padding-right,$widget-padding);
+  @include PxToEm(padding-top,11px);
+  @extend .background-box-grey;
+}
+//Class for a stacked widget
+.widget-unitstacked-first-unit{
+  @include PxToEm(padding-left,$widget-padding - 1px);
+	@include PxToEm(padding-right,$widget-padding);
+  @include PxToEm(padding-top,11px);
+	//to maintain gutter with the next widget
+  @extend .background-box-grey;	
+}
+.widget-unitstacked-last-unit{
+  @include PxToEm(padding-bottom,$widget-padding);
+}
+
+.widget-background-true{ 
+  background : {
+  	image: url($dashboard-widget-bg);
+  	position: right bottom;
+  	repeat : no-repeat;
+  }
+}
+// All grid's classes start here
+.widget-title-grid{
+	@extend .grid;
+}
+.widget-heading-cell{
+	@extend .grid-cell;
+	@include PxToEm(padding-top,20px);
+	@include PxToEm(padding-bottom,20px);
+}
+.widget-icon-cell{
+	@extend .grid-cell;
+    @include PxToEm(width,43px);
+    @extend .text-right;
+	@include PxToEm(padding-left,15px);
+	>img{
+	    width:100%
+	}
+}
+.widget-bordered-grid{
+	@include PxToEm(padding-left,14px);
+	@include PxToEm(margin-right,$widget-padding * -1);
+	@include PxToEm(padding-top,6.1px);
+	>.grid >:last-child{ 
+		.grid-column, .grid-three-column-1, .grid-three-column-2, .grid-three-column-3{
+			border-bottom:none;
+		}
+	}
+	.grid-column{
+	  	@include cssTableCell(49%);
+	 	@include PxToEm(padding-top,8.1px);
+	 	@include PxToEm(padding-bottom,7px);
+	 	border-bottom: 1px solid $dullGrey;
+	}
+	.grid-column-last{
+	  	@extend .grid-column;
+	  	@include PxToEm(padding-left,10px);
+	  	@include PxToEm(padding-right,$widget-padding/2);
+	}	
+	.grid-three-column-1{
+	  	@include cssTableCell(32.5%);
+	 	@include PxToEm(padding-top,9.1px);
+	 	@include PxToEm(padding-bottom,8px);
+	 	@include PxToEm(padding-right,10px);
+	 	border-bottom: 1px solid $dullGrey;
+	}	
+	.grid-three-column-2{
+	  	@include cssTableCell(26%);
+	 	@include PxToEm(padding-top,9.1px);
+	 	@include PxToEm(padding-bottom,8px);
+	 	@include PxToEm(padding-right,10px);
+	 	border-bottom: 1px solid $dullGrey;
+	}	
+	.grid-three-column-3{
+	  	@include cssTableCell(41.5%);
+	 	@include PxToEm(padding-top,9.1px);
+	 	@include PxToEm(padding-bottom,8px);
+	 	@include PxToEm(padding-right,10px);
+	 	border-bottom: 1px solid $dullGrey;
+	}
+}
+.widget-shaded-grid{
+  	@include PxToEm(padding-right,33px);
+	@include PxToEm(padding-top,15px);
+	@include PxToEm(padding-bottom,3px);	
+	.grid{
+	    >:nth-child(odd){
+	      background-color : $darkBoxGreyColor;
+	    }
+	    >:nth-child(even){
+	      background-color : $lightBoxGrey;
+	    }
+	    .grid-column{
+			@include cssTableCell(70%);
+    		@include PxToEm(padding-left,13.1px);
+			@include PxToEm(padding-top,10.1px);
+			@include PxToEm(padding-bottom,11.1px);
+		}
+		.grid-column-last{
+			@extend .grid-column;
+			@include PxToEm(padding-right,$widget-padding/2);
+		}
+	}
+	/*light shaded grid class*/
+	.light{
+	    >:nth-child(odd),tr:nth-child(odd){
+	      background-color : $boxGreyColor;
+	    }
+	    >:nth-child(even),tr:nth-child(even){
+	      background-color : $greyColor;
+	    }
+	}
+}
+.widget-reverse-shaded-grid{
+	@extend .widget-shaded-grid;
+	padding-top:0;
+	.grid{
+	    >:nth-child(even){
+	      background-color : $darkBoxGreyColor;
+	    }
+	    >:nth-child(odd){
+	      background-color : $lightBoxGrey;
+	    }
+	}
+}
+//all container classes start here
+.widget-button-container{
+	@include PxToEm(padding-top,25px);
+}
+.widget-content-container{
+	@include PxToEm(padding-top,3px);
+}
+.widget-msg-container{
+	//Here we are providing the same padding as of widget-icon-cell's width 
+	//So as the text wraps itself before it reaches below the icon
+	@include PxToEm(padding-right,43px);
+	
+}
+.widget-text{
+	line-height:1.2;
+}
+.widget-note{
+	@include PxToEm(margin-top,19px);
+	@extend .widget-text;
+}
+.widget-link-container{
+	@include PxToEm(padding-top,26px);
+}
+#myallowancesSummary .grid{
+	margin-top:-1px;
+}
+.grid-column-padding-left{
+	@include PxToEm(padding-left,35px);
+}
+
+.widget-content-container-width{
+	width:97%;
+}
+
+.widget-text-width{
+	@include PxToEm(padding-right,30px);
+}
+
+.my-animate.ng-enter{
+	transition: 0.5s linear all;
+	opacity: 0;
+}
+
+.my-animate.ng-enter.ng-enter-active{
+	opacity: 1;
+}
+
+.my-animate.ng-leave, .my-animate.ng-leave.ng-leave-active{
+	transition: none;
+	opacity: 0;
+}
+
+.animate-show-hide.ng-hide-add, .animate-show-hide.ng-hide-remove{
+	transition: 0.15s linear all;
+	display: block!important;
+	opacity: 1;
+}
+
+.animate-show-hide.ng-hide{
+	opacity: 0;
+}

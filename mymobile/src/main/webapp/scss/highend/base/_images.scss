@@ -1,0 +1,25 @@
+//defining path for base image directory
+$imagePath:"../../img/highend/";
+
+//header images
+$pageHeaderBg:$imagePath + "page_header_bg.jpg";
+
+//seperator image
+$seperator: $imagePath + "moduledivider.jpg";
+$infoSeparator:$imagePath + "info_seperator.png";
+$boltonSeparator:$imagePath + "boltonbg.png";
+$headlessSeparator:$imagePath + "headless-seperator.png";
+
+//images for checkbox
+$checkbox-checked:$imagePath + "checkbox_check.jpg";
+$checkbox-unchecked:$imagePath + "check_box.jpg";
+
+//image for webchat
+$webchatBg:$imagePath + "promo_webchat.png";
+
+$webchatWrapperBg:$imagePath + "web_chat_bg.png";
+
+
+$loadingGif:$imagePath + "loadinganim_1080_with_text.gif";
+
+$loadingWidgetGif:$imagePath + "loadinganim_1080.gif";

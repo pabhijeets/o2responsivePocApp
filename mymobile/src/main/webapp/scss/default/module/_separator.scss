@@ -1,0 +1,24 @@
+.headless-seperator{
+  height: 1px;
+  border: none;
+  background:url($headlessSeparator) repeat-x;
+	@include PxToEm(margin-left,12px);
+  @include PxToEm(margin-right,$widget-padding * -1);
+}
+.plain-dark-separator{
+  background: $dullGrey;
+  border-top: $dullGrey;
+  border-bottom: 1px solid $whiteColor;
+  border-left: 0;
+  height: 1px;
+}
+.common-shadow-seprator{
+ border:0;
+ @include PxToEm(margin-bottom,21px);
+  background:url($bottom-shadow) no-repeat left bottom; 
+ }
+ .latest-bill-plain-dark-separator{
+    @extend .plain-dark-separator;
+    width: 112%;
+    margin-left: -6%;
+ }

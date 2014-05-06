@@ -1,0 +1,155 @@
+/*@import "base/_common";
+@import "base/_mixins";*/
+table tr {
+  background: none; }
+
+.ie8-table {
+  width: auto; }
+
+.ie8-table-border-bottom {
+  border-bottom: 1px solid #d8d8d8; }
+
+.darkBoxGreyColor-bg {
+  background: #e6e6e6; }
+
+.lightBoxGrey-bg {
+  background: #eeeeee; }
+
+.boxGreyColor-bg {
+  background: #efefef; }
+
+.greyColor-bg {
+  background: #f8f8f8; }
+
+.border-bottom-none {
+  border-bottom: none; }
+
+.legacy .grid {
+  width: 100% !important; }
+
+.ie8-table-escape-col {
+  background: none !important; }
+
+.blue-button-common, .anchor-button-blue, .ie8-btn, .ie8-blue-btn, .ie8-btn-true, .ie8-btn-false {
+  font-weight: normal;
+  padding: 11px 10px 11px 10px;
+  line-height: 14px;
+  text-decoration: none solid white;
+  color: white; }
+
+.blue-button-common, .anchor-button-blue, .ie8-btn-true, .ie8-blue-btn {
+  background: #419ed9;
+  color: white;
+  border: none;
+  background: url("../../img/default/btn-bg-ie8.jpg") repeat-x #2f7cb4;
+  display: inline-block; }
+
+.ie8-btn-false {
+  background: transparent;
+  color: #d2d2d2;
+  border: 1px solid #d2d2d2; }
+
+.ie8-btn-true:hover, .ie8-blue-btn:hover, .blue-button-common:hover, .anchor-button-blue:hover {
+  background: url("../../img/default/blue-btn-bg-hover-ie8.jpg") repeat-x #1d5d91; }
+
+.ie8-btn-false:hover {
+  background: transparent; }
+
+.blue-button-common:active, .anchor-button-blue:active, .button-payment:active:enabled, .anchor-button-blue:active, .button-payment:active:enabled, .button-payment:active {
+  background: #032b5a; }
+
+.hidden-checkbox {
+  filter: alpha(opacity=0); }
+
+#checkbox.checkbox-checked {
+  background: url("../../img/default/checkbox_check.jpg") left top no-repeat;
+  background-size: 100%; }
+
+.cta-info img, .customlink img, .info-icon img {
+  width: 15px;
+  height: 15px;
+  /*width:12px;
+   height:12px; */
+  vertical-align: -2px; }
+
+.cta-info span, .customlink span {
+  font-size: 14px; }
+
+.cta-info-alignment-boltons img {
+  width: 14px;
+  height: 14px; }
+
+
+.payg-icon-boltons {
+  left: 105px; }
+
+.ie8-allowance-section-details .alert-message-grid .alert-icon img,.allowance-warning-icon img,.balanceandallowanceContainer img,.boltons-summary-grid-wrapper img, .grid-column-boltons img,.boltons-allowance-container-widget img{
+   width: 18px;
+  height: 18px;
+}
+.balanceandallowanceContainer img,.boltons-summary-grid-wrapper img, .grid-column-boltons img,.boltons-allowance-container-widget img{
+  float: left;
+  margin-right: 10px; 
+}
+ .allowance-warning-icon  img,.boltons-summary-grid-wrapper img, .grid-column-boltons img,#myBoltonsSummary .boltons-allowance-container-widget img
+{  margin-top: 2px;
+}
+.ie8-allowance-section-details .alert-message-grid .alert-icon img{
+  vertical-align: -3px;  
+}
+
+
+.cta-info-alignment-alert img {
+  margin-right: 4px; }
+
+.cta-info-alignment-alert img, .cta-info-alignment-alert-table img {
+  width: 16px;
+  height: 16px; }
+
+.cta-info-alignment-alert-table img {
+  margin-top: -3px; }
+
+.expand-collapse-ie8-link img {
+  width: 12px;
+  height: 12px; }
+
+
+.legacy body {
+  width: 100%; }
+
+.desktop-only-nav #nav-secondary {
+  min-width: 815px; }
+
+.legacy #nav-secondary {
+  min-width: 815px !important; }
+.legacy .nav-primary {
+  min-width: 815px !important; }
+.legacy .toolbar {
+  min-width: 815px !important; }
+.legacy .grid-inner {
+  width: 100% !important; }
+.legacy #o2-footer {
+  min-width: 815px !important; }
+.legacy widget-header {
+  min-width: 815px !important; }
+
+/* media queris when we shrink bowser  */
+@media screen and (max-width: 1000px) {
+  .wrapper .offer-grid-wrapper .grid-offer {
+    width: 29%; } }
+@media screen and (min-width: 1116px) {
+  .wrapper .wrapper-container, .header-content, .wrapper-container.ie8-wrapper {
+    width: 1100px;
+    margin: 0 auto; }
+
+  .wrapper .hero-cmc-container {
+    width: 100%; } }
+@media screen and (max-width: 815px) {
+  .wrapper .wrapper-container, .wrapper-container.ie8-wrapper {
+    width: 815px; }
+
+  .wrapper .content-wrapper {
+    width: 98%; }
+
+  .wrapper .hero-cmc-container {
+    width: 100%; } }

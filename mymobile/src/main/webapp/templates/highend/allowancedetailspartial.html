@@ -1,0 +1,87 @@
+    <section class="container" id="allowanceDetail{{$index}}">
+        <h1>
+            {{allowance.description || properties[allowanceType+'allowance'].title}}
+        <span ng-show="status == 'success' && hasAllowances && allowance.type == 'data'">
+            <a href="#/dataInformation" title="dataAllowanceInfoLink" class="dataallowanceinfolink">
+                <o2svg  tag="span" name="'cta_info'"></o2svg>
+            </a>
+        </span>
+        </h1>
+        <div ng-if="!hasAllowances" class="grid-row">
+            <p class="widget-allowance-nil">
+                {{properties[allowanceType+'allowance'].noAllowanceMessage}}
+            </p>
+        </div>
+        <div ng-if="hasAllowances">
+            <p ng-show="status == 'success' && allowance.expiryDate && !allowance.isUnlimited" class="allowance-text">left until {{allowance.expiryDate | dateFormatter}}</p>
+            <div ng-switch on="status" class="addbolton-widget">
+                <div class="grid allowance-grid-partial">
+                    <div class="grid-row">
+                        <figure class="widget-logo-cell">
+                            <donutchart
+                                    ng-switch-when="success"
+                                    class="donut-canvas"
+                                    lineWidth="15"
+                                    radius="21"
+                                    isunlimited="allowance.isUnlimited"
+                                    isabovethreshold="allowance.warningMessage"
+                                    percentage="allowance.percentageUsed">
+                            </donutchart>
+                            <div ng-switch-when="error">
+                                <o2svg id="errorIcon" svgclass="embedded-svg" nonsvgclass="" name="'icon_error'" fallbackext="png"></o2svg>
+                            </div>
+                        </figure>
+                        <div class="widget-header-panel">
+                            <div ng-switch-when="error">
+                                <p class="error-message">
+                                    This information is not available at the moment. Please try again later.
+                                </p>
+                            </div>
+                            <div ng-switch-when="success" ng-switch on="allowance.isUnlimited">
+                                <!-- UNLIMITED -->
+                                <p ng-switch-when="true" id="allowanceIsUnlimited" class="amount">Unlimited</p>
+                                <!-- LIMITED -->
+                                <div ng-switch-when="false" ng-switch on="allowance.type" class="allowance-text">
+                                    <!-- DATA -->
+                                    <div ng-switch-when="data">
+                                        <p id="dataAllowanceTotal" class="line-height-1" ng-init="totalAllowance=(allowance.startingBalance | dataAllowanceFormatter)">Allowance: {{totalAllowance.allowanceValue}}{{totalAllowance.allowanceUnit}}</p>
+                                        <p id="dataAllowanceUsed" class="line-height-1" ng-init="usedAllowance=(allowance.used | dataAllowanceFormatter)">Used: {{usedAllowance.allowanceValue}}{{usedAllowance.allowanceUnit}}</p>
+                                        <p class="allowance-amount">
+                                            <span class="amount" ng-init="remainingAllowance=(allowance.remaining | dataAllowanceFormatter:true)">{{remainingAllowance.allowanceValue}}</span>
+                                            <span>{{remainingAllowance.allowanceUnit}}</span>
+                                            <span>left</span>
+                                        </p>
+                                    </div>
+                                    <!-- MINUTES -->
+                                    <div ng-switch-when="minutes">
+                                        <p id="minutesAllowanceTotal" class="line-height-1">Allowance: {{allowance.startingBalance | minutesAllowanceFormatter}}</p>
+                                        <p id="minutesAllowanceUsed" class="line-height-1">Used: {{allowance.used | minutesAllowanceFormatter}}</p>
+                                        <p><span class="amount">{{allowance.remaining | minutesAllowanceFormatter}} </span>left</p>
+                                    </div>
+                                    <!-- MESSAGES -->
+                                    <div ng-switch-when="messages">
+                                        <p id="messagesAllowanceTotal" class="line-height-1">Allowance: {{allowance.startingBalance}}</p>
+                                        <p id="messagesAllowanceUsed" class="line-height-1">Used: {{allowance.used}}</p>
+                                        <p><span class="amount">{{allowance.remaining}} </span>left</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div ng-switch-when="success" ng-if="allowance.warningMessage && viewType != 'addDataBoltOns'" class="alert-message-grid">
+                    <div class="grid-row">
+                        <o2svg svgclass="alert-icon" tag="span" nonsvgclass="alert-icon" name="'icon_' + allowance.messageType" fallbackext="png"></o2svg>
+                    <span id="allowanceWarningMessage" class="alert-message-comment allowance-comment">
+                         <span ng-bind-html="allowance.warningMessage"></span>
+                     </span>
+                    </div>
+                </div>
+                <div ng-switch-when="success" ng-if="allowance.type=='data' && !allowance.isUnlimited && viewType != 'addDataBoltOns'" class="spacing-top">
+                    <p id="dataAllowanceAddBoltonMessage" class="allowance-comment-static">If you want to add more data, you might be able to buy extra Bolt Ons, or you can use wifi.</p>
+                    <a id="dataAllowanceAddBoltonLink" href="#/adddataboltons" class="customlink"><o2svg svgclass="arrow" nonsvgclass="arrow" name="'cta_link'"></o2svg>Add data Bolt On</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr ng-if="!(hideLastSeparator && allowanceIndex == (allowancesCount - 1)) && viewType != 'addDataBoltOns'" class="headless-seperator"/>

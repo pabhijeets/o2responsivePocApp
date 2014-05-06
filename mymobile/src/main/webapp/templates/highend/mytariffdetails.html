@@ -1,0 +1,22 @@
+<section class="grid shading tariff-grid">
+    <div class="grid-row">
+        <label class="grid-column-first">Length of contract</label>
+        <label class="grid-column-second">{{tariffDetail.minimumTermInMonths}} months</label>
+    </div>
+
+    <div class="grid-row">
+        <label class="grid-column-first">Contract renewal date</label>
+        <label class="grid-column-second"><time>{{tariffDetail.endDate | dateFormatter }}</time></label>
+    </div>
+
+    <div class="grid-row">
+        <label class="grid-column-first">Key features</label>
+        <label class="grid-column-second">{{tariffDetail.description}}</label>
+    </div>
+
+</section>
+<div class="container-padding">
+	<p id="boltonsMessage" class="key-note" ng-show="tariffDetail.hasCoreDataBolton">
+	    Your tariff also includes a data allowance Bolt On. 
+	</p>
+</div>

@@ -1,0 +1,38 @@
+<article>
+	<!-- Error -->
+	<p class="error" ng-show="infoPage.error">
+	    {{infoPage.error}}
+	</p>
+	<p class="spinner" ng-show="loading">Loading...</p>
+	<!-- Success -->
+	<div ng-hide="infoPage.error" class="container-padding">
+		<section>
+			<h1>What is my balance?</h1>
+			<p class="info-paragraph">
+				Your balance is the amount outstanding on your account once your usage has been calculated and charged to your latest bill.
+			</p>
+			<p class="info-paragraph">	
+				Your latest bill will provide the details of the most recent round of charges made to you, and will include items like your monthly Tariff charge and other allowance charges (e.g. using your phone abroad).
+			</p>
+		</section>	
+		<hr class="info-seperator"/>
+		<section>
+			<h1>When will my payment be taken?</h1>
+			<p class="info-paragraph">
+				When your latest bill is generated every month, any payment will be required approx. 14 days after that.
+			</p>
+			<p class="info-paragraph">
+				During that time, the amount to be paid will be shown as a balance due. If you pay your bill by Direct Debit, don't worry, this will be taken automatically for you and is the most convenient way to pay. If you pay by alternative means (e.g. cash/cheque), please make payment in the usual way once you see a balance due.
+			</p>
+		</section>	
+		<hr class="info-seperator"/>
+		<section>
+			<h1>Why doesn't my balance match latest bill?</h1>
+			<p class="info-paragraph">
+				There are several reasons why your balance due may not match your latest bill amount, including one-off payments or recent changes to your tariff or add/removing a Bolt On for example. Please refer to the detail in your latest bill for further information.
+			</p>
+		</section>	
+	</div>
+</article>
+<hr class="blue-strip-separator" />
+

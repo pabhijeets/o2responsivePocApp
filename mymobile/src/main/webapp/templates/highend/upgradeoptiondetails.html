@@ -1,0 +1,23 @@
+    <article >
+        <div ng-switch on="status">
+            <!-- Error -->
+            <div id="errorPage" ng-switch-when="error">
+                <div ng-include="'templates/highend/errorpage.html'"></div>
+            </div>        <!-- Loading -->
+            <div id="loadingPage" ng-switch-when="loading" class="loading-page">
+                <div ng-include="'templates/highend/loadingpage.html'"></div>
+            </div>
+            <!-- Success -->
+            <div ng-switch-when="success">
+                <section id="infoMessageSection" class="container-height container-padding">
+
+                    <p class="text-l" compile="upgradeEligibilityMessages[0]"></p>
+
+                    <p ng-if="upgradeEligibilityMessages.length > 1" class="paragraph-margin-top" compile="upgradeEligibilityMessages[1]"></p>
+                    <a id= "upgradenowlink" ng-if="displayUpgradeShop" target="_blank" href="https://www.o2.co.uk/upgrade/signIn/" class="customlink"><o2svg id="errorIcon" svgclass="arrow" nonsvgclass="arrow arrowpng" name="'cta_link'" fallbackext="png"></o2svg>Upgrade now</a>
+                </section>
+                <hr class="blue-strip-separator" />
+            </div>
+        </div>
+    </article>
+

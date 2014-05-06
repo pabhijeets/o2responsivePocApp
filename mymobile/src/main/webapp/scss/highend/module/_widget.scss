@@ -1,0 +1,265 @@
+ .widget-details-background{
+  background-color:$boxGreyColor;
+  @include PxToEm("padding-left",20px);
+  @include PxToEm("padding-bottom",15px);
+  @include PxToEm("padding-top",15px);
+	.customlink{
+	  @include PxToEm("margin-right",11px);
+	}
+}
+ .widget-details-background-allowance  .widget-details-background{
+   @include PxToEm("padding-left",22px);
+   @include PxToEm("padding-bottom",7px);
+   @include PxToEm("padding-top",14px);
+ }
+.widget-details-background-additional-summary {
+	@extend .widget-details-background;
+	@include PxToEm("padding-bottom",16.4px);
+}
+.widget-additional-summary {
+	background-color:$boxGreyColor;
+	@include PxToEm("padding-left",20px);
+	@include PxToEm("padding-bottom",19px);
+	@include PxToEm("padding-top",0px);
+	@include PxToEm("padding-right",18px);
+}
+.widget-grid-table{
+	@extend .grid;
+}
+.widget-logo-cell{
+	@include cssTableCell(null,top);
+	@include PxToEm(width,43px);
+	div{
+		@include PxToEm(height,52px);
+		@include PxToEm(line-height,49px);
+		text-align:center;
+	}	
+	img[src$='.svg'] {
+		width:100%;
+		@include PxToEm(margin-top,2px);		
+	}
+    
+}
+.widget-logo-cell img{
+	vertical-align:middle;
+	left:-3px;
+}
+.widget-logo-cell >div svg{
+	vertical-align:middle;
+	left:-3px;
+	width:3.2em;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+.allowance-grid-partial #errorIcon svg{
+	height:3.5em;
+}
+.widget-header-panel{
+	@include PxToEm(padding-top,2px);
+	@include PxToEm(padding-left,18px);
+	@include cssTableCell(null,top);
+	h1{
+	@include PxToEm(font-size,22px);
+		line-height:1;
+	}
+}
+.widget-toggle-cell{
+	cursor:pointer;
+	@include PxToEm(height,34px);
+	@include PxToEm(line-height,34px);
+	@include PxToEm(padding-left,8.16px);
+	@include PxToEm(padding-top,17px);
+	text-align:right;
+	svg {
+		vertical-align:top;
+	}
+}
+.widget-call-to-action{
+	@include cssTableCell(null,top);
+	@include PxToEm(width,37.33px);	
+	@include PxToEm(padding-right,18px);	
+
+}
+.widget-summmary{
+	@include PxToEm("padding-top",6px);	
+}
+.widget-toggle-cell{
+	a{
+	display:block;
+	}
+}
+.widget-unlimited-desc-column{
+	@include cssTableCell(null,top);
+	@extend .widget-info;
+	@include PxToEm(padding-top,14px);
+	@include PxToEm(padding-bottom,8.16px);
+}
+.widget-unlimited-title-column{
+	@extend .bold;
+	@extend .widget-unlimited-desc-column;
+	@include PxToEm(width,58.33px);
+	@include PxToEm("padding-left",$spacingFromEnds);
+}
+.widget-info-more-text{
+    @include PxToEm("margin-top",11px);
+    display:block;
+}
+.widget-info-extra-margin-top{
+  line-height:1.3;
+   @include PxToEm("margin-top",7px);
+}
+.widget-allowance-nil,p.widget-allowance-nil{
+	@include PxToEm("padding-top",12.83px);
+	@include PxToEm("padding-bottom",5.83px);
+	@include PxToEm("padding-left",$spacingFromEnds);
+	@include PxToEm("padding-right",$spacingFromEnds);
+}
+p.widget-allowance-nil{
+	padding-left:0;
+}
+.widget-info{
+  @extend .text-xs;
+  line-height:1.3;
+}
+.open-widget-plain-text{
+	@extend .text-m;
+	@include PxToEm(margin-top,16px);
+	@include PxToEm(margin-bottom,14px);
+}
+.addbolton-widget{
+	@include PxToEm(padding-top,4px);
+}
+.widget-details-background-allowance .widget-header-panel{
+	@include PxToEm("padding-left",14px);
+}
+
+.web-chat-container{
+ 	  @extend .container-padding;
+	  color: $whiteColor;  
+	  @extend .text-xs;
+	  height:12.8em;
+	  a{
+	  	color: $whiteColor; 
+	  	@include PxToEm("margin-top",7px);
+	  }
+	  p{
+	  	@include PxToPercent(width,180px);
+	  	@include PxToEm("margin-top",6px);
+	  	@include PxToEm("font-size",12px);
+	  }
+	 h1{
+	  	@include PxToEm(font-size,22px);
+	  	@include PxToEm("padding-top",25px);
+		line-height:1;
+	  }
+	  background: {
+	    image: url($webchatBg);
+	    repeat: no-repeat;
+	    position:100%;
+
+  	  }
+  		img[src$='.svg'] {
+	      width:1.3em;
+	      height:1.3em;
+	      vertical-align: -20%;
+	  }
+}
+
+.web-chat-wrapper{	
+	width:100%;
+	display:block;
+	overflow:hidden;
+	background-position: 0px;
+	background: {
+	    image: url($webchatWrapperBg);
+	    repeat: repeat-x;
+  	  }
+
+}
+.widget-info-padding-right,#bottomNav #fullSiteLink{
+	 @include PxToEm(padding-right,$spacingFromEnds);
+}
+
+#head .mobileNavContainer p a{
+	font-size:14px;
+	padding-top:4px;
+}
+
+/* Specific Fixes */
+.myBoltons .grid-column{	
+	width:50%;
+	@include PxToEm("padding-bottom",7px);
+}
+.myBoltons .key-note {
+@include PxToEm("padding-top",21px);
+@include PxToEm("margin-left",-2px);
+line-height: 1.15;
+
+}
+
+.container-padding-boltons-payg{
+	@include PxToEm("padding-top",10px);
+}
+
+
+#balanceAndAllowance .widget-details-background{
+ @include PxToEm("padding-bottom",6px);
+}
+
+@media screen and (max-width:400px) {
+    @-ms-viewport{
+        width:320px;
+    }
+}
+
+.arrow svg, .arrow img {
+   height: 1em;
+   width: 1em;
+   vertical-align:-14%;   
+ }
+
+ .arrow img{
+	@include PxToEm(margin-right,10px);
+}
+.widget-arrow svg {
+   height: 1.4em;
+   width: 1.4em;
+
+ }
+ #dataAllowanceAddBoltonLink .arrow svg{
+ 	@include PxToEm(margin-right,6px);	
+ }
+.alert-icon img{
+	vertical-align:-3%;
+}
+
+#expandCollapseToggle img, #expandCollapseToggle svg{
+	width:1.4em;
+	height:1.4em;
+}
+
+.dataallowanceinfolink svg, #dataallowanceinfolink img{
+	width:0.8em;
+	height:0.8em;
+
+}
+#balanceInfoIcon svg, #balanceInfoIcon img{
+	width:1.3em;
+	height:1.3em;
+	}
+
+#tariffName svg, #tariffName img{
+	width:1.6em;
+	height:1.65em;
+}
+#paygbalanceandallowancedetails .alert-message-comment{
+	top:-1px;
+}
+#paygbalanceandallowancedetails svg {
+	position:relative;
+	top:2px;
+}
+.widget-info-payg-comment{
+	@include PxToEm(padding-bottom,18px);
+}

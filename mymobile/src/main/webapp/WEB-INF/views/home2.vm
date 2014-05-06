@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>My Mobile</title>
+</head>
+<body>
+    #parse("fragments/head.highend.vm")
+<img style="display:none;" src="img/highend/loadinganim_1080_with_text.gif"/>
+<img style="display:none;" src="img/highend/loadinganim_1080.gif"/>
+    #parse("/fragments/jsdisabledwarning.highend.vm")
+
+<!-- Page Heading and Mobile Number -->
+<div class="wrapper-container"  ng-app="myo2" id="myo2app" ng-init=
+        "app.pageLoading=true;
+            app.isPayM=true;
+            app.desktopSiteRedirectUrl='$desktopSiteRedirectUrl';
+            app.changeMobileUrl='$changeMobileUrl'";
+            ng-controller="rootController">
+    #parse("/fragments/svgimages.vm")
+    #parse("/includes/scripts/include-angular-templates.vm")
+    <div id="main-container">
+        <div class="mymobile-top" ng-controller="navigationController" ng-cloak>
+            <header id="pageHeader" class="widget-header">
+                <h1><span ng-bind="getHeading()"></span></h1>
+            </header>
+            <div class="change-mobile">
+                <div class="subscriber-number"><p>{{userDetails.mobileNumber}}</p></div>
+            </div>
+        </div>
+        <div ng-controller="userDetailsController.getUserDetails" id="bodyContent">
+            <div ng-view></div>
+        </div>
+        <div ng-cloak>
+            #parse("/fragments/bottomnav.highend.vm")
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>
+

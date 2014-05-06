@@ -1,0 +1,39 @@
+
+
+/*balanceand allowance*/
+
+.widget-content-container-balanceandallowance .alert-message-comment-balance-payg{
+	line-height:1.2;
+}
+.balanceandallowanceContainer{
+	display:block;
+	overflow:hidden;
+	@extend .widget-link-container;
+	svg{
+		float: left;
+		width: 1.3em;
+		height: 1.3em;
+		@include PxToEm(margin-right,10px);
+	}
+}
+.alert-message-comment-balance-payg{
+	float: left;
+	width: 87%;	
+	@include PxToEm(margin-top,3px);
+	padding-bottom:1px;
+}
+.widget-msg-container-balance {
+	@include PxToEm(margin-top,14px);
+	svg{		
+		height:1em;
+		width:1em;
+	}
+}
+.payg-icon-balance-allowance{
+	left:-4px;
+	@extend .payg-icon;
+}
+.balance-aestrik{
+	bottom: 9px;
+	position: relative;
+}

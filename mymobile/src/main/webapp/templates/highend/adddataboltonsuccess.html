@@ -1,0 +1,63 @@
+<!-- Loading -->
+<article ng-show="boltonCompletionLoading">
+    <div ng-include="templates/highend/loadingpage.html">
+    </div>
+</article>
+<!-- Bolt ons failed to Add -->
+<article ng-hide="boltonCompletionLoading" class="add-bolton-container-success">
+    <div ng-show="!addBoltOnsResult.error">
+        <div class="error-container" ng-show="addBoltOnsResult.unsuccessfulAdditions.length > 0">
+            <div class="icon-data-container">
+                <div class="alert-message-grid">
+                    <div id="boltonFailedToAddMessage" class="grid-row">
+                        <o2svg id="alert-icon" tag="div" svgclass="alert-icon" nonsvgclass="alert-icon" name="'icon_alert'" fallbackext="png"></o2svg>
+                        <span class="alert-message-comment">Unfortunately the following data Bolt Ons could not be added:</span>
+                    </div>
+                </div>
+            </div>
+            <div id="boltonNotAdded_{{$index}}" class="bolton-success-container" ng-repeat="bolton in addBoltOnsResult.unsuccessfulAdditions">
+                <p class="bolton-success">
+                    {{bolton.boltOnName}} 
+                </p>
+                <p class="bolton-value">
+                    ({{bolton.monthlyFee.valueInPence | currencyFormatter}} one-off)
+                </p>
+            </div>
+        </div>
+        <!-- Bolt ons successfully added -->
+        <div ng-show="addBoltOnsResult.successfulAdditions.length > 0">
+            <p id="AddBoltOnConfirmationMessage_1" class="heading-container">
+                <span ng-hide="addBoltOnsResult.unsuccessfulAdditions.length > 0">Thanks. </span>You've successfully added:
+            </p>
+            <div id="boltonAdded_{{$index}}" ng-repeat="bolton in addBoltOnsResult.successfulAdditions" class="bolton-success-container">
+                <p>
+                    {{bolton.boltOnName}} 
+                </p>
+                <p class="bolton-value">
+                    ({{bolton.monthlyFee.valueInPence | currencyFormatter}} one-off)
+                </p>
+            </div>
+            <p id="AddBoltOnConfirmationMessage_2" class="key-note-success">
+                We've sent you a text to confirm your purchase.
+            </p>
+        </div>
+        <section class="button-blue-container">
+            <div id="closeButton" class="button-blue-success" ng-click="goToAllowancesPage()">
+                <div class="button-text">
+                    Close
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- error -->
+    <div id="addBoltonErrorMessageUponConfirmation" ng-show="addBoltOnsResult.error">
+        <div class="error-page">
+            <o2svg svgclass="embedded-svg" nonsvgclass="" name="'icon_error'" fallbackext="png"></o2svg>
+            <p class="eror-paragraph">
+                There was a problem adding Bolt Ons. Please try again later.
+            </p>
+        </div>
+    </div>
+</article>
+<hr class="blue-strip-separator" />
+</script>

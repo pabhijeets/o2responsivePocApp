@@ -1,0 +1,41 @@
+<article id="myCallingPlanPage" >
+	<div ng-switch on="status">
+		<!-- Error -->
+		<div id="errorPage" ng-switch-when="error">
+		    <div ng-include="templates/highend/errorpage.html"></div>
+		</div>
+		<!-- Loading -->
+		<div id="loadingPage" ng-switch-when="loading" class="loading-page">
+		    <div ng-include="templates/highend/loadingpage.html"></div>
+		</div>
+		<!-- Success -->
+		<div ng-switch-when="success">
+			<div ng-if="callingPlan[0].name != null" class="callingplan-page">
+				<div ng-switch on="userDetails.ismonthly">
+					<div ng-switch-when="true" class="container-padding">
+						<p id="infoMessage" class="calling-plan-title">Charges are per minute unless noted and include VAT.</p>
+					</div>
+					<div ng-switch-when="false" class="container-padding">
+						<p id="infoMessage" class="calling-plan-title">Charges are per minute unless stated.</p>
+					</div>
+					<section class="grid reverse-shading">
+					<div class="grid-row" ng-repeat="callingPlanItem in callingPlan">
+						<label class="grid-column-large">{{callingPlanItem.name}}</label>
+						<label class="grid-column-small">{{callingPlanItem.value}}</label>
+					</div>
+					</section>
+				</div>
+			</div>
+            <div ng-if="callingPlan[0].name == null" class="callingplan-page">
+                <div>
+                    <div class="container-padding">
+                        <p id="noChargesMessage" class="calling-plan-title">There are no call and text charges for this number.</p>
+                    </div>
+                </div>
+            </div>
+			<hr class="blue-strip-separator" />
+		</div>
+
+	</div>
+
+</article>

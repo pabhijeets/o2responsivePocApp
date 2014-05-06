@@ -1,0 +1,41 @@
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/lib/html5shiv.js"></script>
+<script type="text/javascript" src="js/lib/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<!--:decorum:inject:head-->
+<script type="text/javascript">
+    var ASSET_URL = "/";
+    var MYMOBILE_BASE_URL="/";
+</script>
+
+<!-- ref to below script needs to be removed once global header footer is integrated -->
+<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery.watermark.min.js"></script>
+#parse("includes/scripts/include-lib-js.vm")
+#if(${debugAllowed} == true)
+	#parse("includes/scripts/include-common-application-js.vm")
+	#parse("includes/scripts/include-highend-application-js.vm")
+	#parse("includes/scripts/include-default-application-js.vm")
+#else
+	#parse("includes/scripts/include-all-application-min-js.vm")
+#end
+#parse("/fragments/svgimages.vm")
+<link rel="stylesheet" href="css/default/style.css" type="text/css" media="all" charset="utf-8" />
+
+<!--[if gte IE 7]>
+<link rel="stylesheet" href="css/default/ie-hacks.css" type="text/css" media="all" charset="utf-8" />
+<![endif]-->
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="css/default/ie8.css" type="text/css" />
+<![endif]-->
+
+<meta http-equiv="PRAGMA" content="NO-CACHE">
+<meta http-equiv="PRAGMA" content="-1">
+<meta http-equiv="X-UAcontent="IE=edge,chrome=1"/>
+
+#if (${isPayM})
+	<script type="text/javascript">var USER_TYPE = 'paym'</script>
+#else
+	<script type="text/javascript">var USER_TYPE = 'payg'</script>
+#end

@@ -1,0 +1,52 @@
+.paperFreeBills{
+	@include setFont(FrutigerLTStd55Roman,16px);
+	.customlink {
+	svg{
+		@include PxToEm(width,15px);
+	    @include PxToEm(height,15px);
+	    @include PxToEm(vertical-align,-3px);
+	}
+	span:first-child{
+		@include PxToEm(padding-right,6px);
+		@include PxToEm(padding-left,5px);
+		}
+	}
+}
+.paperfreebilllinks{
+	@extend .grid;
+	width:520px;
+
+	>div{
+		@extend .grid-cell;
+		@include PxToEm(padding-top,27px);
+		svg{
+			@include PxToEm(width,15px);
+		    @include PxToEm(height,15px);
+		    @include PxToEm(vertical-align,-3px);
+		}
+	}
+
+	>p{
+		@extend .grid-cell;
+		@include PxToEm(padding-top,28px);
+		svg{
+			@include PxToEm(width,15px);
+		    @include PxToEm(height,15px);
+		    @include PxToEm(vertical-align,-3px);
+		}
+	}
+}
+.padding-bottom-zero{
+	@include PxToEm(padding-bottom,0px);
+}
+.set-paper-free-billing-loading {
+	.loading-container {
+		@include PxToEm(padding-top, 0px);
+		@include PxToEm(padding-bottom, 33px);
+	}
+}
+.paperFreeBills .info-icon-info-img svg{
+	@include PxToEm(width,13px);
+	@include PxToEm(height,13px);
+	vertical-align: -1px;
+}

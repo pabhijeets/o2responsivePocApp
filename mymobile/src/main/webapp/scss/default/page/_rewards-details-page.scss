@@ -1,0 +1,46 @@
+#rewards .widget-unit{
+	@include PxToEm(padding-top,12px);
+}
+.rewards-summary-container{
+	 @include PxToEm(margin-top,-22px);	
+	 .widget-bordered-grid .grid-column{
+		line-height:1.2em;
+	}
+	.grid-column-last{
+		@include PxToEm(padding-top,10px);	
+	}
+
+}
+.widget-link-container-rewards-wrapper{
+	@include PxToEm(margin-top,20px);
+	.customlink{
+		@include PxToEm(font-size,15px);
+	}
+}
+#rewardsInfoMessage{
+	@include PxToEm(padding-top,15px);
+	width:49%;
+}
+.rewards-container-bg .rewards-not-opted{
+	padding-bottom:9%;
+	background-image: url("../../img/default/no-rewards.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.rewards-summary-container .grid-column{
+	width:61%;	
+}
+.rewardsContainer .grid .grid-row .grid-column-padding{
+		border-bottom: none;
+		@extend .grid-column;
+		padding:0px;
+}
+.grid-column-padding-div{
+	@include PxToEm(margin-left,36px);
+	border-bottom: 1px solid #d8d8d8;
+	@include PxToEm(padding-bottom,7px);
+}
+.grid-column-border-top{
+	/*border-top:1px solid #d8d8d8;*/
+}

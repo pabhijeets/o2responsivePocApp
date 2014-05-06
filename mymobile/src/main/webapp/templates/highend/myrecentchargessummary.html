@@ -1,0 +1,7 @@
+<p id="totalRecentCharges" class="widget-info">
+    <span class="amount">{{recentCharges.totalCharge | currencyFormatter}}</span>
+    <span ng-hide="widget.closed" class="recentcharges-asterisk">*</span>
+    <span ng-show="recentCharges.userHasBeenBilledBefore">since your last bill</span>
+    <span ng-hide="recentCharges.userHasBeenBilledBefore">to date</span>
+</p>
+

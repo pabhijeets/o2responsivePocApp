@@ -1,0 +1,320 @@
+.key-note{
+  @extend .text-l;
+  @include PxToEm("padding-top",19.36px);
+}
+.key-note-summary{
+  @include PxToEm("margin-top",29px);
+  line-height:1.32;
+  @extend .text-xs;
+}
+.calling-plan-title{
+  @extend .text-l;
+  @include PxToEm(padding-bottom,26px);
+  @include PxToEm(padding-top,5px);
+  line-height:1.35;
+}
+   
+.current-balance-payg {
+	@extend .background-box-grey; 
+	@include PxToEm("margin-bottom",-30px);	
+}
+
+.current-balance-payg .grid-row,.current-balance-payg .widget-info{
+	 @include PxToEm("padding-left",$spacingFromEnds);
+	 @include PxToEm("padding-right",$spacingFromEnds);
+}
+.current-balance-payg .widget-info{
+	@include PxToEm("padding-bottom",$spacingFromEnds);
+	@include PxToEm("padding-top",6px);
+}
+.mobile{
+	width:100%;
+	
+}
+.grid-row .lb-info-icon-padding{
+	@include PxToEm("padding-right",15px);
+}
+	
+.info-icon{
+	@include PxToEm("margin-left",3px);
+}
+
+// fix for global header tab buttons for samsung s4
+#head{
+	.mobileNavContainer{
+	 					p {
+	 						a{
+	 						 @include setBorderRadius($value:5px);
+	 						}
+	 					}
+	 				}
+	 }
+.recentcharges-asterisk{
+	@include PxToEm("margin-right",-1px);
+	@include PxToEm("margin-left",-4px);
+	vertical-align: super;
+}
+
+.data-information-heading{
+	@include PxToEm("padding-top",3px);
+	line-height:1.25;
+}
+
+.current-balance-payg .widget-info{
+ @include PxToEm("padding-bottom",$spacingFromEnds);
+ padding-bottom: 22px;
+ }
+.changeMobileLink{
+	@include PxToEm("margin-top",-27px);
+	@include PxToEm("margin-left",20.1px);
+	@include PxToEm("margin-bottom",5px);
+	@include PxToEm("font-size",15px);
+	color:#419eda;
+	float:left;
+	img[src$='.svg'], img{
+		width: 1em;
+		height: 1em;
+		@include PxToEm("margin-right",8px);
+		vertical-align:-15%;
+	}
+}
+
+.allowanceinfomessage {
+@include PxToEm("font-size",12px);
+line-height: 1.22;
+}
+.allowance-grid-partial{
+	@include PxToEm("padding-bottom",15px);
+}
+.bolton-details-text{
+	@include PxToEm("margin-top",2px);
+}
+
+
+.changeMobileLink svg{
+		width: 1em;
+		height: 1em;
+		@include PxToEm("margin-right",4px);
+		vertical-align:-15%;
+}
+
+/* SVG images */
+
+.widget-logo-cell svg, .widget-logo-cell figure{
+	@include PxToEm("height",52px);
+	@include PxToEm("width",45px);
+}
+.allowance-grid-partial svg{
+	width:4.3em;
+	height:4.3em;
+}
+
+.alert-icon-payg-balance svg{
+	width: 1.5em;
+	height: 1.6em;
+}
+.alert-icon-intreatment svg, .alert-icon-intreatment img {
+	height:1.5em;
+	width:1.5em;
+}
+.web-chat-container svg, .web-chat-container img{
+	width: 1.3em;
+	height: 1.3em;
+	vertical-align: -20%;
+	@include PxToEm("margin-right",6px);
+	@include PxToEm("padding-bottom",1px);
+}
+.common-link > svg, .customlink > svg, .confirm-bolton-link > svg{
+	margin-right: 0.57143rem;	
+}
+.alert-message-grid .alert-icon svg{
+	width: 1.28571rem;
+	height: 1.28571rem;
+}
+.alert-icon-allowance svg{
+	padding-right: 0;
+	width: 1.3em;
+	height: 1.3em;
+	position:relative;
+	top:1px;
+}
+.data-allowances-widget .widget-details-background{
+	@include PxToEm("padding-top",15px);
+}
+.allowance-widget .widget-details-background{
+	@include PxToEm("padding-top",13px);
+	@include PxToEm("padding-bottom",10px);
+	
+}
+#addDataBoltOn .arrow svg, #upgradenowlink .arrow svg{
+	@include PxToEm("margin-right",5px);
+}
+
+.donut_big{
+    display:block;
+    overflow:hidden;
+    background-repeat: no-repeat;     
+    height: 60px;
+    width: 57px;
+}
+.donut_big_blue{
+    background-image: url("../../img/highend/donut_big_blue.png"); 
+    @extend .donut_big;   
+}
+.donut_big_orange{
+    background-image: url("../../img/highend/donut_big_orange.png");
+    @extend .donut_big;  
+}
+.donut_big_100 {
+    background-position: 0px 0px;
+}
+.donut_big_95 {
+    background-position: 0px -60px;
+}
+.donut_big_90 {
+    background-position: 0px -120px;
+}
+.donut_big_85 {
+    background-position: 0px -180px;
+}
+.donut_big_80 {
+    background-position: 0px -240px;
+}
+.donut_big_75 {
+    background-position: 0px -300px;
+}
+.donut_big_70 {
+    background-position: 0px -360px;
+}
+.donut_big_65 {
+    background-position: 0px -420px;
+}
+.donut_big_60 {
+    background-position: 0px -480px;
+}
+.donut_big_55 {
+    background-position: 0px -540px;
+}
+.donut_big_50 {
+    background-position: 0px -600px;
+}
+
+.donut_big_45 {
+    background-position: 0px -660px;
+}
+.donut_big_40 {
+    background-position: 0px -720px;
+}
+.donut_big_35 {
+    background-position: 0px -780px;
+}
+.donut_big_30 {
+    background-position: 0px -840px;
+}
+.donut_big_25 {
+    background-position: 0px -900px;
+}
+.donut_big_20 {
+    background-position: 0px -960px;
+}
+.donut_big_15 {
+    background-position: 0px -1020px;
+}
+.donut_big_10 {
+    background-position: 0px -1080px;
+}
+.donut_big_5 {
+    background-position: 0px -1140px;
+}
+.donut_big_0 {
+    background-position: 0px -1200px;
+}
+
+.donut_small{
+    display:block;
+    overflow:hidden;
+    background-repeat: no-repeat;
+    height: 45px;
+    width: 45px;
+}
+
+.donut_small_blue{
+    background-image: url("../../img/highend/donut_small_blue.png");
+     @extend .donut_small;
+    
+}
+.donut_small_orange{
+    background-image: url("../../img/highend/donut_small_orange.png");    
+     @extend .donut_small;
+}
+
+
+.donut_small_100 {
+    background-position: 0px 0px;
+}
+.donut_small_95 {
+    background-position: 0px -46px;
+}
+.donut_small_90 {
+    background-position: 0px -92px;
+}
+.donut_small_85 {
+    background-position: 0px -138px;
+}
+.donut_small_80 {
+    background-position: 0px -184px;
+}
+.donut_small_75 {
+    background-position: 0px -230px;
+}
+.donut_small_70 {
+    background-position: 0px -276px;
+}
+.donut_small_65 {
+    background-position: 0px -322px;
+}
+.donut_small_60 {
+    background-position: 0px -368px;
+}
+.donut_small_55 {
+    background-position: 0px -414px;
+}
+.donut_small_50 {
+    background-position: 0px -460px;
+}
+.donut_small_45 {
+    background-position: 0px -506px;
+}
+.donut_small_40 {
+    background-position: 0px -552px;
+}
+.donut_small_35 {
+    background-position: 0px -598px;
+}
+.donut_small_30 {
+    background-position: 0px -644px;
+}
+.donut_small_25 {
+    background-position: 0px -690px;
+}
+.donut_small_20 {
+    background-position: 0px -736px;
+}
+.donut_small_15 {
+    background-position: 0px -782px;
+}
+.donut_small_10 {
+    background-position: 0px -828px;
+}
+.donut_small_5 {
+    background-position: 0px -874px;
+}
+.donut_small_0 {
+    background-position: 0px -920px;
+}
+#o2-footer .nav .social li a{
+   line-height: 1.3em;
+}
+#myCallingPlanPage .grid-column-large {
+  width: 24%;
+}

@@ -1,0 +1,13 @@
+<script type="text/ng-template" id="templates/highend/payg/paygbalanceandallowancesummary.html">
+<section id="paygbalanceandallowancesummary">
+    <p class="widget-info" id="tariffCost">
+       <span class="amount"> {{balanceAndAllowanceSummary.accountBalance | currencyFormatter}}*</span>
+    </p>
+    <p class="widget-info widget-info-more-text" id="tariffName" ng-show="balanceAndAllowanceSummary.anniversaryDate">
+		Anniversary date {{balanceAndAllowanceSummary.anniversaryDate | dateFormatter}}
+		<a href="#/anniversarydateinfo">
+            <o2svg  tag="span" name="'cta_info'" svgclass="info-icon"></o2svg>
+		</a>
+    </p>
+</section>
+</script>

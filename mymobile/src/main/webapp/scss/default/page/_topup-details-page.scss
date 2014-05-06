@@ -1,0 +1,89 @@
+
+/*Top Up Summary*/
+.topup-table{
+	width:69.5%;
+	@include PxToEm(margin-left,30px);
+}
+.table-width{
+	width:93.1%;
+	margin:24px auto 0 auto;
+}
+.top-up-history-table{
+	@include PxToEm(margin-bottom,12px);
+}
+.topup-heading-background{
+	background-color:#dbdbdb;	
+}
+.topup-heading{
+	width:33%;
+	text-align: left;
+	@include PxToEm(padding-top,12px);
+	@include PxToEm(padding-bottom,8px);
+	@include PxToEm(padding-left,12px);
+	@include PxToEm(padding-right,12px);
+}
+.topup-heading-dark{
+	@extend .topup-heading;
+	background-color:$transparentGrey;	
+}
+.topup-detail{
+	@extend .topup-heading;
+	
+}
+.topup-detail-dark{
+	@extend .topup-heading;
+	
+}
+.widget-summary-title{
+	svg{
+		height:0.9em;
+		width:0.7em;
+		float:left;
+		@include PxToEm(margin-right,6px);
+	}
+	@include PxToEm(padding-top,14px);
+	@include PxToEm(padding-bottom,12px);
+	@include PxToEm(padding-left,10px);
+	@include PxToEm(padding-right,10px);
+	font-size: 16px;
+	background-color: $boxGreyColor;
+}
+.widget-summary-title .customlink{
+	color:$darkBlueColor;
+	font-size: 16px;
+}
+.widget-note-topup-widget-msg{
+	font-size: 16px;
+	@include PxToEm(margin-top,3px);
+	line-height:1.2em;
+}
+.message-topup{
+	@include PxToEm(margin-top,28px);
+
+}
+
+ #top-up-hostory-with-topups{  	
+	    >:nth-child(even){
+	      background-color :#f8f8f8;
+	    }
+	    >:nth-child(odd){
+	      background-color :#eeeeee;
+	   }
+}
+ #top-up-hostory-with-topups{  	
+	    >:nth-child(even)>{
+	      background-color :#f8f8f8;
+	      :nth-child(even){
+	      	    background-color :#efefef;
+	      }
+	    }
+	    >:nth-child(odd){
+	      background-color :#eeeeee;
+	       :nth-child(even){
+	      	    background-color :#e6e6e6;
+	      }
+	   }
+}
+.tariff-link{
+	@include PxToEm(margin-bottom,30px);
+}

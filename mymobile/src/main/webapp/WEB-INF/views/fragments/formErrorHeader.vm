@@ -1,0 +1,11 @@
+#if($status.errors.hasErrors())
+  ##Global error messages
+  <div id="errorMessage" class="errormsg">
+  #*
+  #foreach($e in $status.errorMessages)
+    ${e}<br />
+  #end
+  *#
+  There has been an issue with the submission of this form
+  </div>
+#end

@@ -1,0 +1,34 @@
+.info-icon{
+  @include PxToEm(margin-left,6px);
+  vertical-align: -20%;
+}
+.alert-icon{
+	@include PxToEm(padding-right,6px);
+}
+.alert-message-grid .alert-icon{
+	@include PxToEm(padding-right,0px);
+	@include PxToEm(width,18px);
+	@include PxToEm(height,18px);
+}
+.alert-icon-allowance{
+	@extend .alert-icon;
+	padding-right:0;
+	width:1.3em;
+	height:1.3em;
+}
+.alert-icon-intreatment{
+	@extend .alert-icon;
+	@include PxToEm(padding-right,5px);
+	width:1.5em;
+	height:1.5em;	
+}
+
+.alert-icon-payg-balance {
+	@extend .alert-icon;
+	width: 1.5em;
+	height: 1.6em;
+}
+.alert-icon-allowance-alignment{
+	position:relative;
+	top:2px;
+}

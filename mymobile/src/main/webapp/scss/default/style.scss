@@ -1,0 +1,62 @@
+@import "base/_fonts";
+@import "base/_palette";
+@import "base/_mixins";
+@import "base/images";
+@import "base/_variables";
+@import "base/_normalize";
+@import "base/_root";
+@import "base/_reuse";
+
+@import "module/_layout";
+@import "module/_loading";
+@import "module/_error";
+@import "module/_widget";
+@import "module/_widget-icon";
+@import "module/_inline-widget";
+@import "module/_headings";
+@import "module/_paragraphs";
+@import "module/_grid";
+@import "module/_buttons";
+@import "module/_links";
+@import "module/_icons";
+@import "module/_tooltip";
+@import "module/_separator";
+@import "module/_overlay";
+@import "module/_checkbox";
+@import "module/_dropbox";
+@import "module/watermark";
+
+//page specific classes
+@import "page/_allowance.scss";
+@import "page/_header.scss";
+@import "page/_boltons.scss";
+@import "page/_phone-details-summary.scss";
+@import "page/_recent-charges-summary.scss";
+@import "page/_allowance-details-page.scss";
+@import "page/_billing-details-page.scss";
+@import "page/_balance-and-allowance.scss";
+@import "page/_tariff-details-page";
+@import "page/_orders-summary-page.scss";
+@import "page/_paperFreeBills-page.scss";
+@import "page/_viewPaymentDetails-page.scss";
+@import "page/_billingAddressView.scss";
+@import "page/_topup-details-page.scss";
+@import "page/_rewards-details-page.scss";
+@import "page/_phone-plan.scss";
+@import "page/_additional-boltons.scss";
+@import "page/_setupNewPin.scss";
+@import "page/_offers-summary-page.scss";
+@import "page/_offers-details.scss";
+@import "page/_change-payment-details-by-credit.scss";
+
+//reskining legacy pages
+@import "page/_reskin-myorder.page.scss";
+@import "page/_reskin-myorders-detail.scss";
+@import "page/_reskin-mychoices-page.scss";
+
+@import "page/_mylatestbillsummary.scss";
+
+
+// the file base/_common.scss must be included atlast
+// It contains the general components/overrides 
+@import "base/_common";

@@ -1,0 +1,9 @@
+    <div class="mymobile-top">
+        <div ng-hide="userDetails.error">
+            <div  ng-include = "'templates/highend' + (app.isPayM === false ? '/payg' : '') + '/mymobile.html'"></div>
+        </div>
+
+        <div ng-show="userDetails.error">
+            <div ng-include = "templates/highend/errorpage.html"></div>
+        </div>
+    </div>

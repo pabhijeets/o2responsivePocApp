@@ -1,0 +1,65 @@
+.info-icon{
+  vertical-align: -22%;
+  @include PxToEm(width,14px);
+  @include PxToEm(margin-left,5px);
+}
+.new-page-link-icon{
+    @include PxToEm(margin-right,1px);
+    vertical-align: -33%;
+}
+.alert-icon-allowance{
+	@extend .alert-icon;
+	@include PxToEm(margin-top,5px);
+	@include PxToEm(margin-left,1px);
+	@include PxToEm(padding-right,0px);
+	width:1.3em;
+	height:1.3em;
+}
+.alert-icon{
+	@include PxToEm(padding-right,6px);
+}
+.payg-icon{
+	@include PxToEm(padding-left,5px);
+	position: relative;
+	top: -3px;
+}
+.alert-icon-intreatment {
+    svg{
+	@include PxToEm(width,18.2px);
+	@include PxToEm(height,18.2px);
+	vertical-align:-3px;
+    }
+}    
+.right-arrow-icon{
+	svg{
+	    @include PxToEm(width,15px);
+	    @include PxToEm(height,15px);
+	    @include PxToEm(vertical-align,-3px);
+	    @include PxToEm(margin-right,5px);
+	}
+}
+
+.cta-info-alignment svg{
+	width:1.2em;
+	height:1.2em;
+	@include PxToEm(margin-right,5px);
+}
+.info-icon-info-img svg,.tariff-details-widget .info-icon-info-img svg ,.info-icon-tarriff svg{
+	@include PxToEm(width,13px);
+	@include PxToEm(height,13px);
+}
+.info-icon-info-img.vertical-align-two svg{
+	vertical-align:2px; 	
+}
+.info-icon-info-img.vertical-align-zero svg{
+	vertical-align:0; 		
+}
+.info-icon-info-img.vertical-align-eight svg{
+	vertical-align:8px; 		
+}
+.info-icon-tarriff svg{
+	vertical-align:3px; 		
+}
+.info-icon-info-img.margin-left-five-pixle svg{
+	margin-left:5px;
+}

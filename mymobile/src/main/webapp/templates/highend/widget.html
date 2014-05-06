@@ -1,0 +1,79 @@
+
+    <section class="widget-details-background{{additionalSummary?'-additional-summary':''}}" ng-init="widget.closed = !properties[module].openByDefault">
+        <div class="widget-grid-table">
+            <!-- static portion -->
+            <div class="grid-row">
+                <!-- icon -->
+                <div ng-switch on="status" class="widget-logo-cell">
+                    <div ng-switch-when="error">
+                        <o2svg id="errorIcon" svgclass="error-span embedded-svg" nonsvgclass="" name="'icon_error'" ></o2svg>
+                    </div>
+
+                    <div ng-switch-when="loading">
+                        <span class="loading-widget-gif"></span>
+                    </div>
+
+                    <div ng-switch-when="success" ng-switch on="properties[module].iconType">
+                        <o2svg svgclass="icon-span" ng-switch-default nonsvgclass="" name="properties[module].iconUrl" ></o2svg>
+                        <figure ng-switch-when="donutchart" class="widget-logo-cell">
+                            <donutchart
+                                    lineWidth="11"
+                                    radius="15.5"
+                                    isunlimited="allowance.isUnlimited"
+                                    isabovethreshold="allowance.warningMessage"
+                                    percentage="allowance.percentageUsed">
+                            </donutchart>
+                        </figure>
+                    </div>
+
+
+                </div>
+
+                <!-- title + module-specific-text -->
+                <div ng-switch on="status" class="widget-header-panel" ng-click="showCallToAction ? ((properties[module].callToAction == 'open-close') ? (widget.closed=!widget.closed) : (location.path(properties[module].newPageRoute))) : ''">
+                    <!-- title -->
+                    <h1>{{title || properties[module].title}}</h1>
+
+                    <!-- module-specific-text -->
+                    <div ng-switch-when="success">
+                        <div ng-include="'templates/highend' +  (app.isPayM === false ? '/payg' : '') + '/' + (properties[module].summaryTemplate || (module + 'summary.html'))" class="widget-summmary"> </div>
+                    </div>
+                    <p id="errorMessage" ng-switch-when="error" class="error-message">
+                        This information is not available at the moment. Please try again later.
+                    </p>
+                    <p ng-switch-when="loading">
+                        <span class="amount">Loading</span><span> Please wait</span>
+                    </p>
+                </div>
+
+                <!-- call to action -->
+                <div id="{{module}}-widgetCallToAction" ng-show="showCallToAction" ng-switch on="properties[module].callToAction" class="widget-call-to-action" ng-click="(properties[module].callToAction == 'open-close') ? (widget.closed=!widget.closed) : (location.path(properties[module].newPageRoute))">
+                    <div
+                            id="expandCollapseToggle"
+                            class="widget-toggle-cell"
+                            ng-switch-when="open-close">
+                        <span ng-show="widget.closed"><o2svg  tag="span" id="expandCollapseTogglePlus" name="'cta_more'"></o2svg></span>
+                        <span ng-show="!widget.closed"><o2svg tag="span" id="expandCollapseToggleMinus" name="'cta_less'"></o2svg></span>
+                    </div>
+                    <div
+                            class="widget-toggle-cell"
+                            ng-switch-when="new-page">
+                        <o2svg svgclass="widget-arrow" nonsvgclass="" name="'cta_link'"></o2svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section ng-if="additionalSummary" class="widget-additional-summary widget-info">
+        <div id="additionalSummary" compile="additionalSummary"></div>
+    </section>
+
+    <!-- open-close portion -->
+    <div id="widgetDetails" ng-switch on="properties[module].callToAction" ng-hide="status == 'error'">
+        <div
+                class="collapse-{{widget.closed}} collapse-false-padding"
+                ng-switch-when="open-close">
+            <div ng-include="'templates/highend' + (app.isPayM === false ? '/payg' : '') + '/' + module + 'details.html'"></div>
+        </div>
+    </div>

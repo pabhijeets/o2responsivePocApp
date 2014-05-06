@@ -1,0 +1,81 @@
+//classes for grid
+.grid{
+	@include cssTable(100%);
+}
+.shading{
+    >:nth-child(odd){
+      background-color : $greyColor;
+    }
+     >:nth-child(even){
+      background-color :$boxGreyColor;
+    }
+}
+.reverse-shading {
+      >:nth-child(odd){
+      background-color : $boxGreyColor;
+    }
+     >:nth-child(even){
+      background-color :$greyColor;
+    }
+}
+.grid-row{
+  @include cssTableRow;  
+  .grid-column:last-of-type{
+    @include PxToEm(padding-right,$spacingFromEnds);
+  }
+}
+.grid-column{
+  @include cssTableCell(57%,top);
+  @include PxToEm("padding-top",12.00016975402832px);
+  @include PxToEm("padding-bottom",8.000020027160645px);
+  @include PxToEm("padding-left",20px);   
+  word-break:break-word;
+}
+/* grid column width  override for bigger first column */
+.grid-column-large{
+  @extend .grid-column;
+  @include cssTableCell(70%);
+  word-break: break-word;
+
+  }
+/* grid column width  override for smaller second column */
+.grid-column-small{
+  @extend .grid-column;
+  @include cssTableCell(29%);
+  @include PxToEm("padding-left",18px);  
+}  
+.grid-column-medium{
+  @extend .grid-column;
+  @include cssTableCell(51%);
+}
+.grid-cell{
+  @include cssTableCell;
+}
+.container-height{
+	@extend .container-padding-bottom;
+  @extend .container-padding;
+}
+.tariff-grid{   
+    .tariff-grid .grid-column{
+      width:50%;
+    }
+}
+.callingplan-page .grid-column-small{
+  @include PxToEm("padding-left",14px);
+}
+.callingplan-page .grid-column-large{
+  @include PxToEm("padding-left",21px);
+}
+.grid-column-first,.grid-column-second{
+  @extend .grid-column;
+  word-break:break-word;
+}
+.grid-column-first{
+ width:53%;
+}
+.grid-column-second{
+  @include PxToEm("padding-left",7px);
+}
+.tariff-grid ~.container-padding .key-note{
+    @include PxToEm("padding-top",16px);
+}

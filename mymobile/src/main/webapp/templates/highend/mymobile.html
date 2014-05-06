@@ -1,0 +1,59 @@
+    <a id="changeMobileLink" class="changeMobileLink" href="{{app.changeMobileUrl}}" class="customlink">
+        <o2svg svgclass="" nonsvgclass="" name="'cta_link'"></o2svg>Change mobile
+    </a>
+    <!-- ALLOWANCES -->
+    <div
+            id="myAllowancesSummary"
+            ng-init="allowancesView='summary';"
+            ng-controller="myAllowancesController.getSummary">
+        <div ng-include="'templates/highend/allowanceswidget.html'"></div>
+    </div>
+    <hr class="blue-strip-separator" />
+
+    <!-- RECENT CHARGES -->
+    <div
+            id="myRecentChargesSumary"
+            class="widget-container"
+            ng-init="module='myrecentcharges';showCallToAction=true;"
+            ng-controller="myRecentChargesController.getSummary">
+        <div ng-include="'templates/highend/widget.html'"></div>
+    </div>
+    <hr class="blue-strip-separator"/>
+
+    <!-- LATEST BILL -->
+   <div
+            id="myLatestBillSumary"
+            class="widget-container"
+            ng-init="module='mylatestbill';showCallToAction=true;"
+            ng-controller="myLatestBillController.getSummary">
+        <div ng-include="'templates/highend/widget.html'"></div>
+    </div>
+    <hr class="blue-strip-separator"/>
+
+    <!-- PHONE PLAN -->
+    <div
+            ng-if="userDetails.isCCA"
+            id="myPhonePlan"
+            class="widget-container"
+            ng-init="module='myphoneplan';showCallToAction=false;"
+            ng-controller="myPhonePlanController.getDetails">
+        <div ng-include="'templates/highend/widget.html'"></div>
+        <hr class="blue-strip-separator"/>
+    </div>
+
+    <!-- UPGRADE OPTIONS -->
+    <div
+            id="myUpgradeOptions"
+            class="widget-container"
+            ng-init="module='myupgradeoptions';showCallToAction=false;"
+            ng-controller="upgradeEligibilityController.getOptions">
+        <div id="UpgradeOptions" ng-if="!isMBBUser">
+            <div ng-include="'templates/highend/widget.html'"></div>
+            <hr class="blue-strip-separator"/>
+        </div>
+    </div>
+
+    <!-- WEB CHAT -->
+    <div ng-include="templates/highend/chatonline.html"></div>
+    
+                       

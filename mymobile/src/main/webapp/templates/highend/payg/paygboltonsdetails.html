@@ -1,0 +1,16 @@
+<script type="text/ng-template" id="templates/highend/payg/paygboltonsdetails.html">
+<section>
+  <section id="dataBoltOnList_{{$index}}" ng-repeat="bolton in paygBoltons.dataBoltons">
+    <div ng-include="'/mymobile/_assets/templates/highend/boltondetailtemplate.html'">
+    </div>
+  </section>
+  <section id="OtherBoltOnList_{{$index}}" ng-repeat="bolton in paygBoltons.otherBoltons">
+    <div ng-include="'/mymobile/_assets/templates/highend/boltondetailtemplate.html'">
+    </div>
+  </section>
+
+  <div class="container-padding container-padding-boltons-payg"> 
+    <p id="addBoltOnInfoMessage" class="key-note">To add any other types of Bolt Ons, please visit the <a class="inline-custom-link" id="fullSiteLink" ng-click="setFullSiteCookie()">full site</a> or <a class="inline-custom-link" target="_blank" href="http://www.o2.co.uk/mobile/contactus">contact us</a>.</p>
+  </div>
+</section>
+</script>

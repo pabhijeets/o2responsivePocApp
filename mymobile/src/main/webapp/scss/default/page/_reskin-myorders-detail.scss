@@ -1,0 +1,112 @@
+.myorders-details-reskin{
+	@include PxToEm(margin-top,48px);
+	@include PxToEm(padding-left,3px);
+	
+	.order{
+		@include PxToEm(margin-top,17px);
+	}
+	.title-margin-top{
+		@include PxToEm(margin-top,40px);
+	}
+	td a{
+		color:$lightBlueColor;
+		@include PxToEm(margin-left,20px);
+	}
+	.orders-table-width .grid{
+		min-width: 53%;
+		max-width: 53%;	
+		.grid-column{
+			width: 37.5%;			
+		}
+	}
+	.total-table{
+		@include PxToEm(margin-top,20px);
+	}
+	.orderitems{
+		width:53%;
+	}
+	table{
+		thead th, tr td{
+			@include PxToEm(padding-top,10px);
+			@include PxToEm(padding-right,10px);
+			@include PxToEm(padding-bottom,10px);
+			@include PxToEm(padding-left,11px);	
+		}
+		thead tr th{
+			background-color: #DBDBDB
+		}
+		tr.odd td,.even-background-color{
+			//background-color:$lightBoxGrey;
+			border-left:none;
+		}
+		 tr.even td{
+			//background-color:#e6e6e6;
+			border-left:none;
+		}
+	}
+	.delivery-table , .total-table{
+		width:53%;
+		 .grid-column{
+			width: 35%;
+		}
+		.data{
+			width: 86%;
+		}
+	}
+	.desc{
+		width:37.5% !important;
+	}
+	.parcels {
+		width: 51.5%;
+		@include PxToEm(margin-top,20px);
+		.parcel-grid-column{
+			width:37.5%;
+		}
+
+		.tooltip{			
+			position: inherit;
+			top:0px;
+			padding:0;
+			background:none;
+			div.info{
+				background-color:$lightBlueColor;
+				border-radius:none;
+				color:$whiteColor;
+				border-radius:0px;
+				box-shadow:none;	
+				border:none;
+			}
+			.tooltip-heading{				
+				font-size:16px;
+			}
+			.tooltip-text{
+				font-size:14px;
+				@include PxToEm(margin-top,10px);
+			}
+			img{
+				width: 1.07143rem;
+				height: 1.07143rem;
+				vertical-align: -0.14286rem;
+				cursor: pointer;
+			}
+		}
+	}
+	.links{
+			line-height:17px;
+			@include PxToEm("margin-top",10px);
+			border-top:none;
+			border-bottom:none;
+			background: none;
+			a{
+				@extend .blue-button-common, .anchor-button-blue, .button-payment:enabled;
+				a.btn span, a.btn{
+				bakground-image:none;
+				color:$whiteColor;
+				height:20px;
+				}
+			}			
+	}	
+	.order table, .parcels table{
+		border-bottom:none;
+	}	
+}

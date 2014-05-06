@@ -1,0 +1,24 @@
+<div class="container-padding">
+	<p id="add-boltons-heading" class="add-boltons-heading">Are these the Bolt Ons you'd like to add to your account?</p>
+	
+	<div id="boltonToConfirm_{{$index}}" class="bolton-container" ng-repeat="bolton in availableBoltons.boltonList | filter:{selected: true}">
+	  	<p class="confirm-title">{{bolton.name}}</p>
+	  	<p class="bolton-value"> ({{bolton.monthlyFee | currencyFormatter}} one-off)</p>
+	  </p>
+	</div>
+
+
+    <a id="chooseDifferentBoltOnLink" ng-click="goToSelectionPage()" class="confirm-bolton-link"><o2svg svgclass="arrow embedded-svg" nonsvgclass="arrow" name="'cta_link'" fallbackext="png"></o2svg>Choose different Bolt Ons</a>
+    <p id='totalCost' class="total-confirm">Total one-off cost: <span class="float-right">{{totalOneOffCost | currencyFormatter}}</span></p>
+
+	<p class="text-l">By clicking 'Add Bolt Ons', you agree to accept our
+	    <a class="inline-custom-link" target="_blank" href="$application.url('/help/postpayboltonterms-popup')">Terms & Conditions</a>.
+	</p>
+	
+	
+	<section class="button-blue-container">	
+		<div id="cancelAddBoltons" class="button-blue-width-cancel" ng-click="goToAllowancesPage()"><div class="button-text-confirm">Cancel</div></div>		
+		<div id="confirmAddBoltons" class="button-blue-confirm" ng-click="confirm()"><div class="button-text-confirm">Add Bolt Ons</div></div>
+	</section>
+</div>
+<hr class="blue-strip-separator" />

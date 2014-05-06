@@ -1,0 +1,237 @@
+
+.boltons-summary-grid-wrapper{
+	@include PxToEm(padding-bottom,30px);
+	@include PxToEm(margin-bottom,20px);
+}
+.bolton-summary-text{
+	@extend .widget-text;
+	@include PxToEm(padding-bottom,8px);
+}
+#myBoltonsSummary .widget-shaded-grid{
+	padding-top:0 !important;
+	@include PxToEm(margin-bottom,15px);
+}
+.bolton-widget{
+	@include PxToEm(padding-top,1px);
+	@include PxToEm(padding-bottom,6px);
+}
+.payg-icon-boltons{
+	position: relative;
+	top: -4px;
+	left: 12px;
+}
+#myBoltonsSummary .boltons-allowance-container-widget{
+	display:block;
+	overflow:hidden;
+	@extend .widget-link-container;	
+	@include PxToEm(margin-bottom,10px);
+	@include PxToEm(margin-top,10px);
+	svg{
+		float: left;
+		width: 1.3em;
+		height: 1.3em;
+		@include PxToEm(margin-right,10px);
+	}
+}
+
+.grid-column-boltons{
+	width:61% !important;
+	float:left;
+}
+.widget-button-container-boltons{
+	@include PxToEm(padding-top,24px);
+}
+#myBoltonsSummary .error-container{
+	@include PxToEm(padding-right,45px);
+	@include PxToEm(padding-left,30px);
+}
+
+#myAllowancesSummary #myBoltonsSummary .error-container{
+	@include PxToEm(padding-right,45px);
+	@include PxToEm(padding-left,0px);
+}
+
+#myBoltonsSummary .widget-title-grid,.widget-button-container-boltons{
+	@include PxToEm(padding-right,30px);
+	@include PxToEm(padding-left,30px);
+	width:88%;
+}
+.boltons-summary-container{
+	@include PxToEm(padding-left,30px);
+}
+.boltons-summary-grid-wrapper ,.grid-column-boltons{
+	svg{
+		width: 1.3em;
+		height: 1.3em;
+		float:left;
+		@include PxToEm(margin-right,10px);
+	}
+}
+
+.alert-message-comment-boltons-payg{
+	position: relative;
+	top: 4px;
+}
+.boltons-summary-container{
+	/*@include PxToEm(margin-top,-20px);*/
+}
+.alert-message-comment-boltons-payg-desc{
+	position: relative;
+	top: 2px;
+}
+.boltons-summary-container .grid{
+	width:94.7%;
+}
+.boltons-tarrif-link{
+	@include PxToEm(padding-bottom,29px);
+	@include PxToEm(padding-left,30px);
+	@include PxToEm(padding-top,22px);
+
+}
+.swap-data{
+		clear:both;
+		@extend .padding-bot-eighteen;
+	}
+.swap-data-text{
+    @extend .font-size-sixteen;
+    @extend .padding-bot-twenty-two;
+}
+.swap-data-page{
+	//width:60%;
+
+	select{
+			@extend .margin-left-forty;
+			background: url("../../img/default/selectbox-arrow-gradient.png") no-repeat right;
+			padding: 7px 7px 8px 7px;
+			width: 307px;
+			border: 1px solid #d8d8d8;
+			border-radius: 4px;
+			display: inline-block;
+
+	}
+	option{
+			background: none;
+		}
+}
+.progress-bar{
+	padding-top:17px;
+	width:94.6%;
+
+	.check-one-text{width:47.4%;}
+	.grid{
+		width:100%;
+		tr{
+			background-image:url(../../img/default/);
+			font-size:16px;
+		}
+
+	.connect{border: 1px solid#d8d8d8;
+		margin-top:10px;
+	}
+
+	.checkpoint{
+		padding:10px;
+		font-weight:bold;
+		width:10px;
+		text-align:center;
+	}
+	.checkpoint-one,
+	.checkpoint-two,
+	.checkpoint-three,
+	.checkpoint-one-active,
+	.checkpoint-two-active,
+	.checkpoint-three-active
+	{
+		@extend .checkpoint;
+	}
+	.checkpoint-one{
+		background:url(../../img/default/check-one.png) no-repeat center;
+	}
+	.checkpoint-one-active{
+		background:url(../../img/default/check-one-dark.png) no-repeat center;
+	}
+	.checkpoint-two{
+		background:url(../../img/default/check-two.png) no-repeat center;
+	}
+	.checkpoint-two-active{
+		background:url(../../img/default/check-two-dark.png) no-repeat center;
+	}
+	.checkpoint-three{
+		background:url(../../img/default/check-three.png) no-repeat center;
+	}
+	.checkpoint-three-active{
+		background:url(../../img/default/check-three-dark.png) no-repeat center;
+	}
+}
+}
+
+
+.swapInput{
+	@extend .hide-any;
+}
+.swapInput + label, .radio-unchecked{
+	display: inline-block;
+	width:20px;
+	height: 20px;
+	background:url(../../img/default/radio-unchecked.png) no-repeat center;
+	vertical-align: middle;
+}
+.swapInput:checked + label, .radio-checked{
+	background:url(../../img/default/radio-checked.png) no-repeat center;
+}
+
+
+.bolton-plan{
+	width:55%;
+		td{
+				padding-left:0;
+				padding-top:0;
+				padding-bottom:0;
+		}
+
+		font-size: 14px;
+	//width:100%;
+	.radio-select{
+	width:20px;
+	padding:0;
+	padding-top: 16px;
+	padding-right: 7px;
+	padding-bottom: 15px;
+	}
+
+	.bolton-plan-text{
+		padding-top: 20px;
+		padding-left: 0;
+		padding-bottom: 20px;
+		width:104px;
+	}
+	.bolton-plan-text-width{
+		//width:460px;
+
+		width:auto;
+	}
+	tr:last-child {
+		.bolton-plan-text{border-bottom:0 none;}
+	}
+}
+
+.error-message-margin-left{
+	@include PxToEm(margin-left,29px);
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+     /* to only effect on safari, you can add this */
+    ::i-block-chrome,#myBoltonsSummary .widget-title-grid {
+     width:100%;
+    }
+    ::i-block-chrome,#myBoltonsSummary .widget-title-grid .payg-icon-boltons{
+    	left:5px;
+    }
+}
+
+#swapInformation {
+	p:last-child{
+
+		padding-bottom:0;
+	}
+
+}

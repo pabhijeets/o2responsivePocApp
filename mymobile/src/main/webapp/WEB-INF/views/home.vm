@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=8">
+            <meta charset="utf-8"  />
+            <meta content="width=320; user-scalable = no; initial-scale=1.0; maximum-scale=1" name="viewport" />
+            <link rel="apple-touch-icon" href="img/mobile/iphoneo2icon_57x57.png" />
+            <title>O2 | My Mobile</title>
+            <link href="css/mobile/template-fixed.css?ts=63542" type="text/css" rel="stylesheet" />
+            <script type="text/javascript" src="js/lib/jquery-1.7.min.js"></script>
+            <script src="js/coremetrics/eluminate.js" type="text/javascript"></script>
+            <script src="js/coremetrics/cmdatatagutils.js" type="text/javascript"></script>
+            <!--:decorum:inject:head-->
+</head>
+<body>
+    <div class="mobile">
+        <div id="head">
+            <div class="logoRow">
+                <a href="http://www.o2.co.uk/" title="Return to the O2 home page" id="logo-m">
+                    <img src="img/mobile/wrapper/o2logo-m.gif" width="31" height="30" alt="O2" />
+                    <span class="O2">O2</span>
+                </a>
+                <div class="clear"> </div>
+            </div>
+            <!-- end logoRow -->
+            <div class="mobileNavContainer">
+                <p>
+                    <a href="http://m.o2.co.uk/shop" class="shopLink">Shop</a>
+                    <a href="http://m.o2.co.uk/myo2" class="myO2Link">My O2</a>
+                    <a href="http://m.o2.co.uk/support" class="supportLink">Support</a>
+                </p>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+            <!-- end mobileNavContainer -->
+        </div>
+        <div class="white">
+            #parse("fragments/head.highend.vm")
+            <img style="display:none;" src="img/highend/loadinganim_1080_with_text.gif"/>
+            <img style="display:none;" src="img/highend/loadinganim_1080.gif"/>
+            #parse("fragments/jsdisabledwarning.highend.vm")
+            <!-- Page Heading and Mobile Number -->
+            <div id="angularTest" ng-controller="userDetailsController.getUserDetails">
+            </div>
+            <div class="wrapper-container"  ng-app="myo2" id="myo2app" ng-init=
+                "app.pageLoading=true;"
+                ng-controller="rootController">
+                <div id="angularTest2" ng-controller="userDetailsController.getUserDetails">
+                </div>
+                <div id="main-container" >
+                    <div class="mymobile-top" ng-controller="navigationController" ng-cloak>
+                        <header id="pageHeader" class="widget-header">
+                            <h1>
+                                <span ng-bind="getHeading()"></span>
+                            </h1>
+                        </header>
+                        <div class="change-mobile" style="display:block;overflow:hidden;">
+                            <div class="subscriber-number">
+                                <p>{{userDetails.mobileNumber}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="home">
+                        #parse("/fragments/svgimages.vm")
+                        <div class="loading-container" ng-show="app.pageLoading">
+                            <img style="width:203px; height: 39px; margin: auto; overflow: hidden;" src="img/highend/loadinganim_1080_with_text.gif"/>
+                        </div>
+                        <div ng-controller="userDetailsController.getUserDetails" id="bodyContent">
+							<div ng-view></div>
+                        </div>
+                        <div ng-cloak>
+                            #parse("fragments/bottomnav.highend.vm")
+                        </div>
+                    </div>
+##					
+##					<div id="allowances" >
+##						##set($navstate = ["allowance"])
+##                        #parse("navsecondary.vm")
+##                        #parse("fragments/head.highend.vm")
+##                        ##parse("includes/scripts/include-angular-default-templates.vm")
+##                        <!-- ALLOWANCES DETAILS -->
+##                        <div
+##                            id="allowancedetails"
+##                            ng-init="allowancesView='detail';"
+##                            ng-controller="myAllowancesController.getSummary"
+##                            ng-hide="userDetails.error"
+##                            class="widget-group allowancedetails-widget">
+##                            <div ng-include="'templates/highend/allowanceswidget.html'"></div>
+##                        </div>
+##                    </div>
+                </div>
+                <div id="main-container-error" style="display: none;">
+                    <div class="mymobile-top wrapper-disabled">
+                        <div class="mymobile-top">
+                            <header id="pageHeader" class="widget-header">
+                                <h1>
+                                    <span>My O2</span>
+                                </h1>
+                            </header>
+                            <div id="subscribe" class="subscriber-number">
+                                <p id="mobileNumberValue" class="data">
+                                    $mobilePhoneNumber
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="js-disabled-wrapper">
+                        #if (${isPayM})
+                            <p>Unfortunately we can't display My O2 on your mobile.</p>
+                                <p style="margin-top: 20px;">Want to check how much allowance you have left?</p>
+                                <p style="margin-top: 20px;">Text the word 'Balance' to 21202</p>
+#end
+#if (!${isPayM})
+    <p>Unfortunately we can't display My O2 on your mobile.</p>
+        <p style="margin-top: 20px;">Want to check how much allowance you have left?</p>
+        <p style="margin-top: 20px;">Text the word 'Balance' to 20202</p>
+                        #end
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div id="foot">
+            <ul id="footer-menu">
+                <li>
+                    <a href="http://m.o2.co.uk/storelocator" target="_blank">Store Locator</a>
+                </li>
+                <li>
+                    <a href="http://m.o2.co.uk/support/contactus" target="_blank">Contact Us</a>
+                </li>
+                ## <li>
+                    <a href="http://m.o2.co.uk/upgrade/static/pages/browsing/mobile/faq.html" target="_blank">Frequently Asked Questions</a>
+                </li>
+                <li>
+                    <a href="http://m.o2.co.uk/support" target="_blank">Help &amp; Support</a>
+                </li>
+            </ul>
+            <ul id="footerLinks">
+                <li>
+                    <a href="http://m.o2.co.uk/o2privacy" target="_blank" title="Privacy">Privacy</a>
+                </li>
+                <li>
+                    <a href="http://m.o2.co.uk/o2tsandcs" target="_blank" title="T&amp;Cs">T&amp;Cs</a>
+                </li>
+                <li class="last">
+                    <a href="http://mobi.o2.co.uk/pl/svt/si/mo2couk/po/o2uk/pa/cookiepolicyhome" target="_blank" title="Cookie Policy">Cookie Policy</a>
+                </li>
+            </ul>
+            <p id="branding">
+                <a href="http://www.telefonica.com/" target="_blank">
+                    <img src="img/mobile/wrapper/telefonica.jpg" width="70" height="20" alt="Telefonica" />
+                </a>
+                &copy; $date.year Telef&oacute;nica UK Limited</p>
+        </div>
+    </div>
+    <!-- EXPORTED TAGS --> 
+    <!------- Tags for First Party oneTag-------> 
+    <!-- One Tag Conditional Container: O2 UK First Party Adserved (2746) | First Party oneTag (1752) -->
+    <script type="text/javascript">
+        var ft_onetag_1752 = {
+        ft_vars:{
+        "ftXRef":"",
+        "ftXValue":"",
+        "ftXType":"",
+        "ftXName":"",
+        "ftXNumItems":"",
+        "ftXCurrency":"",
+        "U1":"",
+        "U2":"",
+        "U3":"",
+        "U4":"",
+        "U5":"",
+        "U6":"",
+        "U7":"",
+        "U8":"",
+        "U9":"",
+        "U10":"",
+        "U11":"",
+        "U12":"",
+        "U13":"",
+        "U14":"",
+        "U15":"",
+        "U16":"",
+        "U17":"",
+        "U18":"",
+        "U19":"",
+        "U20":"",
+        "U21":"",
+        "U22":"",
+        "U23":"",
+        "U24":"",
+        "U25":"",
+        "U26":"",
+        "U27":"",
+        "U28":"",
+        "U29":"",
+        "U30":""
+        },
+        ot_dom:document.location.protocol+'//servedby.o2.co.uk',
+        ot_path:'/container/2746;14241;1752;iframe/?',
+        ot_href:'ft_referrer='+escape(document.location.href),
+        ot_rand:Math.random()*1000000,
+        ot_ref:document.referrer,
+        ot_init:function(){
+        var o=this,qs='',count=0,ns='';
+        for(var key in o.ft_vars){
+        qs+=(o.ft_vars[key]==''?'':key+'='+o.ft_vars[key]+'&');
+        }
+        count=o.ot_path.length+qs.length+o.ot_href+escape(o.ot_ref).length;
+        ns=o.ot_ns(count-2000);
+        document.write('<iframe style="position:absolute; visibility:hidden; width:1px; height:1px;" src="'+o.ot_dom+o.ot_path+qs+o.ot_href+'&ns='+ns+'&cb='+o.ot_rand+'"></iframe>
+        ');
+        },
+        ot_ns:function(diff){
+        if(diff>0){
+        var o=this,qo={},
+        sp=/(?:^|&)([^&=]*)=?([^&]*)/g,
+        fp=/^(http[s]?):\/\/?([^:\/\s]+)\/([\w\.]+[^#?\s]+)(.*)?/.exec(o.ot_ref),
+        ro={h:fp[2],p:fp[3],qs:fp[4].replace(sp,function(p1,p2,p3){if(p2)qo[p2]=[p3]})};
+        return escape(ro.h+ro.p.substring(0,10)+(qo.q?'?q='+unescape(qo.q):'?p='+unescape(qo.p)));
+        }else{
+        var o=this;
+        return escape(unescape(o.ot_ref));
+        }
+        }
+        }
+        ft_onetag_1752.ot_init();
+    </script>
+</body>
+</html>

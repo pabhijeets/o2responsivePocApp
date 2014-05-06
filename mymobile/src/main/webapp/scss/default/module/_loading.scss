@@ -1,0 +1,28 @@
+.loading-container{
+	@include PxToEm(padding-top,13px);
+	@include PxToEm(margin-bottom,-2px);
+}
+.loading-msg-container{
+	@extend .text-align-center;	
+	@extend .grid-cell;
+}
+.loading-icon{
+    height: 39px;
+   width: 194px;
+   padding-top: 3px;
+}
+.widget-logo-cell .allowance-loading-icon{
+	@include PxToEm(width,38px);
+	@include PxToEm(padding-left,10px);
+}
+.allowance-loading-container{
+	@include PxToEm(padding-top,12px);
+	@include PxToEm(padding-padding,5px);
+}
+.allowance-loading-text{
+	@include PxToEm(font-size,20px);
+}
+.allowance-loading-subtext{
+	@include PxToEm(font-size,12px);
+	@include PxToEm(padding-left,4px);
+}

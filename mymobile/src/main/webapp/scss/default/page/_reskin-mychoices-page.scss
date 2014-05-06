@@ -1,0 +1,113 @@
+.mychoices-reskin {
+	@include PxToEm(margin-top,50px);
+
+	.col2{
+		@include PxToEm(max-width,765px);
+		fieldset {
+			margin: 0;
+			border: none;
+		}
+	}
+
+	.paragraph-title-medium{
+		@include PxToEm(margin-bottom,20px);
+	}
+
+	.section-header {
+		p{
+			@include PxToEm(max-width,650px);
+			@include PxToEm(margin-bottom,25px);
+		}
+		@include PxToEm(margin-bottom,20px);
+	}
+
+	.accordion-container {
+
+		.accordion-open {
+			background: $whiteColor;
+			overflow: hidden;
+			@include PxToEm(padding-top,25px);
+			@include PxToEm(padding-left,30px);
+			@include PxToEm(padding-right,30px);
+			@include PxToEm(padding-bottom,15px);
+			@include PxToEm(margin-bottom, 30px);
+
+			input {
+				@include PxToEm(width,17px);
+				@include PxToEm(height,17px);
+				float: left;
+			}
+
+			label {
+				position: relative;
+				overflow: hidden;
+				display: block;
+				@include PxToEm(padding-left,8px);
+				@include PxToEm(padding-top,2px);
+				p {
+					margin:0;
+				}
+			}
+
+			li {
+				margin-top: 0;
+				@include PxToEm(margin-bottom,10px);
+			}
+
+			.accordion-open-inner {
+				@include PxToEm(max-width,620px);
+			}
+
+			ul.infooptions {
+				li {
+					padding: 0;
+					@include PxToEm(margin-bottom,10px);
+					ul {
+						@include PxToEm(margin-left,48px);
+						@include PxToEm(margin-top,12px);
+						li {
+							@include PxToEm(margin-bottom,15px);
+							margin-top: 0;
+						}
+					}
+				}
+			}
+
+			.third-party { 
+				@include PxToEm(margin-top,20px);
+				p {
+					&:first-child {  
+						@include PxToEm(margin-bottom,18px);
+					} 
+				}
+			}
+
+			.fieldset-header {
+				@include PxToEm(margin-bottom,10px);
+			}
+		}
+	}
+
+	.links { 
+
+		a.btn {
+			@extend .allowance-widget-link;
+		}
+
+		border: none;
+		.submitChoices {
+			@extend .button-payment:enabled;
+			height: auto;
+		}
+	}
+
+	#detailsUpToDateMessage {
+		@include PxToEm(margin-bottom,25px);
+	}
+
+	.common-shadow-seprator {
+		@include PxToEm(height, 10px);
+		@include PxToEm(margin-bottom, 20px);
+		background-size: 100%;
+	}
+}

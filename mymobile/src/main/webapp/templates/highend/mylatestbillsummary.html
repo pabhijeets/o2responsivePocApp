@@ -1,0 +1,10 @@
+<section ng-show="myLatestBillDetail.paymentDueDate != null">
+  <p id="latestBillAmount" class="amount">{{myLatestBillDetail.billAmount | currencyFormatter}}</p>
+  <p id="nextBillDateLabel" class="widget-info">
+    <span class="widget-info-more-text" ng-bind-html="myLatestBillDetail.nextBillMessage"></span>
+  </p>
+</section>
+
+<section id="noBillMessage" ng-if="myLatestBillDetail.paymentDueDate == null">
+  <p ng-bind-html="myLatestBillDetail.noBillMessage" class="widget-info widget-info-padding-right"></p>
+</section>

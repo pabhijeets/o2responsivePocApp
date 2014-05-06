@@ -1,0 +1,32 @@
+
+    <section id="latestBillDetails" class="latestbilldetails-grid">
+    <div id="inTreatmentBillDetailMessage" class="intreatment-details-message" ng-if="myLatestBillDetail.inTreatment">
+        <p class="widget-info intreatment-message-text" ng-bind-html="myLatestBillDetail.inTreatmentBillMessage.detail"></p>
+    </div>
+    <section class="grid shading">
+        <div class="grid-row">
+            <label class="grid-column">You were billed on</label>
+            <label class="grid-column"> <time>{{myLatestBillDetail.billDate | dateFormatter}}</time></label>
+        </div>
+        <div class="grid-row">
+            <label class="grid-column">Payment due on</label>
+            <label class="grid-column"> <time>{{myLatestBillDetail.paymentDueDate | dateFormatter}}</time> </label>
+        </div>
+        <div class="grid-row">
+            <label class="grid-column">Balance</label>
+            <label class="grid-column lb-info-icon-padding"><span class="currency">{{myLatestBillDetail.currentBalance | currencyFormatter}}</span>
+            <a id="balanceInfoIcon" href="#/balanceInformation">
+                <o2svg  tag="span" name="'cta_info'" svgclass="info-icon" ></o2svg>
+            </a>
+            </label>
+        </div>
+    </section>
+    <section id="caaBillDetailsMessage" class="cca-bill-details-message" ng-if="userDetails.isCCA">
+        <p class="widget-info">
+            This is your airtime bill only. You also have a separate monthly payment for your Phone Plan (Credit Agreement).
+        </p>
+    </section>
+</section>
+<section class="button-blue-container-anchor">
+	<a id="makeAPayment" href="tel:{{userDetails.isCCA?'08448471424':'202'}}" class="anchor-button-blue">Make a payment</a>
+</section>

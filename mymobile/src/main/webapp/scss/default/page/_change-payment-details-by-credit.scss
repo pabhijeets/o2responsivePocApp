@@ -1,0 +1,78 @@
+.changePaymentDetailsFirstRow{
+	@include PxToEm(margin-top,16px);
+	@include PxToEm(margin-bottom,6px);
+}
+.changePaymentDetailsRow{
+	@include PxToEm(margin-top,21px);
+}
+
+.inline-block{
+	display:inline-block;
+}
+.minwidth200{
+	min-width: 215px;
+}
+.changePaymentDetailsCredit .widget-note-line-height{
+	width:auto;
+}
+.padding-bottom-zero .widget-heading-cell{
+	padding-bottom: 0;
+}
+.changePaymentDetailsCredit .errorRed{
+	@include PxToEm(margin-top,8px);	
+}
+#changecreditcardpaymentdetailsform {
+	.error-container{	
+	margin-top:35px;}
+	.loading-container {
+	margin-top:34px;
+	}
+}
+.custom-select{
+	height:36px;
+}
+.custom-input{
+	height:20px;	
+	@include PxToEm(padding-left,8px);
+	@include PxToEm(padding-top,8px);
+	@include PxToEm(padding-bottom,8px);
+	@include PxToEm(margin-top,5px);
+	border:1px solid #d2d2d2;
+}
+.font-14{
+	font-size: 14px;
+}
+.changePaymentDetailsContainer{
+	@include PxToEm(margin-bottom,24px);
+}
+.changePaymentDetailsCredit{
+    .common-shadow-seprator{
+    	padding-bottom: 13px;
+    }
+
+    
+ }
+.margin-top-12{
+	@include PxToEm(margin-top,12px);
+}
+
+.changecreditcardpaymentdetails .error-container{
+	@include PxToEm(margin-top,32px);
+	@extend .min-height-three-eight-five;
+} /*
+.changecreditcardpaymentdetails .error-logo-container, .changecreditcardpaymentdetails .error-msg-container{
+	display:block;
+	margin-left: 0;
+	margin-right: 0;
+	float: left;
+	clear: none;
+} 
+.changecreditcardpaymentdetails .error-logo-container{
+	width: 43px;	
+}
+.changecreditcardpaymentdetails .error-msg-container{
+	margin-top: 20px;
+}*/
+.changecreditcardpaymentdetails .margin-top-fortyseven{
+	@include PxToEm("margin-top",47px);	
+}

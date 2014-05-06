@@ -1,0 +1,24 @@
+//This file has all the classes related to CSS tranitions
+.collapse{
+  overflow: hidden;
+  @include css-browser-prefix(transition, 500ms ease);
+}
+.collapse-true {
+  max-height:0;
+  @extend .collapse;
+}
+.collapse-false{
+  max-height:50em;
+  @extend .collapse;
+}
+.collapse-false-padding{
+    >:last-child{
+    @include PxToEm("margin-bottom",30px);
+  }
+}
+/*class specific to bolton details to accomodate very large max-height*/
+.myBoltons {
+  .collapse-false{
+   max-height:300em;
+  }
+}

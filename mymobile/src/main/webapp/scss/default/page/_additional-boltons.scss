@@ -1,0 +1,188 @@
+#additionBoltonsSection .widget-shaded-grid{
+	padding-top:0;	
+}
+.payg-additional-boltons{
+	width:94.6%;
+}
+
+.additional-boltons-container-paym .your-additional-boltons{
+	/*width:885px;*/
+	/*width:100%;*/
+	padding:0;
+	max-width: 885px;
+	width:100%;
+	}
+.your-additional-boltons{
+	thead tr td{padding:10px 10px 10px 11px;font-weight:bold;}
+	thead tr td:nth-child(even){background:#D2D2D2;}
+	thead tr {background-color:#DBDBDB;}
+	
+	tbody .category-caption td{padding:12px 10px 10px 12px;}
+	tbody .category-details td{padding:9px 10px 13px 12px;vertical-align: baseline;}
+	tbody .category-details td:nth-child(1){padding:0px;}
+	tbody tr td:nth-child(2){padding-left:0px;}
+
+	.first-col{	width:278px;}
+	.second-col{width:137px;}
+	.third-col{width:150px;}
+	.fourth-col{width:220px;}
+
+	.escape-col{width:4.8%;}
+/*Space padding for the sperator colum*/
+
+	tbody:nth-child(odd) { background: #f5f5f5;
+		.category-caption td:nth-child(odd){background-color:#f8f8f8;}
+		.category-caption td:nth-child(even){background-color:#eeeeee;}
+		.category-details td:nth-child(odd){background-color:#eeeeee;}
+		.category-details td:nth-child(even){background-color:#f8f8f8;}
+		.category-details td:first-child{background-color:#f8f8f8;border-bottom:0;}
+		.category-details td{border-bottom:1px solid #d8d8d8;}
+		.category-details:last-child td{border-bottom:0px solid;}
+		}
+
+	tbody:nth-child(even) { background: #e5e5e5;
+		.category-caption td:nth-child(odd){background-color:#efefef;}
+		.category-caption td:nth-child(even){background-color:#e6e6e6;}
+		.category-details td:nth-child(odd){background-color:#e6e6e6;}
+		.category-details td:nth-child(even){background-color:#efefef;}
+		.category-details td:first-child{background-color:#efefef;border-bottom:0;}
+		.category-details td{border-bottom:1px solid #d8d8d8;}
+		.category-details:last-child td{border-bottom:0px solid;}
+		}
+}
+
+
+.your-additional-boltons {
+	.payg-first-col{
+		width: 28.5%;
+	}
+	.payg-second-col{
+		width: 142px;
+	}
+	.payg-three-col{
+		width: 160px;
+	}
+	.payg-four-col{
+		width:140px;
+	}
+	.payg-five-col{
+		width:265px;
+	}
+}
+.your-additional-boltons-container{
+	
+	@extend  .padding-top-thirty;
+	.manage-link{padding-top:16px;}
+	.arrow{margin-right:1px;}
+}
+.additional-boltons-container{
+	.heading{		
+   		display: table-row;
+   		.heading-cloumn{
+   			//@extend .widget-summary-title;
+   			//@extend .topup-detail;
+   			display: table-cell; 
+   			width:20%;
+	 		@include PxToEm(padding-left,14px);
+	 		@include PxToEm(padding-top,12px);
+	 		@include PxToEm(padding-bottom,10px);
+	 		@include PxToEm(padding-right,10px);
+	 		vertical-align:middle;
+	 		font-weight:bold;
+
+   		}
+   			>:nth-child(even){
+	      		background:#d2d2d2;
+	      	}
+
+   		background:#DBDBDB;
+	}
+}
+.category-table{
+	.category-column, .details-column{
+		display: table-cell; 
+		width:20%;	
+	 	@include PxToEm(padding-right,15px);
+	 	@include PxToEm(padding-left,15px);	 
+	 		
+	}
+
+}
+
+.details-row .details-column{
+	@include PxToEm(padding-top,21px);
+	@include PxToEm(padding-bottom,9px);
+}
+
+.category-table-container{
+	.details-row,.details-row{
+		 .bg-color-none{
+			background:none;
+		}
+	}
+}
+
+.category-table-container .category-row .category-column span, .category-table-container .details-row .details-column span{
+	background:rgba(0,0,0,0);
+}
+.category-table .category-column{
+	@include PxToEm(padding-top,12px);
+}
+.cta-info-alignment-boltons{
+	@extend .cta-info-alignment;
+	svg{
+	width:1em;
+	height:1em;
+  }
+ }
+  .cta-info-alignment-alert svg{
+  	@extend .cta-info-alignment;  	
+  	width:1.2em;
+  	height:1.2em; 
+}
+.cta-info-alignment-alert-table svg{
+	margin-top:-3px;
+}
+.additional-boltons-message{
+	@include PxToEm(margin-top,30px);
+	a{
+		color:$lightBlueColor;
+	}
+}
+.cta-info-alignment-float svg{
+	float:left;
+}
+.customlink span{
+	@include PxToEm(font-size,15px);
+}
+.additional-bolton-message{
+	@include PxToEm(margin-top,14px);
+	@include PxToEm(margin-bottom,19px);
+}
+.additional-bolton-static-message{
+	@extend .padding-top-thirty;
+}
+.manage-bolton-link{
+	@include PxToEm(margin-bottom,31px);
+} 
+.additional-bolton-action{
+    @include PxToEm(margin-top,17px);
+    @include PxToEm(margin-left,15px);
+}
+.additional-boltons-link{
+	@include PxToEm(margin-top,14px);
+}
+#additionBoltonsSection .widget-heading-cell{
+	@include PxToEm(padding-top,8px);
+}
+.margin-left-zero{
+	margin-left:0;	
+}
+
+.tariff-details-widget .info-icon-info-img svg , .additional-boltons-widget .info-icon-info-img svg , .info-icon-info-img svg {
+	@include PxToEm(width,13px);
+	@include PxToEm(height,13px);
+}
+.tariff-details-widget .info-icon-info-img.vertical-align-zero svg{
+	vertical-align:0; 		
+}

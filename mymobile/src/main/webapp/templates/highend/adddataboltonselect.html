@@ -1,0 +1,60 @@
+    <!-- Loading -->
+    <article ng-show="loading != 2">
+        <div ng-include="templates/highend/loadingpage.html"></div>
+    </article>
+
+    <article ng-show="loading == 2">
+        <section>
+            <div id="addBoltOnDataAllowanceSection"
+                 ng-show = "allowance && allowance.isValid && !allowance.error && !availableBoltons.error"
+                 ng-init = "viewType = 'addDataBoltOns';allowanceType = 'data';hasAllowances = true;"
+                 ng-controller = "widgetController.doNothing"
+                 class="background-box-grey">
+                <div ng-include="templates/highend/allowancedetailspartial.html"></div>
+            </div>
+
+            <div id="boltonList" class="container-padding" ng-show="availableBoltons.boltonList.length > 0">
+                <p class="top-heading-margin-less">Add extra UK data for browsing, emailing and downloading.</p>
+                <!--Please update check box id and label id with ng-repeat index-->
+                <div class="checkbox-list">
+                    <div id="boltonToAdd_{{$index}}" ng-repeat="bolton in availableBoltons.boltonList" class="checkbox-list-row ">
+                        <input type="checkbox" class="hidden-checkbox" id="{{$index}}" ng-change="boltonSelected(bolton)" ng-model="bolton.selected"/>
+                        <label class="checkbox-label" for="{{$index}}">
+                            <span class="custom-checkbox"></span>
+                            <span class="text-m">{{bolton.name}}</span>
+                            <p id="boltOnDescription_1" class="bolton-description bolton-description-font">({{bolton.monthlyFee | currencyFormatter}} one-off)</p>
+                            <p id="boltOnDescription_2" class="bolton-description">{{bolton.description}}</p>
+                        </label>
+                    </div>
+                </div>
+
+                <p id="totalCost" class="total-heading" ng-class="{textDisabled: selectedBoltOns.length == 0}">Total one-off cost: <span class="float-right">{{totalOneOffCost | currencyFormatter}}</span>
+                </p>
+                <section class="button-blue-container">
+                    <input id="addBoltonButton" type="button" ng-disabled="selectedBoltOns.length == 0" ng-click="add(availableBoltons)" class="button-disabled-{{selectedBoltOns.length == 0}}" value="Continue"/>
+                </section>
+            </div>
+
+
+            <div id="noAvailableDataBoltonsMessage" class="error-boltons-container" ng-show="availableBoltons.boltonList.length == 0 && !availableBoltons.error">
+            <span>
+            <p>There are no available data Bolt Ons for your tariff.</p>
+            <p>If you'd like to upgrade to one of our newer tariffs go to
+                <a class="inline-custom-link" target="_blank" href="https://www.o2.co.uk/upgrade/signIn/">O2 upgrade</a>.</p></span>
+                <section class="button-blue-container">
+                    <div id="closeButton" class="button-blue-success" ng-click="goToAllowancesPage()">
+                        <div class="button-text">Cancel</div>
+                    </div>
+                </section>
+
+            </div>
+
+        </section>
+        <hr ng-hide="availableBoltons.error" class="blue-strip-separator" />
+        <!-- One-off boltons Error -->
+        <div id="addBoltonsErrorMessage" ng-show="availableBoltons.error">
+            <div ng-include="templates/highend/errorpage.html"></div>
+        </div>
+
+
+    </article>

@@ -1,0 +1,30 @@
+.my-loading-container {
+  padding-top: 0.92857em;
+  padding-top: 0.92857rem;
+  margin-bottom: -0.14286em;
+  margin-bottom: -0.14286rem; 
+  margin-top: 34px;
+}
+
+.my-loading-grid { 
+  display : table;
+  width: 100%;
+  margin:0;
+}
+
+.my-loading-grid-row {
+  display : table-row;
+  height: 200px;
+}
+
+.my-loading-msg-container {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.my-loading-icon {
+  height: 39px;
+  width: 194px;
+  padding-top: 3px;
+}

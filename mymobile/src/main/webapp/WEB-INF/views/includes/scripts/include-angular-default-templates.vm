@@ -1,0 +1,248 @@
+
+<script type="text/ng-template" id="/templates/default/loading.html">
+#parse("templates/default/loading.html")
+</script>
+
+<!--[if lt IE 9]>
+<script>
+document.createElement('header');
+document.createElement('nav');
+document.createElement('section');
+document.createElement('article');
+document.createElement('aside');
+document.createElement('footer');
+document.createElement('hgroup');
+</script>
+<![endif]-->
+
+<script type="text/ng-template" id="/templates/default/common/myorderssummary.html">
+#parse("templates/default/common/myorderssummary.html")
+</script>
+<script type="text/ng-template" id="/templates/default/common/offers.html">
+#parse("templates/default/common/offers.html")
+</script>
+<script type="text/ng-template" id="/templates/default/common/offersdetails.html">
+#parse("templates/default/common/offersdetails.html")
+</script>
+<script type="text/ng-template" id="/templates/default/common/offerssummary.html">
+#parse("templates/default/common/offerssummary.html")
+</script>
+<script type="text/ng-template" id="/templates/default/common/overlay.html">
+#parse("templates/default/common/overlay.html")
+</script>
+<script type="text/ng-template" id="/templates/default/common/overlays/offeracceptanceoverlay.html">
+#parse("templates/default/common/overlays/offeracceptanceoverlay.html")
+</script>
+<script type="text/ng-template" id="/templates/default/common/phonedetailssummary.html">
+#parse("templates/default/common/phonedetailssummary.html")
+</script>
+<script type="text/ng-template" id="/templates/default/error.html">
+#parse("templates/default/error.html")
+</script>
+<script type="text/ng-template" id="/templates/default/payg/additionalboltonsdetails.html">
+#parse("templates/default/payg/additionalboltonsdetails.html")
+</script>
+<script type="text/ng-template" id="/templates/default/payg/additionalboltonsdetailtemplate.html">
+#parse("templates/default/payg/additionalboltonsdetailtemplate.html")
+</script>
+<script type="text/ng-template" id="/templates/default/payg/balanceandallowancesummary.html">
+#parse("templates/default/payg/balanceandallowancesummary.html")
+</script>
+<script type="text/ng-template" id="/templates/default/payg/boltonssummary.html">
+#parse("templates/default/payg/boltonssummary.html")
+</script>
+<script type="text/ng-template" id="/templates/default/payg/boltonsummarygrid.html">
+#parse("templates/default/payg/boltonsummarygrid.html")
+</script>
+<script type="text/ng-template" id="/templates/default/payg/inline-widget.html">
+#parse("templates/default/payg/inline-widget.html")
+</script>
+<script type="text/ng-template" id="/templates/default/payg/mymobile.html">
+#parse("templates/default/payg/mymobile.html")
+</script>
+<script type="text/ng-template" id="/templates/default/payg/overlays/aniversarydateinfooverlay.html">
+#parse("templates/default/payg/overlays/aniversarydateinfooverlay.html")
+</script>
+<script type="text/ng-template" id="/templates/default/payg/overlays/callingplanoverlay.html">
+#parse("templates/default/payg/overlays/callingplanoverlay.html")
+</script>
+<script type="text/ng-template" id="/templates/default/payg/paygtariffsummary.html">
+#parse("templates/default/payg/paygtariffsummary.html")
+</script>
+<script type="text/ng-template" id="/templates/default/payg/rewards-widget.html">
+#parse("templates/default/payg/rewards-widget.html")
+</script>
+<script type="text/ng-template" id="/templates/default/payg/rewardssummary.html">
+#parse("templates/default/payg/rewardssummary.html")
+</script>
+<script type="text/ng-template" id="/templates/default/payg/tariffandboltons.html">
+#parse("templates/default/payg/tariffandboltons.html")
+</script>
+<script type="text/ng-template" id="/templates/default/payg/tariffdetails.html">
+#parse("templates/default/payg/tariffdetails.html")
+</script>
+<script type="text/ng-template" id="/templates/default/payg/topuphistory.html">
+#parse("templates/default/payg/topuphistory.html")
+</script>
+<script type="text/ng-template" id="/templates/default/payg/mymobile.html">
+#parse("templates/default/payg/mymobile.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/additionalboltonsdetails.html">
+#parse("templates/default/paym/additionalboltonsdetails.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/additionalboltonsdetailtemplate.html">
+#parse("templates/default/paym/additionalboltonsdetailtemplate.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/allowancedetailspartial.html">
+#parse("templates/default/paym/allowancedetailspartial.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/allowancepartial.html">
+#parse("templates/default/paym/allowancepartial.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/allowances.html">
+#parse("templates/default/paym/allowances.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/allowancesummary.html">
+#parse("templates/default/paym/allowancesummary.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/allowanceswidget.html">
+#parse("templates/default/paym/allowanceswidget.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/billdetailshome.html">
+#parse("templates/default/paym/billdetailshome.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/billsummarydetails.html">
+#parse("templates/default/paym/billsummarydetails.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/changecreditcardpaymentdetailsform.html">
+#parse("templates/default/paym/changecreditcardpaymentdetailsform.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/changedirectdebitpaymentdetailsform.html">
+#parse("templates/default/paym/changedirectdebitpaymentdetailsform.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/changepaymentdetails.html">
+#parse("templates/default/paym/changepaymentdetails.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/changepin.html">
+#parse("templates/default/paym/changepin.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/changepinform.html">
+#parse("templates/default/paym/changepinform.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/chequepaymentdetails.html">
+#parse("templates/default/paym/chequepaymentdetails.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/billingaddressview.html">
+#parse("templates/default/paym/billingaddressview.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/coreorpromoboltondetailtemplate.html">
+#parse("templates/default/paym/coreorpromoboltondetailtemplate.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/coreorpromoboltonsummarydetails.html">
+#parse("templates/default/paym/coreorpromoboltonsummarydetails.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/creditcardpaymentdetails.html">
+#parse("templates/default/paym/creditcardpaymentdetails.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/directdebitpaymentdetails.html">
+#parse("templates/default/paym/directdebitpaymentdetails.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/highend-widget.html">
+#parse("templates/default/paym/highend-widget.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/inline-widget.html">
+#parse("templates/default/paym/inline-widget.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/mobilenumbers.html">
+#parse("templates/default/paym/mobilenumbers.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/myallowancessummary.html">
+#parse("templates/default/paym/myallowancessummary.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/myboltonssummary.html">
+#parse("templates/default/paym/myboltonssummary.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/mylatestbillsummary.html">
+#parse("templates/default/paym/mylatestbillsummary.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/mymobile.html">
+#parse("templates/default/paym/mymobile.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/myrecentchargessummary.html">
+#parse("templates/default/paym/myrecentchargessummary.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/mytariffsummary.html">
+#parse("templates/default/paym/mytariffsummary.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/myupgradeoptionssummary.html">
+#parse("templates/default/paym/myupgradeoptionssummary.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/overlays/dataallowancedetailsoverlay.html">
+#parse("templates/default/paym/overlays/dataallowancedetailsoverlay.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/overlays/messageallowancesdetailsoverlay.html">
+#parse("templates/default/paym/overlays/messageallowancesdetailsoverlay.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/overlays/minutesallowancesdetailsoverlay.html">
+#parse("templates/default/paym/overlays/minutesallowancesdetailsoverlay.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/overlays/mylatestbillbalanceoverlay.html">
+#parse("templates/default/paym/overlays/mylatestbillbalanceoverlay.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/overlays/paperfreebilloverlay.html">
+#parse("templates/default/paym/overlays/paperfreebilloverlay.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/overlays/tariffdetailsoverlay.html">
+#parse("templates/default/paym/overlays/tariffdetailsoverlay.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/paymentdetailscancelchangeslink.html">
+#parse("templates/default/paym/paymentdetailscancelchangeslink.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/paymentdetailsfooterlinks.html">
+#parse("templates/default/paym/paymentdetailsfooterlinks.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/paymentdetailspinvalidationform.html">
+#parse("templates/default/paym/paymentdetailspinvalidationform.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/paymentdetailssuccess.html">
+#parse("templates/default/paym/paymentdetailssuccess.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/pendingtariffboltons.html">
+#parse("templates/default/paym/pendingtariffboltons.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/phoneplandetails.html">
+#parse("templates/default/paym/phoneplandetails.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/phoneplansummary.html">
+#parse("templates/default/paym/phoneplansummary.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/pinmaintenancesuccess.html">
+#parse("templates/default/paym/pinmaintenancesuccess.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/resetpin.html">
+#parse("templates/default/paym/resetpin.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/resetpinform.html">
+#parse("templates/default/paym/resetpinform.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/setuppin.htm">
+#parse("templates/default/paym/setuppin.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/setuppinform.html">
+#parse("templates/default/paym/setuppinform.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/swapboltons.html">
+#parse("templates/default/paym/swapboltons.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/tariffsummarydetails.html">
+#parse("templates/default/paym/tariffsummarydetails.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/userhasnopinview.html">
+#parse("templates/default/paym/userhasnopinview.html")
+</script>
+<script type="text/ng-template" id="/templates/default/paym/viewpaymentdetails.html">
+#parse("templates/default/paym/viewpaymentdetails.html")
+</script>
+<script type="text/ng-template" id="/templates/default/widget.html">
+#parse("templates/default/widget.html")
+</script>

@@ -1,0 +1,9 @@
+.myorders-widget{
+	.widget-heading-cell{
+		@include PxToEm(padding-bottom,9px);
+	}
+	.widget-bordered-grid{
+		@include PxToEm(padding-top,13px);
+		@include PxToEm(margin-bottom,-6px);
+	}
+}

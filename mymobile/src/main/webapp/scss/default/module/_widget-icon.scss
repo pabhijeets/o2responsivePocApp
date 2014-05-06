@@ -1,0 +1,20 @@
+.mylatestbill-icon{
+	margin-right : -4px;
+	margin-top : -4px;
+}
+.myrecentcharges-icon{
+	margin-right : -6px;
+	margin-top : -2px;
+}
+.myupgradeoptions-icon{
+	padding-top: 1px;
+	padding-left: 3px;
+}
+.myallowances-icon{
+	padding-left: 2px;
+	 padding-bottom: 4px;
+}
+.phoneplan-icon{
+	@include PxToEm(margin-top,-7px);
+	@include PxToEm(padding-left,7px);
+}

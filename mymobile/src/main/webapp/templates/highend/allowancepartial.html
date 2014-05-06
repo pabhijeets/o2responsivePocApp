@@ -1,0 +1,55 @@
+<div ng-switch on="allowances.hasAllowances(allowanceType)">
+
+    <!-- HAS ALLOWANCES OF THIS TYPE-->
+    <div ng-switch-when="true" ng-init="allowancesCount = allowances.getAllowances(allowanceType, summarise).length">
+        <section ng-switch on="allowancesView" ng-repeat="allowance in allowances.getAllowances(allowanceType, summarise)">
+            <!-- ALLOWACNE SUMMARY -->
+            <div ng-switch-when="summary" class="widget-details-background-allowance">
+                <section id="allowance_{{$index}}">
+                    <div>
+                        <!-- unLimited -->
+                        <div ng-show="allowance.isUnlimited" ng-switch on="allowanceType">
+                            <span class="widget-unlimited-title-column">Unlimited</span>
+                            <span class="widget-unlimited-desc-column" ng-switch-when="data">UK Data</span>
+                            <span class="widget-unlimited-desc-column" ng-switch-when="minutes">{{allowance.description}}</span>
+                            <span class="widget-unlimited-desc-column" ng-switch-when="messages">{{allowance.description}}</span>
+                        </div>
+
+                        <!-- limited -->
+                        <div
+                            ng-hide="allowance.isUnlimited"
+                            id="{{allowanceType}}{{$index}}"
+                            ng-init="module=allowanceType+'allowance';showCallToAction=false;"
+                            ng-controller="allowanceDetailsController.setInLocalScope">
+                            <div ng-include="'templates/highend/widget.html'"> </div>
+                        </div>
+                    </div>
+                </section>
+                <hr ng-if="!(hideLastSeparator && $index == (allowancesCount - 1))" class="headless-seperator"/>
+            </div>
+            
+            <!-- ALLOWACNE DETAIL -->
+            <div ng-switch-when="detail">
+                <div
+                    id="{{allowanceType}}{{$index}}"
+                    ng-init="module=allowanceType+'allowance';hasAllowances=true;allowanceIndex=$index"
+                    ng-controller="allowanceDetailsController.setInLocalScope">
+                    <div ng-include="'templates/highend/allowancedetailspartial.html'"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- NO ALLOWANCES OF THIS TYPE -->
+    <div ng-switch-when="false">    
+        <section ng-if="allowancesView == 'detail'">
+            <div
+                id="no-{{allowanceType}}-allowances"
+                ng-init="module=allowanceType+'allowance';status='success';hasAllowances=false"
+                ng-controller="widgetController.doNothing">
+                <div ng-include="'templates/highend/allowancedetailspartial.html'"></div>
+            </div>
+        </section>
+    </div>
+</div>

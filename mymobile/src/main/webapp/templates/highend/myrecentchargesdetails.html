@@ -1,0 +1,46 @@
+<section id="recentChargesDetails">
+    <section class="grid shading">
+        <div class="grid-row">
+            <label class="grid-column-large">Minutes</label>
+            <label class="grid-column-small">{{recentCharges.voiceCharge | currencyFormatter}}</label>
+        </div>
+
+        <div class="grid-row">
+            <label class="grid-column-large">Messages</label>
+            <label class="grid-column-small">{{recentCharges.messageCharge | currencyFormatter}}</label>
+        </div>
+
+        <div class="grid-row">
+            <label class="grid-column-large">Data</label>
+            <label class="grid-column-small">{{recentCharges.dataCharge | currencyFormatter}}</label>
+        </div>
+
+        <div class="grid-row">
+            <label class="grid-column-large">Charges when abroad</label>
+            <label class="grid-column-small">{{recentCharges.internationalCharge | currencyFormatter}}</label>
+        </div>
+
+        <div class="grid-row">
+            <label class="grid-column-large">Premium & information services</label>
+            <label class="grid-column-small">{{recentCharges.otherCharge | currencyFormatter}}</label>
+        </div>
+
+        <div class="grid-row">
+            <label class="grid-column-large">Things you've bought</label>
+            <label class="grid-column-small">{{recentCharges.directToBillCharge | currencyFormatter}}</label>
+        </div>
+
+        <div class="grid-row">
+            <label class="grid-column-large">Total new charges</label>
+            <label class="grid-column-small">{{recentCharges.totalCharge | currencyFormatter}}</label>
+        </div>
+
+    </section>
+   
+   <div class="container-padding">
+    <p id="recentChargesInfoMessage" class="key-note-summary" ng-hide="recentCharges.error">
+        *These charges exclude VAT. <BR/>
+        It can take up to 12 hours for UK calls to be updated and longer for international and data calls.
+    </p>
+   </div>
+</section>

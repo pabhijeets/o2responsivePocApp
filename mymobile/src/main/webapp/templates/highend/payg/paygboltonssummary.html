@@ -1,0 +1,26 @@
+<script type="text/ng-template" id="templates/highend/payg/paygboltonssummary.html">
+<article>
+    <div id="boltOnSummaryHasAllowance" ng-show="showCallToAction" class="text-m">
+        <p class="widget-info widget-info-extra-margin-top widget-info-padding-right">You have 
+            <ng-pluralize count="paygBoltons.dataBoltOnsCount"
+            when="{
+                '1': '{} data allowance Bolt On',
+                '0': 'no data allowance Bolt On',
+                'other': '{} data allowance Bolt Ons'
+            }">
+            </ng-pluralize>
+            and
+            <ng-pluralize count="paygBoltons.otherBoltOnsCount"
+            when="{
+                '1': '{} other Bolt On',
+                '0': 'no other Bolt On',
+                'other': '{} other Bolt Ons'
+            }">
+            </ng-pluralize>
+        </p>  
+    </div>
+    <div id="boltOnSummaryHasNoAllowance" ng-show="!showCallToAction">
+        <p class="widget-info widget-info-extra-margin-top widget-info-padding-right">There are no allowances included with your tariff. You'll be charged at your standard rate for any minutes, texts or data you use.</p>
+    </div>
+</article>
+</script>

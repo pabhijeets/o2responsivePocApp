@@ -1,0 +1,14 @@
+html, body{
+  font:$defaultFontSize FrutigerLTStd55Roman + $fallbackFonts;
+	
+}
+html, body{
+  margin: 0;
+  color: $darkBlueColor;
+  line-height: $defaultLineHeight;
+  text-rendering: optimizeLegibility;
+  font-size:$defaultFontSize;
+}
+table p{
+	word-break:normal;
+}

@@ -1,0 +1,112 @@
+body, html{
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+}
+.wrapper-container{
+	width:100%;
+	display:block;
+	overflow:visible;
+}
+.content{
+	width:100%;
+	margin:auto;
+	display:block;
+	overflow:hidden;
+}
+.content-wrapper{
+	display: block;
+	margin: auto;
+	margin-bottom:30px;
+	 @include PxToEm("margin-top",20px); 
+	 overflow:visible;
+}
+.hero-cmc-container{
+	color: white;
+	padding: 10% 0 10% 0;
+	background-image: url("../../img/default/cmc.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display:block;
+	overflow:hidden;	
+	width:100%;
+}
+.widget-column-left{
+	float:left;
+	width:49%;
+}
+.bills-page-column-left {
+	float:left;
+	width:71%;
+}
+.widget-column-right{
+	float:right;
+	width:49%;
+}
+.bills-page-column-right {
+	float:right;
+	width:27.5%;
+}
+.footer{
+	color: white;
+	padding: 10% 0 10% 0;
+	background-image: url("../../img/default/footer.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.widget-grid{
+	display:block;
+}
+
+@media screen 
+and (min-width : 1116px) {
+ .wrapper-container, .header-content{
+ 	width:1100px;
+ 	margin:0 auto;
+ }
+ .hero-cmc-container{
+ 	width:100%;
+ }
+}
+
+@media screen 
+and (max-width : 815px) {
+ .wrapper-container{
+ 	width:815px;
+ }
+ .content-wrapper{
+ 	width:98%;
+ }
+ .hero-cmc-container{
+ 	width:100%;
+ }
+}
+.setupNewPin-margin-top {
+	max-width: 1070px;
+	@include PxToEm("padding-left",30px); 
+	margin: 0 auto;
+	width:auto;
+}
+
+@media screen 
+and (max-width : 990px) {
+ .widget-group{
+ 	width:48%;
+ }
+}
+
+@media screen 
+and (max-width : 860px) {
+ .widget-group{
+ 	width:47%;
+ }
+}
+
+@media screen 
+and (max-width : 840px) {
+ .widget-group{
+ 	width:47%;
+ }
+}

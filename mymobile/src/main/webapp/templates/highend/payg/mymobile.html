@@ -1,0 +1,47 @@
+<script type="text/ng-template" id="templates/highend/payg/mymobile.html">
+    <a id="changeMobileLink" class="changeMobileLink" href="{{app.changeMobileUrl}}" class="customlink">
+        <o2svg svgclass="" nonsvgclass="" name="'cta_link'"></o2svg>Change mobile
+    </a>
+    <!-- BALANCE AND ALLOWANCE SUMMARY -->
+    <div
+            id="balanceAndAllowance"
+            class="widget-container"
+            ng-init="module='paygbalanceandallowance';status='loading';showCallToAction=false;"
+            ng-controller="balanceAndAllowanceSummaryController.getSummary">
+        <div ng-include="templates/highend/widget.html"></div>
+    </div>
+    <hr class="blue-strip-separator"/>
+
+    <!-- TARIFF SUMMARY -->
+    <div
+            id="myTariffSummary"
+            class="widget-container"
+            ng-init="module='paygmytariff';status='loading';showCallToAction=false;"
+            ng-controller="myTariffSummaryController.getSummary">
+        <div ng-include="'/mymobile/_assets/templates/highend/widget.html'"></div>
+    </div>
+    <hr class="blue-strip-separator"/>
+
+    <!-- CALLING PLAN -->
+    <div
+            id="myCallingPlanSummary"
+            class="widget-container"
+            ng-init="module='paygcallingplan';status='success';showCallToAction=true;"
+            ng-controller="widgetController.doNothing">
+        <div ng-include="'/mymobile/_assets/templates/highend/widget.html'"></div>
+    </div>
+    <hr class="blue-strip-separator"/>
+
+    <!-- BOLTONS -->
+    <div
+            id="myBoltonsSummary"
+            class="widget-container myBoltons"
+            ng-init="module='paygboltons';status='loading';showCallToAction=false;"
+            ng-controller="boltonsController.getSummary">
+        <div ng-include="'/mymobile/_assets/templates/highend/widget.html'"></div>
+    </div>
+    <hr class="blue-strip-separator"/>
+
+    <!-- WEB CHAT -->
+    <div ng-include="'/mymobile/_assets/templates/highend/chatonline.html'"></div>
+</script>

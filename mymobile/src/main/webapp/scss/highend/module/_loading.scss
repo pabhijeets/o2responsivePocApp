@@ -1,0 +1,39 @@
+.loading-container{
+	@extend .text-align-center;  
+	@include PxToEm("padding-top",86px);
+	@include PxToEm("height",282.49px);
+}
+.loading-text{
+	display: inline-block;
+	position: relative;
+	 @include PxToEm("bottom",11.66px);
+}
+.loading-container svg{
+	width:2.9em;
+	height:2.9em;
+
+}
+
+
+.loading-spinner-image{
+        display:block;
+         overflow:hidden;
+         margin:auto;
+         background-size:100% 100%;
+         height:39px;
+}
+.loading-gif{	
+	background: {
+	    image: url($loadingGif);
+  	  }
+     width:203px; 
+     @extend .loading-spinner-image;
+}
+
+.loading-widget-gif {
+    background: {
+        image: url($loadingWidgetGif);
+      }
+    width: 39px;
+    @extend .loading-spinner-image;
+}

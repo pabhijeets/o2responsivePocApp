@@ -1,0 +1,35 @@
+<script type="text/ng-template" id="templates/highend/payg/paygbalanceandallowancedetails.html">
+<section id="paygbalanceandallowancedetails" class="current-balance-payg">
+    <!-- Allowance Text -->
+	<div ng-show="balanceAndAllowanceSummary.allowanceText" class="widget-info">
+	    {{balanceAndAllowanceSummary.allowanceText}}
+	</div>
+	
+	<div ng-show="balanceAndAllowanceSummary.topupMessage" class="widget-info">
+		<div class="grid-row">
+            <div ng-if="balanceAndAllowanceSummary.imageUrl == 'alert'">
+                <o2svg id="topup-message-alert-image" tag="span" svgclass="alert-icon-payg-balance" nonsvgclass="alert-icon-payg-balance" name="'icon_alert'" fallbackext="png"></o2svg>
+            </div>
+            <div ng-if="balanceAndAllowanceSummary.imageUrl == 'warning'">
+                <o2svg id="topup-message-warning-image" tag="div" svgclass="alert-icon-payg-balance" nonsvgclass="alert-icon-payg-balance" name="'icon_warning'" fallbackext="png"></o2svg>
+            </div>
+
+           <span class="alert-message-comment">
+ 				{{balanceAndAllowanceSummary.topupMessage}}
+	        </span>
+		</div>	
+	</div>
+
+	 <section class="button-blue-container-payg">
+		<a target="_blank" href="http://www.o2.co.uk/topup">
+			<div id="topupButton" class="button-blue-success">
+			<div class="button-text">Top up</div></div>
+		</a>
+	</section>
+
+	<!-- Need to add horizontal space -->
+	<div id="updateMessage" class="widget-info">
+	    *It can take up to 30 minutes for calls to update and longer for international calls and data.
+	</div>
+</section>
+</script>

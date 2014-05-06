@@ -1,0 +1,30 @@
+<section>
+     <section id="coreOrPromotionalDataBoltOnList_{{$index}}" ng-repeat="bolton in myBoltons.myCoreOrPromotionalDataBoltonList">
+       <div ng-include="templates/highend/boltondetailtemplate.html" ng-init="mandatoryBolton=true">
+       </div>
+    </section>
+	 
+	    <section ng-show="myBoltons.myCoreOrPromotionalDataBoltonList.length != 0">
+	        <div class="container-padding">
+				<p id="changeMandatoryBoltOnInfoMessage" class="key-note">To change your mandatory data allowance Bolt On, please visit the <a class="inline-custom-link" id="fullSiteLink" ng-click="setFullSiteCookie()">full site</a> or <a class="inline-custom-link" target="_blank" href="http://www.o2.co.uk/mobile/contactus">contact us</a>.</p>
+			</div>
+	    </section>
+	    <section id="dataBoltOnList_{{$index}}" ng-repeat="bolton in myBoltons.myDataBoltonList">
+	       <div ng-include="templates/highend/boltondetailtemplate.html">
+	       </div>
+	    </section>
+	    <section>
+	    	<div class="container-padding">
+			     <a id="addDataBoltOn" href="#/adddataboltons" class="customlink"><o2svg svgclass="arrow" nonsvgclass="arrow" name="'cta_link'"></o2svg>Add data Bolt On
+		        </a> 
+			</div>  
+	    </section>
+	
+	    <section id="OtherBoltOnList_{{$index}}" ng-repeat="bolton in myBoltons.myboltonList">
+	       <div ng-include="templates/highend/boltondetailtemplate.html">
+	       </div>
+	    </section>
+		<div class="container-padding">
+			<p id="addBoltOnInfoMessage" class="key-note">To add other types of Bolt Ons, please visit the <a class="inline-custom-link" id="fullSiteLink" ng-click="setFullSiteCookie()">full site</a> or <a class="inline-custom-link" target="_blank" href="http://www.o2.co.uk/mobile/contactus">contact us</a>.</p>
+	 	</div>
+</section>
