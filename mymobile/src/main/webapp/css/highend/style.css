@@ -1689,3 +1689,8 @@ p.widget-allowance-nil {
 .phone-plan-page .phone-plan-details-container .info-seperator {
     margin-top: 0.85714em;
     margin-top: 0.85714rem; }
+.contactus-img {
+	margin-left:1em;
+	height:1em;
+	width:1em;
+}
